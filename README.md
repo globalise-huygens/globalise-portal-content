@@ -28,7 +28,6 @@ pages/
 ├── about/
 │   ├── index.md
 │   ├── project.md
-│   ├── archive.md
 │   ├── ambitions.md
 │   ├── methods.md
 │   ├── outputs.md
@@ -65,7 +64,7 @@ pages/
 │
 ├── resources/
 │   ├── index.md
-│   ├── voc-guide.md
+│   ├── voc-archives-guide.md
 │   ├── bibliography.md
 │   ├── related-projects.md
 │   ├── podcasts.md
