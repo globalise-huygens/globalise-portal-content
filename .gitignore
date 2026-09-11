@@ -1,0 +1,15 @@
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Static-site build output
+_site/
+dist/
+build/
+
+# Local environment
+.env
+.venv/
+venv/
+node_modules/
