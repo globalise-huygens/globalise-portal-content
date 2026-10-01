@@ -183,9 +183,36 @@ Do not repeat the alt text unnecessarily.
 
 ## 16. Citations
 
-Use the citation conventions established for the Globalise research portal.
-
 Citations should make it possible for researchers to identify and, where possible, locate the source.
+
+### Literature
+
+All works cited on the portal are recorded once, in [`/assets/references/references.bib`](/assets/references/references.bib). In the text, refer to them by their citation key, using Pandoc citation syntax:
+
+| You write | Meaning |
+| --- | --- |
+| `[@Gaastra2003]` | A citation in brackets |
+| `[@Gaastra2003, 45]` or `[@Gaastra2003, 45–52]` | A citation with page numbers |
+| `[see @Gaastra2003, 45; @Knaap2023]` | Several works, with a prefix |
+| `@Gaastra2003 argues that …` | The author's name as part of the sentence |
+
+Do not type out formatted references by hand. The formatted citation and the list of references are generated from `references.bib`, so that all pages use the same style.
+
+Citation keys consist of the first author's (or editor's) family name, including particles, and the year of publication, without spaces or diacritics: `Gaastra2003`, `VanRossum2012`, `SJacob2000`. If the same author has more than one work in a year, add a letter: `Verkijk2023a`, `Verkijk2023b`. For reprints, use the year of the original edition.
+
+### Footnotes
+
+Use footnotes (`[^1]`) for comments and for references that need explanation. A footnote can contain a citation key.
+
+### Archival documents
+
+Refer to archival documents by archive, series, inventory number and, where relevant, scan or folio, for example `NL-HaNA, VOC, 1.04.02, inv. 1221, scan 0183`. Where the document is available on the portal, link to it.
+
+<!-- TODO: confirm the format for archival references, and how links to documents on the portal should be formed. -->
+
+### Citing the portal itself
+
+How users should cite Globalise data and documents is explained on [Citing Globalise](/pages/learn/citation.md). That page is about citing the portal, not about citations within it.
 
 ## 17. Licences and reuse
 

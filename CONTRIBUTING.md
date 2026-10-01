@@ -211,7 +211,26 @@ If an external resource is central to the page, describe what users will find th
 
 ## 10. Citations
 
-Follow the conventions in [pages/learn/citation.md](pages/learn/citation.md) for citing archival documents, secondary literature and websites.
+Follow the citation conventions in the [style guide](STYLEGUIDE.md#16-citations). In practice:
+
+1. **Check whether the work is already in [`/assets/references/references.bib`](/assets/references/references.bib).** If it is, use its key.
+2. **If not, add a BibTeX entry** to `references.bib`. Export it from Zotero or another reference manager, or copy it from the publisher, Crossref or the ACL Anthology, and then:
+   * give it a key following the `AuthorYear` convention (for example `Gaastra2003`), and make sure the key is unique;
+   * include at least author or editor, title, year and publisher or journal, and a DOI where one exists;
+   * remove fields that are only used by your reference manager, such as `abstract`, `keywords`, `file` and `urldate`;
+   * for works not in English, add the language, for example `langid = {dutch}`, so that titles keep their own capitalisation;
+   * for reprints, give the original edition and mention the reprint in a `note`.
+3. **Cite the work in your text** with its key, for example `[@Gaastra2003, 45]`. Do not type the formatted reference.
+
+The [bibliography page](pages/resources/bibliography.md) is generated from `references.bib`. Each entry on that page ends with its key in an HTML comment (`<!-- Gaastra2003 -->`). To add a work to the bibliography, add an entry anywhere in the right section with only its key, for example `* <!-- Boxer1965 -->`, and run:
+
+```bash
+python3 scripts/render_bibliography.py pandoc pages/resources/bibliography.md assets/references/references.bib
+```
+
+This re-renders every list on the page from `references.bib` (Chicago author-date style). It requires [Pandoc](https://pandoc.org/) version 3 or later.
+
+[Citing Globalise](pages/learn/citation.md) is a page for portal users about how to cite Globalise data and documents. It is not a guide for citations in content pages.
 
 ## 11. Accessibility
 

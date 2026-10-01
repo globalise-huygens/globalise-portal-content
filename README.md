@@ -96,6 +96,9 @@ templates/
 ├── theme.md
 └── tutorial.md
 
+scripts/
+└── render_bibliography.py   (renders the bibliography page from references.bib)
+
 assets/
 ├── images/
 │   ├── image-metadata.yml
