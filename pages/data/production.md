@@ -56,7 +56,9 @@ Earlier versions of the transcriptions were published on DataverseNL in 2023 and
 
 The VOC archive is organised in bound volumes (inventory numbers), each containing many separate documents. Where one document ends and the next begins is not recorded in a form a computer can use, so Globalise had to reconstruct it. The project combined several sources and methods:
 
-* **Historical finding aids.** Many volumes have tables of contents, which the TANAP project and the Nationaal Archief turned into document-level indexes. Globalise digitised and combined these into the *Digitized Indexes of the Dutch East India Company OBP*. Index entries give the folio numbers on which a document starts and ends; pages were matched to documents by their folio numbers, and remaining gaps between pages of the same document were filled in. The indexes do not cover all inventory numbers: the TANAP indexes cover inventory numbers 1053–1669, 2325–3987, 7527–9179 and 10406–10435, and Globalise added indexes from typescripts in the Nationaal Archief for 1053–2325 and 4374–4447 ([dataset documentation](https://doi.org/10.34894/OP20NM)). For the other inventories, such as most of 9180–11024, documents can only be identified in other ways.
+* **Historical finding aids.** Many volumes have tables of contents. The TANAP project used these to describe the individual documents in thousands of OBP volumes, creating the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/). TANAP ran out of funding before it could describe all volumes. To fill part of the gap, Globalise digitised typescript tables of contents that the Nationaal Archief made after compiling its inventory of the VOC archive in the 1960s, and combined both into the [*Digitized Indexes of the Dutch East India Company OBP*](https://doi.org/10.34894/OP20NM). Index entries give the folio numbers on which a document starts and ends; pages were matched to documents by their folio numbers, and remaining gaps between pages of the same document were filled in.
+
+  Together, the TANAP index and the typescripts cover all OBP volumes of the Amsterdam Chamber (inventory numbers 1053–4447), but only part of those of the Zeeland Chamber (7527–9179 and 10406–10435). For inventory numbers 9180–10405 and 10436–11024, documents can only be identified in other ways.
 * **General Missives.** For the *Generale Missiven*, the summarising reports sent from Batavia to the Dutch Republic, documents were added on the basis of manually created ground truth.
 * **Page layout.** A baseline method identifies document boundaries automatically from blank pages and from pages with signatures, which usually mark the end of a document. Documents found this way get the first header on their first page as a title.
 
@@ -64,7 +66,13 @@ Because these methods are independent, their results can overlap or differ. A pa
 
 The project also experimented with classifying pages and detecting where documents begin using language models, and published a dataset for training and evaluating such methods.
 
-<!-- TODO: confirm which of these methods are used for the documents shown on the portal, whether the automatic start-page detection (nlp-start-page-detection) is used, and how confidence and overlaps are shown to users. Consider adding counts (number of documents per method). -->
+### Document types
+
+Documents are also classified by type, such as letters, resolutions, journals or lists. The TANAP project assigned a category to every document it described, using a classification built from the perspective of the VOC. Globalise digitised this TANAP classification and created a simplified and normalised classification of its own, which is linked to the TANAP categories. All documents in the Digitized Indexes are classified with the Globalise document types. Both classifications are published as thesauri: [SKOS Thesauri for VOC Archival Document Classification](https://doi.org/10.34894/B2WBZZ).
+
+<!-- TODO: explain how document types are assigned to documents that are not in the indexes (e.g. documents found by the baseline method), and how users can see and filter by document type on the portal. -->
+
+<!-- TODO: coverage figures follow the TANAP index page (https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/); the description of the Digitized Indexes dataset on DataverseNL gives slightly different ranges. Check and align. Also confirm which of these methods are used for the documents shown on the portal, whether the automatic start-page detection (nlp-start-page-detection) is used, and how confidence and overlaps are shown to users. Consider adding counts (number of documents per method). -->
 
 ## 4. Recognising entities
 

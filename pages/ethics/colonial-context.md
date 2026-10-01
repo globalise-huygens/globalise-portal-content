@@ -55,7 +55,7 @@ Globalise aims to support research that moves the VOC away from the centre of at
 
 ## How the archive was described
 
-The finding aids that give access to the VOC archives, from historical tables of contents to modern inventories and indexes, are based on document descriptions. These usually record who wrote a document, when, where and to whom, and what it was about when this was relevant to the people who created and later managed the archive.
+The finding aids that give access to the VOC archives, from historical tables of contents to modern inventories and indexes, are based on document descriptions. These usually record who wrote a document, when, where and to whom, and what it was about when this was relevant to the people who created and later managed the archive. The most detailed finding aid for the series that Globalise works with, the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/), also assigns each document to a category, and these categories were explicitly created from the perspective of the VOC.
 
 As a result, the most visible people in these descriptions are company servants, and the most visible subjects are trade and production, even when the documents themselves also deal with local individuals, communities and other subjects. Globalise tries to go beyond these descriptions by identifying people, places, events and other entities within the documents themselves. See [Methods](/pages/about/methods.md).
 

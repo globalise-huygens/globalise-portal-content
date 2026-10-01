@@ -60,9 +60,10 @@ The languages of all pages in Latin script were identified automatically; pages 
 | Component | Description | Link |
 | --- | --- | --- |
 | Globalise documents | Database and scripts for identifying documents, and for exporting the IIIF collection and manifests | <https://github.com/globalise-huygens/documents> |
+| TANAP index and establishment reconstructions | Introduction to the TANAP index, its coverage, and document lists per VOC establishment (Renate Smit, 2025) | <https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/> |
 | GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799) | Document-level index entries from the TANAP and Nationaal Archief finding aids | <https://doi.org/10.34894/OP20NM> |
 | GLOBALISE – VOC Document Segmentation Dataset | Dataset for training and evaluating document segmentation | <https://doi.org/10.34894/XAJ12C> |
-| SKOS Thesauri for VOC Archival Document Classification | Document types | <https://doi.org/10.34894/B2WBZZ> |
+| SKOS Thesauri for VOC Archival Document Classification | Document types: the TANAP classification and the Globalise classification | <https://doi.org/10.34894/B2WBZZ> |
 
 Publication: Schnober et al. (2024), *Page Embeddings: Extracting and Classifying Historical Documents with Generic Vector Representations* (`Schnober2024` in the bibliography).
 

@@ -190,7 +190,7 @@ These records define units of weight, measure and currency used in VOC settlemen
 
 Document descriptions and document types (see [How the data was produced](/pages/data/production.md#3-identifying-documents)) are based on:
 
-* GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799): document-level index entries from the TANAP project and from typescript indexes in the Nationaal Archief. The indexes do not cover all inventory numbers. <https://doi.org/10.34894/OP20NM>
+* GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799): document-level index entries from the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/) and from typescript indexes in the Nationaal Archief. The indexes do not cover all inventory numbers. <https://doi.org/10.34894/OP20NM>
 * SKOS Thesauri for VOC Archival Document Classification: the TANAP document classification and a simplified Globalise classification. <https://doi.org/10.34894/B2WBZZ>
 * Overzicht van Generale Missiven in het archief van de VOC, 1.04.02: the *Generale Missiven* identified in the archive, 1618–1793. <https://doi.org/10.34894/SRDMFU>
 * GLOBALISE – VOC Document Segmentation Dataset: manually segmented inventories, for training and evaluating document segmentation. <https://doi.org/10.34894/XAJ12C>
