@@ -12,7 +12,7 @@ The website content is maintained as Markdown files with YAML front matter and c
 | [Collections](pages/collections/README.md)         | Provide structured entry points into selected categories of Globalise material   | Essential   |
 | [Themes](pages/themes/README.md)                   | Demonstrate how Globalise can be used to investigate specific historical themes  | Essential   |
 | [Learn & Get Started](pages/learn/index.md)        | Teach users how to use the portal effectively                                    | Essential   |
-| [About Globalise](pages/about/index.md)            | Explain the project, archive, methods, outputs and team                          | Essential   |
+| [About Globalise](pages/about/index.md)            | Explain the project, archive, methods, outputs and team; preserve project documents and blog posts in an [Archive](pages/about/archive/index.md) subsection | Essential   |
 | [Ethics & Colonial Context](pages/ethics/index.md) | Explain colonial context, ethics, bias and limitations                           | Essential   |
 | [Data & Documentation](pages/data/index.md)        | Explain Globalise data, methods, models and access                               | Essential   |
 | [Resources](pages/resources/index.md)              | Provide historical, research and media resources                                 | Recommended |
@@ -31,7 +31,12 @@ pages/
 │   ├── ambitions.md
 │   ├── methods.md
 │   ├── outputs.md
-│   └── team.md
+│   ├── team.md
+│   └── archive/
+│       ├── index.md
+│       ├── mission-research-themes.md
+│       └── blog/
+│           └── <one file per archived blog post>.md
 │
 ├── learn/
 │   ├── index.md
@@ -92,6 +97,10 @@ templates/
 
 assets/
 ├── images/
+│   ├── image-metadata.yml
+│   └── about/archive/      (images for the archived pages)
+├── references/
+│   └── references.bib
 └── videos/
 ```
 

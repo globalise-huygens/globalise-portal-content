@@ -25,7 +25,7 @@ related: ["methods", "data", "access", "team-and-partners"]
 
 # Outputs
 
-<!-- Source: https://globalise.huygens.knaw.nl/output/ (consulted 2026-10-01). Lists copied from that page; titles of datasets, models and publications are kept as published, including the capitalised spelling GLOBALISE. -->
+<!-- Source: https://globalise.huygens.knaw.nl/output/ (consulted 2026-10-01). Lists copied from that page, with two corrections checked against the publications (author order of Luthra & Eskevich 2024; page numbers of Arnoult et al. 2025). The publications are also in /assets/references/references.bib. Titles of datasets, models and publications are kept as published, including the capitalised spelling GLOBALISE. -->
 
 <!-- TODO: this page depends on the final output list (see CONTENT.md). Update before publication. -->
 
@@ -72,20 +72,18 @@ The handwritten text recognition and layout models were trained for use with [Lo
 Academic articles and conference papers by members of the Globalise team about the project and its methods:
 
 * Verkijk, Stella & Vossen, Piek (2026). Out-Of-Tune rather than Fine-Tuned: How Pre-training, Fine-tuning and Tokenization Affect Semantic Similarity in a Historical, Non-Standardized Domain. In Proceedings of the Second Workshop on Language Models for Low-Resource Languages (LoResLM 2026), pages 515-531, Rabat, Morocco. <https://doi.org/10.18653/v1/2026.loreslm-1.45>
-* Arnoult, Sophie, Nijman, Brecht, & van Wissen, Leon. (2025). Fine-grained Named-Entity Recognition for the East-India Company domain. In T. Arnold, M. Fantoli, & R. Ros (Eds.), Anthology of Computers and the Humanities. Volume 3: Computational Humanities Research 2025 (pp. 953-967). Association for Computers and the Humanities. <https://doi.org/10.63744/DRbhWNTzqNzR>
+* Arnoult, Sophie, Nijman, Brecht, & van Wissen, Leon. (2025). Fine-grained Named-Entity Recognition for the East-India Company domain. In T. Arnold, M. Fantoli, & R. Ros (Eds.), Anthology of Computers and the Humanities. Volume 3: Computational Humanities Research 2025 (pp. 952-966). Association for Computers and the Humanities. <https://doi.org/10.63744/DRbhWNTzqNzR>
 * Verkijk, Stella, Vossen, Piek, & Sommerauer, Pia. (2025). Language Models Lack Temporal Generalization and Bigger is Not Better. In Findings of the Association for Computational Linguistics: ACL 2025, pages 20629–20637, Vienna, Austria. Association for Computational Linguistics. <https://doi.org/10.18653/v1/2025.findings-acl.1060>
 * Wissen, Leon van, Kuruppath, Manjusha, & Petram, Lodewijk. (2025). Unlocking the Research Potential of Early Modern Dutch Maps. European Journal of Geography, s12–s17. <https://doi.org/10.48088/ejg.si.spat.hum.l.wis.12.17>
 * Schnober, Carsten, Smit, Renate, Kuruppath, Manjusha, Pepping, Kay, van Wissen, Leon & Petram, Lodewijk. (2024). Page Embeddings: Extracting and Classifying Historical Documents with Generic Vector Representations. Proceedings of the CHR 2024: Computational Humanities Research Conference, December 4–6, 2024, Aarhus, Denmark, 999–1011. <https://ceur-ws.org/Vol-3834/paper73.pdf>
 * Luthra, Mrinalini, & Nijman, Brecht. (2024). Lost in Translation? Approaches to Gender Representation in Multilingual Archives. In Proceedings of the 2nd International Workshop on Gender-Inclusive Translation Technologies, pages 42–55, Sheffield, United Kingdom. European Association for Machine Translation (EAMT). <https://aclanthology.org/2024.gitt-1.5>
 * Verkijk, Stella, Sommerauer, Pia, & Vossen, Piek. (2024). Studying Language Variation Considering the Re-Usability of Modern Theories, Tools and Resources for Annotating Explicit and Implicit Events in Centuries Old Text. In Proceedings of the Eleventh Workshop on NLP for Similar Languages, Varieties, and Dialects (VarDial 2024), Mexico City, Mexico, 174–187. Association for Computational Linguistics. <https://aclanthology.org/2024.vardial-1.15>
-* Eskevich, Maria, & Luthra, Mrinalini. (2024). Data-Envelopes for Cultural Heritage: Going beyond Datasheets. In Proceedings of the Workshop on Legal and Ethical Issues in Human Language Technologies @ LREC-COLING 2024, Torino, Italia, 52–65. <https://aclanthology.org/2024.legal-1.9>
+* Luthra, Mrinalini, & Eskevich, Maria. (2024). Data-Envelopes for Cultural Heritage: Going beyond Datasheets. In Proceedings of the Workshop on Legal and Ethical Issues in Human Language Technologies @ LREC-COLING 2024, Torino, Italia, 52–65. <https://aclanthology.org/2024.legal-1.9>
 * Pepping, Kay. (2024). Reflections on Encoding Languages in Historical Data: Working With the Multilingual Dimension of the Dutch East India Company Archives. Journal of Open Humanities Data, 10(29). <https://doi.org/10.5334/johd.176>
 * Verkijk, Stella, & Vossen, Piek. (2023). Sunken Ships Shan’t Sail: Ontology Design for Reconstructing Events in the Dutch East India Company Archives. Proceedings of the CHR 2023: Computational Humanities Research Conference, December 6-8, 2023, Paris, France, 320-332. <https://ceur-ws.org/Vol-3558/paper3332.pdf>
 * Verkijk, Stella, Roothaert, Ritten, Pernisch, Romana, & Schlobach, Stefan. (2023). Do you catch my drift? On the usage of embedding methods to measure concept shift in knowledge graphs. In Knowledge Capture Conference 2023 (K-CAP ’23), December 05-07, 2023, Pensacola, FL, USA. ACM, New York, NY, USA. <https://doi.org/10.1145/3587259.3627555>
 * Petram, Lodewijk, & Rossum, Matthias van. (2022). Transforming historical research practices – a digital infrastructure for the VOC archives (GLOBALISE). International Journal of Maritime History, 34(3), 494-502. <https://doi.org/10.1177/08438714221112873>
 * Petram, Lodewijk, & Rossum, Matthias van. (2022). GLOBALISE: een onderzoeksrevolutie voor het VOC-archief. Tijdschrift voor Zeegeschiedenis, 41(1), 104-107.
-
-<!-- TODO: consider adding these publications to /assets/references/references.bib. -->
 
 ## Blog posts
 
