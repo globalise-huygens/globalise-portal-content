@@ -63,6 +63,7 @@ pages/
 │   ├── access.md
 │   ├── licences.md
 │   ├── production.md
+│   ├── data-model.md
 │   ├── technical-documentation.md
 │   ├── reference-data.md
 │   └── changelog.md
