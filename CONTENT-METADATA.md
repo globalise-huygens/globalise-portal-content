@@ -11,7 +11,7 @@ The page front matter uses YAML. The schema has been slightly expanded from the 
 | `title` | Yes | Human-readable page title |
 | `subtitle` | No | Optional subtitle shown near the title |
 | `summary` | Yes | Short description for cards, search results and metadata |
-| `type` | Yes | Content type, e.g. `page`, `collection`, `theme`, `tutorial`, `resource-list`, `legal` |
+| `type` | Yes | Content type, e.g. `page`, `collection`, `theme`, `tutorial`, `resource-list`, `legal`, `archived-post` |
 | `slug` | Yes | Stable URL/content identifier (NOTE: what kind of URL structure?) |
 | `status` | Yes | Editorial/publishing status |
 | `authors` | Yes | List of contributor IDs; keep IDs stable |
@@ -20,6 +20,7 @@ The page front matter uses YAML. The schema has been slightly expanded from the 
 | `featured` | Yes | Whether the page is eligible for featured placement |
 | `hero` | Yes | Structured hero image metadata. Fill in `src`, `alt`, `caption`, `credit`, `source` and `licence` |
 | `related` | No | List of related content slugs |
+| `originalPublication` | For `archived-post` | Where and when an archived text was first published: `url` and `date` (`YYYY-MM-DD`) |
 
 ## Images
 
