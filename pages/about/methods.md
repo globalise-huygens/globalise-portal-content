@@ -39,7 +39,7 @@ These scans were transcribed automatically using **handwritten text recognition 
 
 To train the HTR models, Globalise team members and others created **ground truth**: a set of pages transcribed and checked by hand, from which the software learns what the handwriting looks like. The ground truth and the trained models have been published openly (see [Outputs](/pages/about/outputs.md)).
 
-Automatic transcriptions are not perfect. Accuracy varies with the handwriting, the condition of the page and the layout. Tables, lists and marginal notes are harder than continuous text. When you read a transcription on this portal, always compare it with the scan if the exact wording matters.
+Automatic transcriptions are not perfect. The software also cannot read non-Latin scripts, such as Chinese, Persian or Sinhala (see [Bias & limitations](/pages/ethics/bias-and-limitations.md)). When you read a transcription on this portal, always compare it with the scan if the exact wording matters.
 
 <!-- TODO: add a short, plain-language statement of HTR accuracy (e.g. character error rate) and link to evaluation details. -->
 

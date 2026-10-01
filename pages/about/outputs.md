@@ -20,7 +20,7 @@ hero:
   source: ""
   licence: ""
 
-related: ["methods", "data", "access", "team-and-partners"]
+related: ["methods", "globalise-data", "accessing-the-data", "team-and-partners"]
 ---
 
 # Outputs
