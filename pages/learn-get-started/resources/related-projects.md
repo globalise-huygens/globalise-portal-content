@@ -51,7 +51,7 @@ The VOC archives are not kept in one place. Each VOC settlement kept its own rec
 
 The overview covers the records of the VOC's management in the Netherlands, of its central administration in Batavia and of its local administrations in Asia and Africa, as well as VOC records in private papers and other collections.
 
-This overview is a useful reminder of how much of the VOC's record-keeping lies outside the series that Globalise works with. See also [Bias & limitations](/pages/ethics/bias-and-limitations.md#what-survived).
+This overview is a useful reminder of how much of the VOC's record-keeping lies outside the series that Globalise works with. See also [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md#what-survived).
 
 ### TANAP index and establishment reconstructions
 
@@ -63,7 +63,7 @@ The [TANAP index and establishment reconstructions](https://docs.globalise.huyge
 * which inventory numbers the index covers. TANAP ran out of funding before it could describe all OBP volumes, and Globalise has filled part of the gap by digitising typescript tables of contents made by the Nationaal Archief;
 * the **establishment reconstructions**: lists of documents arranged by the VOC establishment that produced them and by document category, available as PDFs for 36 establishments. Because establishments did not send copies of all their documents to the Dutch Republic, these reconstructions offer a partial view of the establishments' archives.
 
-The TANAP index is one of the sources Globalise used to identify and classify the documents on the portal. See [How the data was produced](/pages/data/production.md#3-identifying-documents).
+The TANAP index is one of the sources Globalise used to identify and classify the documents on the portal. See [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
 
 ### Cape of Good Hope transcriptions
 
@@ -84,4 +84,4 @@ A [snapshot of the TANAP website from 2018](https://github.com/globalise-huygens
 
 Content to be developed.
 
-<!-- TODO: add other related projects and databases. Candidates mentioned elsewhere in this repository: the published Generale Missiven (resources.huygens.knaw.nl/vocgeneralemissiven), Dutch-Asiatic Shipping, VOC Opvarenden, Bookkeeper-General Batavia, Monsoon Traders, Exploring Slave Trade in Asia (ESTA), Atlas of Mutual Heritage, the Combatting Bias project, Necessary Reunions, and the institutional and project collaborations listed on /pages/about/team.md. -->
+<!-- TODO: add other related projects and databases. Candidates mentioned elsewhere in this repository: the published Generale Missiven (resources.huygens.knaw.nl/vocgeneralemissiven), Dutch-Asiatic Shipping, VOC Opvarenden, Bookkeeper-General Batavia, Monsoon Traders, Exploring Slave Trade in Asia (ESTA), Atlas of Mutual Heritage, the Combatting Bias project, Necessary Reunions, and the institutional and project collaborations listed on /pages/about/project/team.md. -->

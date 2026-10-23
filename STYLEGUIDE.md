@@ -80,7 +80,7 @@ Distinguish, where relevant, between:
 * metadata search;
 * entity search;
 * faceted filtering;
-* AI-assisted search.
+* searching through an AI assistant connected to the Globalise MCP server.
 
 ## 9. Naming people and places
 
@@ -212,7 +212,7 @@ Refer to archival documents by archive, series, inventory number and, where rele
 
 ### Citing the portal itself
 
-How users should cite Globalise data and documents is explained on [Citing Globalise](/pages/learn/citation.md). That page is about citing the portal, not about citations within it.
+How users should cite Globalise data and documents is explained in the [Citation guide](/pages/learn-get-started/citation.md). That page is about citing the portal, not about citations within it.
 
 ## 17. Licences and reuse
 

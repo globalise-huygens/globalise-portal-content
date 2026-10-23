@@ -29,7 +29,7 @@ related: ["voc-archives-guide", "related-projects-and-databases", "colonial-cont
 
 This reading list brings together works that can help you place what you find on the portal in context: introductions to the Dutch East India Company (VOC) and its archives, studies of the regions where the company was active, studies of particular themes, and published editions of sources. It is a selection, not a complete bibliography. It was compiled from the literature used by members of the Globalise project during their work.
 
-Most of the works listed are in English or Dutch. This reflects the literature the project worked with, not the state of scholarship: there is important work in many other languages, including Indonesian, Chinese, Japanese and the languages of South Asia. See also [Colonial context](/pages/ethics/colonial-context.md) and the [guide to the VOC archives](/pages/resources/voc-archives-guide.md), which recommends further reading.
+Most of the works listed are in English or Dutch. This reflects the literature the project worked with, not the state of scholarship: there is important work in many other languages, including Indonesian, Chinese, Japanese and the languages of South Asia. See also [Colonial context](/pages/research-responsibly/ethics/colonial-context.md) and the [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md), which recommends further reading.
 
 <!-- TODO: review the selection with the project team (completeness, balance between regions and themes, works in languages other than English and Dutch). Consider adding standard works that are not in the Zotero library. Consider adding a one-line annotation per entry. -->
 
@@ -51,7 +51,7 @@ Most of the works listed are in English or Dutch. This reflects the literature t
 
 ## The VOC archives and reference works
 
-Guides to the VOC archives, glossaries of VOC terminology and atlases. See also [Related projects and databases](/pages/resources/related-projects.md#tanap-towards-a-new-age-of-partnership) for the TANAP finding aids.
+Guides to the VOC archives, glossaries of VOC terminology and atlases. See also [Related projects and databases](/pages/learn-get-started/resources/related-projects.md#tanap-towards-a-new-age-of-partnership) for the TANAP finding aids.
 
 * Balk, Louisa, Frans Van Dijk, Diederick Kortlang, Femme Gaastra, Hendrik Niemeijer, and Pieter Koenders. 2007. *The Archives of the Dutch East India Company (VOC) and the Local Institutions in Batavia (Jakarta)*. Brill. <!-- Balk2007 -->
 * Gaastra, F. S. 2023. “Geschiedenis van de archiefvormer.” In *Inventaris van het archief van de Verenigde Oost- Indische Compagnie (VOC), 1602-1795 (1811)*. Nationaal Archief. <!-- Gaastra2023 -->

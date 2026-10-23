@@ -1,9 +1,9 @@
 ---
-title: "Changelog"
+title: "Release notes"
 subtitle: ""
 summary: "A record of major changes to Globalise data, models and platform features."
 type: "utility"
-slug: "changelog"
+slug: "release-notes"
 status: "draft"
 
 authors: []
@@ -23,8 +23,8 @@ hero:
 related: []
 ---
 
-# Changelog
+# Release notes
 
-Changelog entries will be added as releases are made.
+Release notes will be added as releases are made.
 
-<!-- TODO: agree on a release process and versioning for data, models and portal (dependency "Release process" in CONTENT.md). Consider starting the changelog with the releases made during the project, e.g. VOC transcriptions on DataverseNL (7 July 2023 and 15 March 2024), the August 2023 text recognition models, and the generation of the annotation pages on the portal (September 2026). -->
+<!-- TODO: agree on a release process and versioning for data, models and portal (dependency "Release process" in CONTENT.md). Consider starting the release notes with the releases made during the project, e.g. VOC transcriptions on DataverseNL (7 July 2023 and 15 March 2024), the August 2023 text recognition models, and the generation of the annotation pages on the portal (September 2026). -->

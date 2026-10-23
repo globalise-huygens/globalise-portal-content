@@ -27,9 +27,9 @@ related: ["data-model-and-ontologies", "licences-and-reuse", "technical-document
 
 <!-- Sources: live endpoints at https://data.globalise.huygens.knaw.nl/ (collection, manifests, annotation pages, inventory and document records), tested 2026-10-01; README of https://github.com/globalise-huygens/documents; Globalise datasets on DataverseNL; Hugging Face organisation https://huggingface.co/globalise. -->
 
-<!-- TODO: this page depends on the final infrastructure (dependency for DATA-03 in CONTENT.md). Check all endpoints before publication. -->
+<!-- TODO: this page depends on the final infrastructure (dependency for DATA-07 in CONTENT.md). Check all endpoints before publication. -->
 
-Everything you see on the portal is also available as open data. This page explains where to find it. For an explanation of the structure and formats, see [Data model & ontologies](/pages/data/data-model.md). For the conditions for reuse, see [Licences & reuse](/pages/data/licences.md).
+Everything you see on the portal is also available as open data. This page explains where to find it. For an explanation of the structure and formats, see [Data model & ontologies](/pages/research-responsibly/data/data-model.md). For the conditions for reuse, see [Licences & reuse](/pages/learn-get-started/licences.md).
 
 ## Data per page, inventory and collection
 
@@ -65,20 +65,24 @@ Content to be developed.
 
 <!-- TODO: document any search API or query endpoint (e.g. full-text search, SPARQL endpoint for reference data and annotations) that will be offered, or state that there is none. -->
 
+## MCP server
+
+<!-- TODO: describe the Globalise MCP (Model Context Protocol) server: what it gives access to, its address, how to connect it to an AI assistant, and its limitations. Remind users that answers produced by an AI assistant must be checked against the scans and transcriptions, and link to Bias & limitations. User-facing instructions go on the page "Using Globalise with an AI assistant" (/pages/learn-get-started/ai-assistant.md). -->
+
 ## Bulk downloads
 
 Content to be developed.
 
 <!-- TODO: describe how to download the complete data (transcriptions, annotations, documents, reference data) in bulk, and in which formats and versions. -->
 
-Earlier versions of the transcriptions, and the datasets on which the reference data is based, are available on [DataverseNL](https://dataverse.nl/dataverse/globalise). See [Reference data & entity linking](/pages/data/reference-data.md) for a list.
+Earlier versions of the transcriptions, and the datasets on which the reference data is based, are available on [DataverseNL](https://dataverse.nl/dataverse/globalise). See [Reference data & entity linking](/pages/research-responsibly/data/reference-data.md) for a list.
 
 ## Models and code
 
 * Models (text recognition, named entity recognition, event detection) are available on [DataverseNL](https://dataverse.nl/dataverse/globalise) and [Hugging Face](https://huggingface.co/globalise).
 * Code is available on GitHub, in the [globalise-huygens](https://github.com/globalise-huygens) organisation and, for text recognition and annotation conversion, the [knaw-huc](https://github.com/knaw-huc) organisation.
 
-See [Technical documentation](/pages/data/technical-documentation.md) for an overview per component.
+See [Technical documentation](/pages/research-responsibly/data/technical-documentation.md) for an overview per component.
 
 ## Long-term availability
 

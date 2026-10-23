@@ -37,7 +37,7 @@ The series is now held by the Nationaal Archief (Dutch National Archives) in The
 
 The documents deal with far more than trade. They report on war and diplomacy, on the rulers and states the VOC dealt with, on taxation, plantations and forced labour, on slavery and the slave trade, on religion, disease, weather and famine. Read critically, they are a source not only for the history of the VOC but also for the histories of the societies it encountered and often subjugated.
 
-For a fuller introduction to the VOC, its archives and their structure, see the [guide to the VOC archives](/pages/resources/voc-archives-guide.md).
+For a fuller introduction to the VOC, its archives and their structure, see the [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md).
 
 ## The problem
 
@@ -56,10 +56,10 @@ The Nationaal Archief has digitised almost all of its VOC archives. Building on 
 
 The [Methods](/pages/about/methods.md) page explains these steps in more detail.
 
-The aim is to move beyond *searchability*, being able to find a word in the text, towards *researchability*: being able to ask historical questions of the archive and receive results with context. Globalise was set up to support new, more diverse and more representative histories based on the VOC archives, especially histories of the societies of Asia and Africa that have often been treated as background to the story of the company. The [Project & ambitions](/pages/about/ambitions.md) page explains this in more detail.
+The aim is to move beyond *searchability*, being able to find a word in the text, towards *researchability*: being able to ask historical questions of the archive and receive results with context. Globalise was set up to support new, more diverse and more representative histories based on the VOC archives, especially histories of the societies of Asia and Africa that have often been treated as background to the story of the company. The [Project & ambitions](/pages/about/project/ambitions.md) page explains this in more detail.
 
 ## Who is behind Globalise?
 
-Globalise is based at the Huygens Institute in Amsterdam and is funded by the Dutch Research Council (NWO). It is carried out together with the International Institute of Social History (IISH), the KNAW Humanities Cluster, the University of Amsterdam, Vrije Universiteit Amsterdam and the Nationaal Archief. See [Team & partners](/pages/about/team.md) for the people and institutions involved.
+Globalise is based at the Huygens Institute in Amsterdam and is funded by the Dutch Research Council (NWO). It is carried out together with the International Institute of Social History (IISH), the KNAW Humanities Cluster, the University of Amsterdam, Vrije Universiteit Amsterdam and the Nationaal Archief. See [Team & partners](/pages/about/project/team.md) for the people and institutions involved.
 
 <!-- TODO: add funding programme, grant reference and project period (start January 2022; end date?). -->

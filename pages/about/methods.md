@@ -27,9 +27,9 @@ related: ["what-is-globalise", "outputs", "bias-and-limitations"]
 
 <!-- Sources: https://globalise.huygens.knaw.nl/project_overview/ ; https://docs.globalise.huygens.knaw.nl/mission/mission_researchthemes/ ; dataset and model list on https://globalise.huygens.knaw.nl/output/ (consulted 2026-10-01). -->
 
-<!-- TODO: check against the final pipeline (dependency in CONTENT.md) before publication, in particular the steps described under "Bringing it together" and anything on semantic search. -->
+<!-- TODO: check against the final pipeline (dependency in CONTENT.md) before publication, in particular the steps described under "Bringing it together" and anything on the MCP server. -->
 
-This page gives a high-level overview of how almost 5 million scanned pages of handwritten documents became the material you can search and explore on this portal. Each step involves both computational methods and the work of historians, and each step introduces its own uncertainties. For detailed technical documentation, see [How the data was produced](/pages/data/production.md) and [Technical documentation](/pages/data/technical-documentation.md).
+This page gives a high-level overview of how almost 5 million scanned pages of handwritten documents became the material you can search and explore on this portal. Each step involves both computational methods and the work of historians, and each step introduces its own uncertainties. For detailed technical documentation, see [How the data was produced](/pages/research-responsibly/data/production.md) and [Technical documentation](/pages/research-responsibly/data/technical-documentation.md).
 
 ## 1. From scans to text
 
@@ -39,7 +39,7 @@ These scans were transcribed automatically using **handwritten text recognition 
 
 To train the HTR models, Globalise team members and others created **ground truth**: a set of pages transcribed and checked by hand, from which the software learns what the handwriting looks like. The ground truth and the trained models have been published openly (see [Outputs](/pages/about/outputs.md)).
 
-Automatic transcriptions are not perfect. The software also cannot read non-Latin scripts, such as Chinese, Persian or Sinhala (see [Bias & limitations](/pages/ethics/bias-and-limitations.md)). When you read a transcription on this portal, always compare it with the scan if the exact wording matters.
+Automatic transcriptions are not perfect. The software also cannot read non-Latin scripts, such as Chinese, Persian or Sinhala (see [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md)). When you read a transcription on this portal, always compare it with the scan if the exact wording matters.
 
 <!-- TODO: add a short, plain-language statement of HTR accuracy (e.g. character error rate) and link to evaluation details. -->
 
@@ -71,10 +71,10 @@ Reference data is curated and checked by people, but it is not neutral. It refle
 
 Finally, entities and events recognised in the text are **linked** to the reference data, so that a mention of a ruler in a document can be connected to what is known about that ruler. An **ontology**, a formal model of the kinds of entities and events and the relationships between them, structures this information so that it can be queried in combination: for example, all conflicts involving a particular polity in a given period.
 
-On the portal, you can see whether a piece of information comes from the transcription, from a model, or from curated reference data. See [Understanding results](/pages/learn/results.md) for how to read this.
+On the portal, you can see whether a piece of information comes from the transcription, from a model, or from curated reference data. See [Understanding results](/pages/learn-get-started/searching-browsing/results.md) for how to read this.
 
 <!-- TODO: confirm that provenance (manual / model / user) is indeed visible in the portal interface, and adjust the paragraph above if needed. -->
 
 ## Limitations
 
-Every step above can introduce errors, and errors in earlier steps carry through to later ones: a misread name cannot be correctly linked. The archive itself is also incomplete and one-sided. It records what VOC officials saw, heard and thought worth reporting. The section on [Bias & limitations](/pages/ethics/bias-and-limitations.md) discusses these issues in detail.
+Every step above can introduce errors, and errors in earlier steps carry through to later ones: a misread name cannot be correctly linked. The archive itself is also incomplete and one-sided. It records what VOC officials saw, heard and thought worth reporting. The section on [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md) discusses these issues in detail.

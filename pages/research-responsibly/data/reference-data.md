@@ -47,7 +47,7 @@ The reference data covers the following types of entities:
 
 Alongside the reference data, Globalise developed **thesauri**: controlled vocabularies with definitions of concepts found in the archive, such as commodities, and types of documents.
 
-Reference data is curated, but it is not neutral. It reflects the sources it was built from and the choices of the people who made it. Because much of it depends on colonial sources, it tends to record colonial names and perspectives more fully than local ones. See [Bias & limitations](/pages/ethics/bias-and-limitations.md#reference-data) and [Colonial context](/pages/ethics/colonial-context.md#place-names).
+Reference data is curated, but it is not neutral. It reflects the sources it was built from and the choices of the people who made it. Because much of it depends on colonial sources, it tends to record colonial names and perspectives more fully than local ones. See [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md#reference-data) and [Colonial context](/pages/research-responsibly/ethics/colonial-context.md#place-names).
 
 ## The final reference datasets
 
@@ -138,7 +138,7 @@ These records define and contextualise the ethnic, religious and caste categorie
 
 **Based on:** labels from the VOC archives, from other datasets based on these archives and from indexes of source publications; definitions mostly from the glossaries of secondary works on the Indian Ocean world in the seventeenth and eighteenth centuries.
 
-**What to expect:** most categories were assigned to people by the VOC, and rarely correspond to how people identified themselves. Many are linked to histories of colonial violence, enslavement and racism, and some are derogatory. The dataset is meant to help users understand these categories in the archive; its creators advise against using it for other purposes. See also [Colonial context](/pages/ethics/colonial-context.md#people-and-groups).
+**What to expect:** most categories were assigned to people by the VOC, and rarely correspond to how people identified themselves. Many are linked to histories of colonial violence, enslavement and racism, and some are derogatory. The dataset is meant to help users understand these categories in the archive; its creators advise against using it for other purposes. See also [Colonial context](/pages/research-responsibly/ethics/colonial-context.md#people-and-groups).
 
 * GLOBALISE – Ethnicities, Religious Groups and Castes in the Archives of the Dutch East India Company (1602-1799). <https://doi.org/10.34894/RI0KGV>
 
@@ -188,7 +188,7 @@ These records define units of weight, measure and currency used in VOC settlemen
 
 ### Documents
 
-Document descriptions and document types (see [How the data was produced](/pages/data/production.md#3-identifying-documents)) are based on:
+Document descriptions and document types (see [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents)) are based on:
 
 * GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799): document-level index entries from the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/) and from typescript indexes in the Nationaal Archief. The indexes do not cover all inventory numbers. <https://doi.org/10.34894/OP20NM>
 * SKOS Thesauri for VOC Archival Document Classification: the TANAP document classification and a simplified Globalise classification. <https://doi.org/10.34894/B2WBZZ>

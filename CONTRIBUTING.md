@@ -8,6 +8,7 @@ Contributions are managed through GitHub Issues and Pull Requests so that drafts
 
 Check:
 
+* [SITEMAP.md](SITEMAP.md) to see where a page sits in the site structure;
 * [CONTENT.md](CONTENT.md) to see what is expected for a website specific section / page;
 * [STYLEGUIDE.md](STYLEGUIDE.md) for editorial conventions;
 * the relevant template in [`templates/`](templates/) if you are creating a new page.
@@ -222,15 +223,15 @@ Follow the citation conventions in the [style guide](STYLEGUIDE.md#16-citations)
    * for reprints, give the original edition and mention the reprint in a `note`.
 3. **Cite the work in your text** with its key, for example `[@Gaastra2003, 45]`. Do not type the formatted reference.
 
-The [bibliography page](pages/resources/bibliography.md) is generated from `references.bib`. Each entry on that page ends with its key in an HTML comment (`<!-- Gaastra2003 -->`). To add a work to the bibliography, add an entry anywhere in the right section with only its key, for example `* <!-- Boxer1965 -->`, and run:
+The [bibliography page](pages/learn-get-started/resources/bibliography.md) is generated from `references.bib`. Each entry on that page ends with its key in an HTML comment (`<!-- Gaastra2003 -->`). To add a work to the bibliography, add an entry anywhere in the right section with only its key, for example `* <!-- Boxer1965 -->`, and run:
 
 ```bash
-python3 scripts/render_bibliography.py pandoc pages/resources/bibliography.md assets/references/references.bib
+python3 scripts/render_bibliography.py pandoc pages/learn-get-started/resources/bibliography.md assets/references/references.bib
 ```
 
 This re-renders every list on the page from `references.bib` (Chicago author-date style). It requires [Pandoc](https://pandoc.org/) version 3 or later.
 
-[Citing Globalise](pages/learn/citation.md) is a page for portal users about how to cite Globalise data and documents. It is not a guide for citations in content pages.
+The [Citation guide](pages/learn-get-started/citation.md) is a page for portal users about how to cite Globalise data and documents. It is not a guide for citations in content pages.
 
 ## 11. Accessibility
 

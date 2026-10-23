@@ -58,7 +58,7 @@ Content to be developed.
 
 Content to be developed.
 
-<!-- TODO: the policy commits to redress mechanisms and invites people to get in touch via the contact form on the former project website. Describe how users of the portal can raise ethical concerns or report harmful content, and link to the contact page (/pages/contact.md). -->
+<!-- TODO: the policy commits to redress mechanisms and invites people to get in touch via the contact form on the former project website. Describe how users of the portal can raise ethical concerns or report harmful content, and link to the contact page (/pages/footer/contact.md). -->
 
 ## Full text of the policy
 

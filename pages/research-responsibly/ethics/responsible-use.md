@@ -25,7 +25,7 @@ related: ["colonial-context", "bias-and-limitations", "citation-guide", "licence
 
 # Responsible use
 
-<!-- Sources: pages/resources/voc-archives-guide.md (section "What do you need to be aware of when using historical archives like the records of the VOC?"); "Mission, Research Themes and Guiding Questions" v1.0, section "Harnessing Big Data Responsibly" (pages/about/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 (pages/ethics/ethics-policy.md). -->
+<!-- Sources: pages/research-responsibly/voc-archives-guide.md (section "What do you need to be aware of when using historical archives like the records of the VOC?"); "Mission, Research Themes and Guiding Questions" v1.0, section "Harnessing Big Data Responsibly" (pages/about/project/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 (pages/research-responsibly/ethics/policy.md). -->
 
 Globalise makes it possible to search millions of pages of colonial archives in ways that were not possible before. That brings new opportunities, and new responsibilities. The project has tried to be transparent about its sources, methods and limitations, but it cannot anticipate every way in which the material will be used. This page offers practical guidance for reading, interpreting and reusing what you find.
 
@@ -41,7 +41,7 @@ When you work with a document, ask yourself:
 4. **Where else is this event recorded in the company's "paper trail"?** Because of how the VOC archives were created, the same event was often written about several times: in a settlement's daily journal, in the resolutions of its government, and again in its correspondence with Batavia. Following this trail shows how an event was written and thought about.
 5. **What does the wider historiography tell you** about the region or event?
 
-The [guide to the VOC archives](/pages/resources/voc-archives-guide.md) explains how the archive and the company's correspondence were organised.
+The [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md) explains how the archive and the company's correspondence were organised.
 
 ## Look beyond this portal
 
@@ -57,32 +57,32 @@ Keep track of what you are looking at:
 * entities and events recognised by language models;
 * reference data and thesauri curated by the project team.
 
-Each of these involves a different degree of interpretation and a different kind of possible error. In particular, do not present a model-generated annotation as an established historical fact. Check transcriptions against the scan, and annotations against the text. See [Bias & limitations](/pages/ethics/bias-and-limitations.md).
+Each of these involves a different degree of interpretation and a different kind of possible error. In particular, do not present a model-generated annotation as an established historical fact. Check transcriptions against the scan, and annotations against the text. See [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md).
 
 ## Be mindful of harmful content
 
-The archives contain descriptions of violence, enslavement and exploitation, and language that is offensive and painful to read. This can affect you as a reader, and it can affect others when you quote, publish or present the material. Consider the people and communities whose histories these documents concern, and provide context when you reproduce offensive terms or descriptions. See [Colonial context](/pages/ethics/colonial-context.md).
+The archives contain descriptions of violence, enslavement and exploitation, and language that is offensive and painful to read. This can affect you as a reader, and it can affect others when you quote, publish or present the material. Consider the people and communities whose histories these documents concern, and provide context when you reproduce offensive terms or descriptions. See [Colonial context](/pages/research-responsibly/ethics/colonial-context.md).
 
 ### Working with communities connected to these histories
 
 Content to be developed.
 
-<!-- TODO: guidance on working with and for communities connected to the histories in the archive. Possible sources: Asawari Luthra's blog post "When Archives Break Hearts" and Tara Huveneers's "Building Bridges: Archives as Spaces of Reconnection" (both in pages/about/archive/blog/), and the Combatting Bias ethical commitments. Needs editorial decision on scope. -->
+<!-- TODO: guidance on working with and for communities connected to the histories in the archive. Possible sources: Asawari Luthra's blog post "When Archives Break Hearts" and Tara Huveneers's "Building Bridges: Archives as Spaces of Reconnection" (both in pages/about/project/archive/blog/), and the Combatting Bias ethical commitments. Needs editorial decision on scope. -->
 
 ## Citing Globalise
 
 Content to be developed.
 
-<!-- TODO: summarise how to cite documents, transcriptions, annotations and datasets, and link to /pages/learn/citation.md once that page is written. -->
+<!-- TODO: summarise how to cite documents, transcriptions, annotations and datasets, and link to /pages/learn-get-started/citation.md once that page is written. -->
 
 ## Reusing Globalise data
 
 Content to be developed.
 
-<!-- TODO: summarise the conditions for reusing Globalise data and link to /pages/data/licences.md once licence decisions are made. -->
+<!-- TODO: summarise the conditions for reusing Globalise data and link to /pages/learn-get-started/licences.md once licence decisions are made. -->
 
 ## Sharing feedback
 
 Content to be developed.
 
-<!-- TODO: explain how users can share corrections, critique or concerns, and link to /pages/contact.md. The ethics policy commits to redress mechanisms for users and third parties. -->
+<!-- TODO: explain how users can share corrections, critique or concerns, and link to /pages/footer/contact.md. The ethics policy commits to redress mechanisms for users and third parties. -->

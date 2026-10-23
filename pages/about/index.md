@@ -31,11 +31,21 @@ The pages in this section explain what Globalise is, why it was built, how the m
 
 ## In this section
 
-**[What is Globalise?](/pages/about/project.md)**
+### Project & team
+
+**[What is Globalise?](/pages/about/project/index.md)**
 A short introduction to the project: the archival series it focuses on, the problem it addresses and what the portal offers.
 
-**[Project & ambitions](/pages/about/ambitions.md)**
+**[Project & ambitions](/pages/about/project/ambitions.md)**
 Why Globalise was set up, the research themes that guided its work and how it aims to support new histories of the regions where the VOC was active.
+
+**[Team & partners](/pages/about/project/team.md)**
+The people and institutions behind Globalise, and the projects it worked with.
+
+**[Archive](/pages/about/project/archive/index.md)**
+Project documents and blog posts published while the project was under way, including the full statement of the project's mission and research themes.
+
+### Methods & outputs
 
 **[Methods](/pages/about/methods.md)**
 A high-level account of how scans of handwritten documents were turned into searchable text, annotations and reference data.
@@ -43,14 +53,8 @@ A high-level account of how scans of handwritten documents were turned into sear
 **[Outputs](/pages/about/outputs.md)**
 The datasets, models, publications and events produced by the project.
 
-**[Team & partners](/pages/about/team.md)**
-The people and institutions behind Globalise, and the projects it worked with.
-
-**[Archive](/pages/about/archive/index.md)**
-Project documents and blog posts published while the project was under way, including the full statement of the project's mission and research themes.
-
 ## Before you start using the portal
 
-Globalise works with colonial archives. The documents were written by and for the VOC, and they reflect its interests, assumptions and categories. Much of the information on this portal has also been produced or enriched by computational methods, which make mistakes and can reproduce the biases of the sources. We recommend reading the pages on [Ethics & colonial context](/pages/ethics/index.md) alongside this section.
+Globalise works with colonial archives. The documents were written by and for the VOC, and they reflect its interests, assumptions and categories. Much of the information on this portal has also been produced or enriched by computational methods, which make mistakes and can reproduce the biases of the sources. We recommend reading the pages on [Ethics & colonial context](/pages/research-responsibly/ethics/index.md) alongside this section.
 
-If you are new to the VOC or its archives, the [guide to the VOC archives](/pages/resources/voc-archives-guide.md) gives a practical introduction to the company, its record-keeping and what the Globalise project makes available. For technical details about the data and how to access it, see [Data & documentation](/pages/data/index.md).
+If you are new to the VOC or its archives, the [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md) gives a practical introduction to the company, its record-keeping and what the Globalise project makes available. For technical details about the data and how to access it, see [Data & documentation](/pages/research-responsibly/data/index.md).

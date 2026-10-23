@@ -29,9 +29,9 @@ related: ["globalise-data", "technical-documentation", "data-model-and-ontologie
 
 <!-- TODO: check against the final pipeline (dependency "Final pipeline" in CONTENT.md). -->
 
-This page describes, step by step, how almost 5 million scans of handwritten pages became the transcriptions, documents and annotations on the portal. It is written for readers who want to understand the process without technical detail. Specifications, model versions and links to code are on the [Technical documentation](/pages/data/technical-documentation.md) page.
+This page describes, step by step, how almost 5 million scans of handwritten pages became the transcriptions, documents and annotations on the portal. It is written for readers who want to understand the process without technical detail. Specifications, model versions and links to code are on the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md) page.
 
-Every step combines computational methods with the work of historians, and every step introduces its own errors and uncertainties. Errors made early in the process carry through to later steps: a word that was misread cannot be correctly recognised as a name. See [Bias & limitations](/pages/ethics/bias-and-limitations.md).
+Every step combines computational methods with the work of historians, and every step introduces its own errors and uncertainties. Errors made early in the process carry through to later steps: a word that was misread cannot be correctly recognised as a name. See [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md).
 
 ## 1. The scans
 
@@ -44,7 +44,7 @@ The scans were transcribed with two pieces of open-source software developed at 
 * **Laypa** analyses the layout of each page. It finds the text regions on the page (such as paragraphs, headers and marginal notes) and the baselines of the individual lines of text.
 * **Loghi** reads the handwriting in each line and turns it into text: handwritten text recognition (HTR).
 
-Both programs use models that have to be trained for a specific type of handwriting and layout. Globalise trained its own models on **ground truth**: pages that were transcribed by hand and carefully checked, partly by the Globalise team. The ground truth and the models are published (see [Technical documentation](/pages/data/technical-documentation.md#layout-analysis-and-text-recognition)).
+Both programs use models that have to be trained for a specific type of handwriting and layout. Globalise trained its own models on **ground truth**: pages that were transcribed by hand and carefully checked, partly by the Globalise team. The ground truth and the models are published (see [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#layout-analysis-and-text-recognition)).
 
 The software can only read Latin script. Pages in, for instance, Chinese, Persian or Sinhala script produce meaningless strings of characters.
 
@@ -88,7 +88,7 @@ NER labels describe the form of a word in the text, not what it refers to. A pla
 
 ## 5. Recognising events
 
-Event detection finds words that describe actions and situations, such as a ship arriving, goods being traded or a war beginning, and classifies them according to the Globalise **event ontology** (see [Data model & ontologies](/pages/data/data-model.md#the-event-ontology)). As with entities, historians and computational linguists first annotated documents by hand, and these annotations were used to train event detection models.
+Event detection finds words that describe actions and situations, such as a ship arriving, goods being traded or a war beginning, and classifies them according to the Globalise **event ontology** (see [Data model & ontologies](/pages/research-responsibly/data/data-model.md#the-event-ontology)). As with entities, historians and computational linguists first annotated documents by hand, and these annotations were used to train event detection models.
 
 The project tested many different language models for this task. Models pre-trained on modern or general text turned out to perform worse on early modern Dutch than a model pre-trained on the archive itself ([Verkijk, Vossen & Sommerauer 2025](https://doi.org/10.18653/v1/2025.findings-acl.1060)). Model output was also evaluated by external historians in workshops.
 
@@ -102,8 +102,8 @@ Content to be developed.
 
 Content to be developed.
 
-<!-- TODO: describe how entity annotations were linked to records in the Globalise reference data (methods and metrics to be added). Summarise here and give details on /pages/data/reference-data.md. -->
+<!-- TODO: describe how entity annotations were linked to records in the Globalise reference data (methods and metrics to be added). Summarise here and give details on /pages/research-responsibly/data/reference-data.md. -->
 
 ## 7. Publishing the results
 
-Finally, the transcriptions, entities and events were converted into a standard format for annotations on images and texts (W3C Web Annotations), organised per page, and published together with descriptions of the inventories and documents (as IIIF manifests). Each annotation file records how, when and with which software it was created. See [Data model & ontologies](/pages/data/data-model.md) and [Accessing the data](/pages/data/access.md).
+Finally, the transcriptions, entities and events were converted into a standard format for annotations on images and texts (W3C Web Annotations), organised per page, and published together with descriptions of the inventories and documents (as IIIF manifests). Each annotation file records how, when and with which software it was created. See [Data model & ontologies](/pages/research-responsibly/data/data-model.md) and [Accessing the data](/pages/research-responsibly/data/access.md).

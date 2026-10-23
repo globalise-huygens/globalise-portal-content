@@ -1,4 +1,4 @@
-"""Re-render the reference lists on a page (e.g. pages/resources/bibliography.md) from references.bib.
+"""Re-render the reference lists on a page (e.g. pages/learn-get-started/resources/bibliography.md) from references.bib.
 
 Every list item ends with its citation key in an HTML comment, e.g. "* ... <!-- Gaastra2003 -->".
 To add a work, add a line containing only "* <!-- Key -->" to the right list and run this script.
@@ -7,7 +7,7 @@ sorted as citeproc sorts them.
 
 Usage:
   python3 scripts/render_bibliography.py PANDOC PAGE BIB [OldKey=NewKey ...]
-  e.g. python3 scripts/render_bibliography.py pandoc pages/resources/bibliography.md assets/references/references.bib
+  e.g. python3 scripts/render_bibliography.py pandoc pages/learn-get-started/resources/bibliography.md assets/references/references.bib
 
 Optional OldKey=NewKey arguments rename keys on the page; "+Heading=Key" adds Key to the list
 under the given heading. Requires Pandoc 3 or later.

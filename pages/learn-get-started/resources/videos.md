@@ -1,9 +1,9 @@
 ---
-title: "Podcasts"
+title: "Videos"
 subtitle: ""
-summary: "Relevant existing podcasts and audio resources about the VOC and related histories."
+summary: "Short videos introducing the VOC, Globalise and the portal."
 type: "resource-list"
-slug: "podcasts"
+slug: "videos"
 status: "planned"
 
 authors: []
@@ -23,6 +23,6 @@ hero:
 related: []
 ---
 
-# Podcasts
+# Videos
 
 Content to be developed.

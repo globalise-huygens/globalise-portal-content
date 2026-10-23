@@ -6,17 +6,18 @@ The website content is maintained as Markdown files with YAML front matter and c
 
 ## Portal structure
 
-| Section                                            | Purpose                                                                          | Priority    |
-| -------------------------------------------------- | -------------------------------------------------------------------------------- | ----------- |
-| [Home](pages/home.md)                              | Introduce Globalise and provide entry points into search, Collections and Themes | Essential   |
-| [Collections](pages/collections/README.md)         | Provide structured entry points into selected categories of Globalise material   | Essential   |
-| [Themes](pages/themes/README.md)                   | Demonstrate how Globalise can be used to investigate specific historical themes  | Essential   |
-| [Learn & Get Started](pages/learn/index.md)        | Teach users how to use the portal effectively                                    | Essential   |
-| [About Globalise](pages/about/index.md)            | Explain the project, archive, methods, outputs and team; preserve project documents and blog posts in an [Archive](pages/about/archive/index.md) subsection | Essential   |
-| [Ethics & Colonial Context](pages/ethics/index.md) | Explain colonial context, ethics, bias and limitations                           | Essential   |
-| [Data & Documentation](pages/data/index.md)        | Explain Globalise data, methods, models and access                               | Essential   |
-| [Resources](pages/resources/index.md)              | Provide historical, research and media resources                                 | Recommended |
-| Legal & footer pages                               | Provide institutional, legal, accessibility and attribution information          | Essential   |
+The navigation bar has four sections. Each corresponds to a folder under `pages/`; Home sits outside them.
+
+| Navigation | Folder | Contents | Priority |
+| --- | --- | --- | --- |
+| [Home](pages/home.md) | `pages/home.md` | Introduce Globalise and provide entry points into search, Collections and Themes | Essential |
+| [Explore](pages/explore/index.md) | `pages/explore/` | [Collections](pages/explore/collections/README.md) and [Themes](pages/explore/themes/README.md): structured entry points into the material and examples of historical research | Essential |
+| [Learn & get started](pages/learn-get-started/index.md) | `pages/learn-get-started/` | How to use the portal (searching and browsing, using an AI assistant via the MCP server, research workflow, citation guide, licences and reuse), plus [Resources](pages/learn-get-started/resources/index.md): bibliography, related projects, and videos | Essential |
+| [About GLOBALISE](pages/about/index.md) | `pages/about/` | Project & team (`project/`: what Globalise is, ambitions, team, and an [Archive](pages/about/project/archive/index.md) of project documents and blog posts) and methods & outputs | Essential |
+| [Research responsibly](pages/research-responsibly/index.md) | `pages/research-responsibly/` | [Ethics & colonial context](pages/research-responsibly/ethics/index.md), the [guide to the VOC archives](pages/research-responsibly/voc-archives-guide.md) and [Data & documentation](pages/research-responsibly/data/index.md) | Essential |
+| Footer | `pages/footer/` | Contact, release notes, privacy, cookies, accessibility, disclaimer and colophon | Essential |
+
+Folder names determine where a file lives, not necessarily the final URL. Navigation labels may change; keep URLs short and topic-based (e.g. `/ethics/policy`, `/data/overview`) so that renaming a navigation item does not break links.
 
 See [CONTENT.md](CONTENT.md) for the detailed editorial production plan.
 
@@ -25,70 +26,73 @@ See [CONTENT.md](CONTENT.md) for the detailed editorial production plan.
 ```text
 pages/
 ├── home.md
+│
+├── explore/
+│   ├── index.md
+│   ├── collections/
+│   │   └── README.md
+│   └── themes/
+│       ├── README.md
+│       └── <one file per theme>.md
+│
+├── learn-get-started/
+│   ├── index.md
+│   ├── searching-browsing/
+│   │   ├── index.md
+│   │   ├── searching.md
+│   │   ├── facets.md
+│   │   ├── browsing.md
+│   │   └── results.md
+│   ├── ai-assistant.md
+│   ├── research-workflow.md
+│   ├── citation.md
+│   ├── licences.md
+│   └── resources/
+│       ├── index.md
+│       ├── bibliography.md
+│       ├── related-projects.md
+│       └── videos.md
+│
 ├── about/
 │   ├── index.md
-│   ├── project.md
-│   ├── ambitions.md
+│   ├── project/
+│   │   ├── index.md            (what is Globalise?)
+│   │   ├── ambitions.md
+│   │   ├── team.md
+│   │   └── archive/
+│   │       ├── index.md
+│   │       ├── mission-research-themes.md
+│   │       └── blog/
+│   │           └── <one file per archived blog post>.md
 │   ├── methods.md
-│   ├── outputs.md
-│   ├── team.md
-│   └── archive/
-│       ├── index.md
-│       ├── mission-research-themes.md
-│       └── blog/
-│           └── <one file per archived blog post>.md
+│   └── outputs.md
 │
-├── learn/
-│   ├── index.md
-│   ├── getting-started.md
-│   ├── searching.md
-│   ├── facets.md
-│   ├── semantic-search.md
-│   ├── browsing.md
-│   ├── results.md
-│   ├── documents.md
-│   ├── research-workflow.md
-│   └── citation.md
-│
-├── ethics/
-│   ├── index.md
-│   ├── ethics-policy.md
-│   ├── colonial-context.md
-│   ├── bias-and-limitations.md
-│   └── responsible-use.md
-│
-├── data/
-│   ├── index.md
-│   ├── data.md
-│   ├── access.md
-│   ├── licences.md
-│   ├── production.md
-│   ├── data-model.md
-│   ├── technical-documentation.md
-│   ├── reference-data.md
-│   └── changelog.md
-│
-├── resources/
+├── research-responsibly/
 │   ├── index.md
 │   ├── voc-archives-guide.md
-│   ├── bibliography.md
-│   ├── related-projects.md
-│   ├── podcasts.md
-│   ├── videos.md
-│   └── interviews.md
+│   ├── ethics/
+│   │   ├── index.md
+│   │   ├── policy.md
+│   │   ├── colonial-context.md
+│   │   ├── bias-and-limitations.md
+│   │   └── responsible-use.md
+│   └── data/
+│       ├── index.md
+│       ├── overview.md         (what's in the data)
+│       ├── access.md
+│       ├── production.md
+│       ├── data-model.md
+│       ├── technical-documentation.md
+│       └── reference-data.md
 │
-├── collections/
-│   └── README.md
-│
-└── themes/
-    └── README.md
-
-legal/
-├── privacy.md
-├── cookies.md
-├── accessibility.md
-├── disclaimer.md
-└── colophon.md
+└── footer/
+    ├── contact.md
+    ├── release-notes.md
+    ├── privacy.md
+    ├── cookies.md
+    ├── accessibility.md
+    ├── disclaimer.md
+    └── colophon.md
 
 templates/
 ├── standard-page.md
@@ -101,12 +105,19 @@ scripts/
 
 assets/
 ├── images/
+│   ├── README.md
 │   ├── image-metadata.yml
-│   └── about/archive/      (images for the archived pages)
+│   ├── about/archive/                 (images for the archived pages in pages/about/project/archive/)
+│   └── resources/voc-archives-guide/  (images for pages/research-responsibly/voc-archives-guide.md)
 ├── references/
 │   └── references.bib
 └── videos/
+    └── README.md
 ```
+
+Image folders follow the original page locations and have not been moved with the pages; page links point to them directly.
+
+See [SITEMAP.md](SITEMAP.md) for the site's navigation structure.
 
 ## Content workflow
 
@@ -169,6 +180,7 @@ The detailed status of pages is maintained in [CONTENT.md](CONTENT.md).
 
 ## Related documentation
 
+* [Sitemap](SITEMAP.md)
 * [Content production plan](CONTENT.md)
 * [Content metadata](CONTENT-METADATA.md)
 * [Contribution guidelines](CONTRIBUTING.md)

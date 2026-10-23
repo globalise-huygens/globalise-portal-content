@@ -69,7 +69,7 @@ Anyone who has worked with early modern (Dutch) handwritings, specifically with 
 
 During the panels, we found that researchers preferred reading through the (scan of the) complete original document instead of relying on automatically generated transcriptions. Search results of online databases were met with the same critical attitude. While we assumed this might be given in by hesitance towards the reliability of query results produced by digital tools, panellists clarified that this is simply part of good research practices. Like any archival document, book, or resource, panellists said, query results should also be approached with critical scrutiny.
 
-This confirms, [once again](/pages/about/archive/blog/looking-back-on-a-successful-kickoff-meeting.md), the importance of introducing both the possibilities and limitations of the research hub, as well as clear guidelines for its responsible use.
+This confirms, [once again](/pages/about/project/archive/blog/looking-back-on-a-successful-kickoff-meeting.md), the importance of introducing both the possibilities and limitations of the research hub, as well as clear guidelines for its responsible use.
 
 ## **Future options**
 

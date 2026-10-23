@@ -25,7 +25,7 @@ related: ["ethics-policy", "colonial-context", "bias-and-limitations", "responsi
 
 # Ethics & Colonial Context
 
-<!-- Sources: pages/resources/voc-archives-guide.md; Globalise Ethics Policy v2.0 (https://docs.globalise.huygens.knaw.nl/ethics/policy/); "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/archive/mission-research-themes.md). -->
+<!-- Sources: pages/research-responsibly/voc-archives-guide.md; Globalise Ethics Policy v2.0 (https://docs.globalise.huygens.knaw.nl/ethics/policy/); "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/project/archive/mission-research-themes.md). -->
 
 The documents on this portal come from the archives of the Dutch East India Company (VOC), a trading company that was also a colonial power. They were written by and for the company, by people with their own political, religious and racial prejudices and agendas. They are an invaluable source for the history of Asia, Africa and the Indian Ocean world, but they cannot be read at face value.
 
@@ -41,16 +41,16 @@ The VOC archives record a period of history marked by violence. They contain rec
 
 ## In this section
 
-**[Ethics policy](/pages/ethics/ethics-policy.md)**
+**[Ethics policy](/pages/research-responsibly/ethics/policy.md)**
 The principles that guided the Globalise project, from diversity and inclusion to transparency, accountability and privacy.
 
-**[Colonial context](/pages/ethics/colonial-context.md)**
+**[Colonial context](/pages/research-responsibly/ethics/colonial-context.md)**
 How the VOC archives came into being, whose perspective they record, and how to approach the colonial terminology and categories they contain.
 
-**[Bias & limitations](/pages/ethics/bias-and-limitations.md)**
+**[Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md)**
 What is missing, distorted or uncertain: in the archive itself, in the part of it that Globalise covers, and in the computational processing.
 
-**[Responsible use](/pages/ethics/responsible-use.md)**
+**[Responsible use](/pages/research-responsibly/ethics/responsible-use.md)**
 Practical guidance for reading, interpreting and reusing material from the portal.
 
-For a practical introduction to the VOC and its archives, see the [guide to the VOC archives](/pages/resources/voc-archives-guide.md).
+For a practical introduction to the VOC and its archives, see the [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md).

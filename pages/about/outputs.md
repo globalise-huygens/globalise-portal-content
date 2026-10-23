@@ -31,7 +31,7 @@ related: ["methods", "globalise-data", "accessing-the-data", "team-and-partners"
 
 Besides this portal, the Globalise project has produced datasets, models, software, academic publications and a series of events. This page lists the main outputs. Most datasets and models are openly available and can be reused under the licences stated in their repositories.
 
-For the data available through this portal, including how to download it and under which conditions, see [Data & documentation](/pages/data/index.md).
+For the data available through this portal, including how to download it and under which conditions, see [Data & documentation](/pages/research-responsibly/data/index.md).
 
 ## Datasets
 
@@ -87,7 +87,7 @@ Academic articles and conference papers by members of the Globalise team about t
 
 ## Blog posts
 
-Between 2022 and 2026, team members, guest researchers and collaborators wrote [blog posts](/pages/about/archive/index.md#blog-posts) about the project's work, from the creation of the first datasets and the training of text recognition models to reflections on working with colonial archives. Together, they give an overview of how the project developed.
+Between 2022 and 2026, team members, guest researchers and collaborators wrote [blog posts](/pages/about/project/archive/index.md#blog-posts) about the project's work, from the creation of the first datasets and the training of text recognition models to reflections on working with colonial archives. Together, they give an overview of how the project developed.
 
 ## Events
 

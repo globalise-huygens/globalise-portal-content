@@ -29,7 +29,7 @@ related: ["how-the-data-was-produced", "data-model-and-ontologies", "accessing-t
 
 <!-- TODO: this page depends on the final documentation (dependency "Documentation" in CONTENT.md). Confirm for each component which version was used to produce the data on the portal. -->
 
-This page brings together the technical details of each step described in [How the data was produced](/pages/data/production.md): the software, models, training data, code and publications. It is intended for researchers and developers who want to evaluate, reproduce or reuse the work.
+This page brings together the technical details of each step described in [How the data was produced](/pages/research-responsibly/data/production.md): the software, models, training data, code and publications. It is intended for researchers and developers who want to evaluate, reproduce or reuse the work.
 
 ## Layout analysis and text recognition
 
@@ -53,7 +53,7 @@ Content to be developed.
 
 ### Language identification
 
-The languages of all pages in Latin script were identified automatically; pages in other scripts were identified separately. The method and results are documented in the [language-identification-data](https://github.com/globalise-huygens/language-identification-data) repository and in the blog post [The Languages of GLOBALISE](/pages/about/archive/blog/the-languages-of-globalise.md).
+The languages of all pages in Latin script were identified automatically; pages in other scripts were identified separately. The method and results are documented in the [language-identification-data](https://github.com/globalise-huygens/language-identification-data) repository and in the blog post [The Languages of GLOBALISE](/pages/about/project/archive/blog/the-languages-of-globalise.md).
 
 ## Document identification
 
@@ -103,7 +103,7 @@ The NER model labels tokens in the normalised page text with one of 15 categorie
 | DATE | Date | 14e, ultimo Februari |
 | DOC | Document | Jongste, brief |
 
-The labels and examples are taken from the annotation guidelines. Some labels (STATUS, ETH_REL) capture categories used in the sources themselves, including colonial designations of status and ethnicity; see [Colonial context](/pages/ethics/colonial-context.md#colonial-terminology-and-categories).
+The labels and examples are taken from the annotation guidelines. Some labels (STATUS, ETH_REL) capture categories used in the sources themselves, including colonial designations of status and ethnicity; see [Colonial context](/pages/research-responsibly/ethics/colonial-context.md#colonial-terminology-and-categories).
 
 | Component | Link |
 | --- | --- |
@@ -122,7 +122,7 @@ Content to be developed.
 
 ## Event detection
 
-Event detection is done in two steps, both with models fine-tuned from GloBERTise: a detection model marks the words that refer to an event, and a classification model assigns an event type from the [event ontology](/pages/data/data-model.md#the-event-ontology).
+Event detection is done in two steps, both with models fine-tuned from GloBERTise: a detection model marks the words that refer to an event, and a classification model assigns an event type from the [event ontology](/pages/research-responsibly/data/data-model.md#the-event-ontology).
 
 | Component | Link |
 | --- | --- |
@@ -153,14 +153,14 @@ Content to be developed.
 | Component | Description | Link |
 | --- | --- | --- |
 | Reference data pipeline | Converts dataset workbooks into RDF knowledge graphs and JSON-LD | <https://github.com/globalise-huygens/reference-data-pipeline> |
-| Source datasets | Datasets on DataverseNL | See [Reference data & entity linking](/pages/data/reference-data.md) |
+| Source datasets | Datasets on DataverseNL | See [Reference data & entity linking](/pages/research-responsibly/data/reference-data.md) |
 
 ## Publishing annotations
 
-The transcriptions, entities and events are converted into W3C Web Annotations with scripts in the [globalise-tools](https://github.com/knaw-huc/globalise-tools) repository of the KNAW Humanities Cluster. The annotation pages on the portal record the exact version of the script used. See [Data model & ontologies](/pages/data/data-model.md).
+The transcriptions, entities and events are converted into W3C Web Annotations with scripts in the [globalise-tools](https://github.com/knaw-huc/globalise-tools) repository of the KNAW Humanities Cluster. The annotation pages on the portal record the exact version of the script used. See [Data model & ontologies](/pages/research-responsibly/data/data-model.md).
 
 ## The portal
 
 The source code of the research portal is available at <https://github.com/globalise-huygens/globalise-research-portal>.
 
-<!-- TODO: add a short description of the portal's technical architecture (search index, semantic search, hosting) once final. -->
+<!-- TODO: add a short description of the portal's technical architecture (search index, MCP server, hosting) once final. -->

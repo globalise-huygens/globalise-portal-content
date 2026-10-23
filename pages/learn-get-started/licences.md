@@ -27,7 +27,7 @@ related: ["accessing-the-data", "citation-guide", "responsible-use"]
 
 <!-- Sources: rights statements in the IIIF collection and manifests at https://data.globalise.huygens.knaw.nl/ (retrieved 2026-10-01); licences of Globalise datasets on DataverseNL as registered with DataCite; Hugging Face model cards; licence statements on https://docs.globalise.huygens.knaw.nl/. -->
 
-<!-- TODO: this page depends on licence decisions (dependency for DATA-04 in CONTENT.md). Everything below the placeholders describes the situation as found on 2026-10-01 and must be checked. -->
+<!-- TODO: this page depends on licence decisions (dependency for LEARN-10 in CONTENT.md). Everything below the placeholders describes the situation as found on 2026-10-01 and must be checked. -->
 
 Globalise aims to make its data as open and reusable as possible. This page explains under which conditions you can reuse the scans, transcriptions, annotations, reference data, models and texts on this portal, and how to credit them.
 
@@ -74,4 +74,4 @@ Images on content pages, such as illustrations in themes and archived blog posts
 
 Content to be developed.
 
-<!-- TODO: give a short attribution statement for reusing Globalise data, and link to /pages/learn/citation.md. -->
+<!-- TODO: give a short attribution statement for reusing Globalise data, and link to /pages/learn-get-started/citation.md. -->

@@ -25,7 +25,7 @@ related: ["colonial-context", "responsible-use", "methods", "voc-archives-guide"
 
 # Bias & limitations
 
-<!-- Sources: pages/resources/voc-archives-guide.md; "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 and its ethics reports on Primary Sources and the Places Dataset (pages/ethics/ethics-policy.md); Arno Bosse, "The Languages of GLOBALISE" (pages/about/archive/blog/the-languages-of-globalise.md). -->
+<!-- Sources: pages/research-responsibly/voc-archives-guide.md; "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/project/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 and its ethics reports on Primary Sources and the Places Dataset (pages/research-responsibly/ethics/policy.md); Arno Bosse, "The Languages of GLOBALISE" (pages/about/project/archive/blog/the-languages-of-globalise.md). -->
 
 <!-- TODO: this page depends on the final models and data (dependency "Final models" in CONTENT.md). Check all statements against the final state of the portal before publication. -->
 
@@ -37,7 +37,7 @@ Neutrality is not attainable. The aim of this page is not to excuse these limita
 
 ### A VOC perspective
 
-The documents on this portal were written by the Dutch East India Company (VOC) and its personnel. They record events, people and societies as the company saw them, and what it considered worth writing down. People who were not part of the company appear mainly when they mattered to it, and their words usually reach us translated and selected by company officials. See [Colonial context](/pages/ethics/colonial-context.md).
+The documents on this portal were written by the Dutch East India Company (VOC) and its personnel. They record events, people and societies as the company saw them, and what it considered worth writing down. People who were not part of the company appear mainly when they mattered to it, and their words usually reach us translated and selected by company officials. See [Colonial context](/pages/research-responsibly/ethics/colonial-context.md).
 
 ### What survived
 
@@ -55,13 +55,13 @@ Making the VOC archives easier to search also carries a risk: that research reli
 
 Globalise does not cover all VOC archives, nor even all of the VOC archive at the Nationaal Archief (Dutch National Archives). It works with the *Overgekomen Brieven en Papieren* (OBP) in series 1.04.02: inventory numbers 1053–4454 and 7527–11024, roughly 6,900 inventory numbers and about 4.8 million pages. The material dates roughly from 1605 to 1794.
 
-Not covered are, for instance, the resolutions of the company's directors, the correspondence sent from the Dutch Republic to Asia, and the archives of the Delft, Rotterdam, Hoorn and Enkhuizen chambers. Nor does the portal include VOC archives held elsewhere in the world. The [guide to the VOC archives](/pages/resources/voc-archives-guide.md) lists what is and is not included.
+Not covered are, for instance, the resolutions of the company's directors, the correspondence sent from the Dutch Republic to Asia, and the archives of the Delft, Rotterdam, Hoorn and Enkhuizen chambers. Nor does the portal include VOC archives held elsewhere in the world. The [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md) lists what is and is not included.
 
 ### Languages and scripts
 
 Almost 97% of the pages in the Globalise corpus (about 4.3 million pages) are written in Dutch. The remainder includes pages in other European languages, such as French, English, Latin and Portuguese, and in Asian languages, such as Malay, Persian, Sinhala and Chinese.
 
-The text recognition software used by Globalise cannot read non-Latin scripts. Pages written in, for example, Chinese, Persian or Sinhala are turned into strings of seemingly random characters and cannot be searched for their content. For about 3% of pages, no language could be identified automatically, and pages with too little continuous text, such as tables and blank pages, were left out of the automatic identification. See [The Languages of GLOBALISE](/pages/about/archive/blog/the-languages-of-globalise.md) for details.
+The text recognition software used by Globalise cannot read non-Latin scripts. Pages written in, for example, Chinese, Persian or Sinhala are turned into strings of seemingly random characters and cannot be searched for their content. For about 3% of pages, no language could be identified automatically, and pages with too little continuous text, such as tables and blank pages, were left out of the automatic identification. See [The Languages of GLOBALISE](/pages/about/project/archive/blog/the-languages-of-globalise.md) for details.
 
 ## Computational processing
 
@@ -87,7 +87,7 @@ Content to be developed.
 
 ### Bias in models
 
-The project's [ethics policy](/pages/ethics/ethics-policy.md) commits to checking its models for discriminatory or biased results, through careful selection of training and test data by people with relevant historical expertise, and through qualitative and quantitative analysis of model output.
+The project's [ethics policy](/pages/research-responsibly/ethics/policy.md) commits to checking its models for discriminatory or biased results, through careful selection of training and test data by people with relevant historical expertise, and through qualitative and quantitative analysis of model output.
 
 Content to be developed.
 
@@ -103,7 +103,7 @@ Even when a dataset is well documented, it can be hard for users to see why a pa
 
 ### Thematic choices
 
-The project could not create reference data for every subject in the archive. It prioritised political and economic subjects, which appear most often in the sources, while drawing attention to lesser-known Asian polities and to the activities of non-European actors. In 2024, the social domain was next in line, after which the project planned to explore the environmental and cultural domains. Any such selection is subjective. See [Mission, Research Themes and Guiding Questions](/pages/about/archive/mission-research-themes.md).
+The project could not create reference data for every subject in the archive. It prioritised political and economic subjects, which appear most often in the sources, while drawing attention to lesser-known Asian polities and to the activities of non-European actors. In 2024, the social domain was next in line, after which the project planned to explore the environmental and cultural domains. Any such selection is subjective. See [Mission, Research Themes and Guiding Questions](/pages/about/project/archive/mission-research-themes.md).
 
 <!-- TODO: update with the final coverage of reference data per domain. The 2024 mission statement says datasets existed or were in preparation for polities, commodities, units of measurement, locations and persons, with the social domain next. -->
 
@@ -117,7 +117,7 @@ An infrastructure that makes an archive easier to search also influences what pe
 
 Advanced search makes it possible to extract small pieces of information from millions of pages. These are representations of historical realities, shaped by the context of the document they come from: its type, its author and its purpose. The archive does not offer unfiltered historical truths, but fragmented observations and interpretations.
 
-Searches on the portal can tell you what was recorded, where and when. Explaining how and why things happened remains the task of the researcher. See [Responsible use](/pages/ethics/responsible-use.md).
+Searches on the portal can tell you what was recorded, where and when. Explaining how and why things happened remains the task of the researcher. See [Responsible use](/pages/research-responsibly/ethics/responsible-use.md).
 
 ## Known issues
 
@@ -129,4 +129,4 @@ Content to be developed.
 
 Content to be developed.
 
-<!-- TODO: explain how users can report errors, biased or harmful content, and what happens with their reports. Link to /pages/contact.md. -->
+<!-- TODO: explain how users can report errors, biased or harmful content, and what happens with their reports. Link to /pages/footer/contact.md. -->

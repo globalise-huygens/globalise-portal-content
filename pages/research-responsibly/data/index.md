@@ -20,7 +20,7 @@ hero:
   source: ""
   licence: ""
 
-related: ["globalise-data", "how-the-data-was-produced", "data-model-and-ontologies", "reference-data", "technical-documentation", "accessing-the-data", "licences-and-reuse", "changelog"]
+related: ["globalise-data", "how-the-data-was-produced", "data-model-and-ontologies", "reference-data", "technical-documentation", "accessing-the-data", "licences-and-reuse", "release-notes"]
 ---
 
 # Data & Documentation
@@ -31,32 +31,29 @@ The pages are written for different readers. The first two are for anyone who wa
 
 ## Understanding the data
 
-**[Globalise data: what you see on the portal](/pages/data/data.md)**
+**[What's in the data](/pages/research-responsibly/data/overview.md)**
 What the scans, transcriptions, entities, events and documents on the portal are, and where each comes from.
 
-**[How the data was produced](/pages/data/production.md)**
+**[How the data was produced](/pages/research-responsibly/data/production.md)**
 The steps from scans of handwritten pages to transcriptions, documents and annotations, in plain language.
 
-**[Reference data & entity linking](/pages/data/reference-data.md)**
+**[Reference data & entity linking](/pages/research-responsibly/data/reference-data.md)**
 The curated datasets about people, places, polities, commodities and other entities, the datasets they are based on, and how the text is linked to them.
 
 ## Technical documentation
 
-**[Data model & ontologies](/pages/data/data-model.md)**
+**[Data model & ontologies](/pages/research-responsibly/data/data-model.md)**
 Identifiers, the standards the data follows (IIIF, Web Annotation, Linked Art), the Globalise ontology and the event ontology.
 
-**[Technical documentation](/pages/data/technical-documentation.md)**
+**[Technical documentation](/pages/research-responsibly/data/technical-documentation.md)**
 Software, models, training data, code and publications for each step.
 
-**[Accessing the data](/pages/data/access.md)**
-Where to find the data, models and code, and how to retrieve them.
+**[Accessing the data](/pages/research-responsibly/data/access.md)**
+Where to find the data, models and code, and how to retrieve them. For the conditions under which you can reuse them, see [Licences & reuse](/pages/learn-get-started/licences.md) under Learn & get started.
 
-**[Licences & reuse](/pages/data/licences.md)**
-Under which conditions you can reuse the data, and how to credit it.
-
-**[Changelog](/pages/data/changelog.md)**
+**[Release notes](/pages/footer/release-notes.md)**
 Changes to the data, models and portal.
 
 ## Limitations
 
-Most of the data on the portal, including the transcriptions, documents, entities and events, was produced by computational methods and contains errors. The reference data was compiled by historians, but it is not neutral either. Read [Bias & limitations](/pages/ethics/bias-and-limitations.md) before drawing conclusions from the data.
+Most of the data on the portal, including the transcriptions, documents, entities and events, was produced by computational methods and contains errors. The reference data was compiled by historians, but it is not neutral either. Read [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md) before drawing conclusions from the data.
