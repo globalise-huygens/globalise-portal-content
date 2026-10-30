@@ -45,7 +45,7 @@ The VOC archives record a period of history marked by violence. They contain rec
 The principles that guided the Globalise project, from diversity and inclusion to transparency, accountability and privacy.
 
 **[Colonial context](/pages/research-responsibly/ethics/colonial-context.md)**
-How the VOC archives came into being, whose perspective they record, and how to approach the colonial terminology and categories they contain.
+What the colonial origins of the VOC archives mean for the portal: how the archive was described, and how the colonial terminology and categories in the documents are handled in the Globalise data.
 
 **[Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md)**
 What is missing, distorted or uncertain: in the archive itself, in the part of it that Globalise covers, and in the computational processing.
@@ -53,4 +53,4 @@ What is missing, distorted or uncertain: in the archive itself, in the part of i
 **[Responsible use](/pages/research-responsibly/ethics/responsible-use.md)**
 Practical guidance for reading, interpreting and reusing material from the portal.
 
-For a practical introduction to the VOC and its archives, see the [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md).
+The history of the VOC and its archives, and what to keep in mind when reading them, are explained in the [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md). The pages in this section build on it.

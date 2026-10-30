@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-10-30"
 
 featured: false
 
@@ -25,7 +25,7 @@ related: ["colonial-context", "responsible-use", "methods", "voc-archives-guide"
 
 # Bias & limitations
 
-<!-- Sources: pages/research-responsibly/voc-archives-guide.md; "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/project/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 and its ethics reports on Primary Sources and the Places Dataset (pages/research-responsibly/ethics/policy.md); Arno Bosse, "The Languages of GLOBALISE" (pages/about/project/archive/blog/the-languages-of-globalise.md). -->
+<!-- Sources: pages/research-responsibly/voc-archives-guide.md; "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/project/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 and its ethics reports on Primary Sources and the Places Dataset (pages/research-responsibly/ethics/policy.md); Arno Bosse, "The Languages of GLOBALISE" (pages/about/project/archive/blog/the-languages-of-globalise.md). Limitations of the VOC archives themselves are covered in the VOC archives guide; this page links to it rather than repeating it. -->
 
 <!-- TODO: this page depends on the final models and data (dependency "Final models" in CONTENT.md). Check all statements against the final state of the portal before publication. -->
 
@@ -35,27 +35,17 @@ Neutrality is not attainable. The aim of this page is not to excuse these limita
 
 ## The archive
 
-### A VOC perspective
+The limitations of the VOC archives themselves carry over to everything on this portal. The [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md#what-do-you-need-to-be-aware-of-when-using-historical-archives-like-the-records-of-the-voc) explains them:
 
-The documents on this portal were written by the Dutch East India Company (VOC) and its personnel. They record events, people and societies as the company saw them, and what it considered worth writing down. People who were not part of the company appear mainly when they mattered to it, and their words usually reach us translated and selected by company officials. See [Colonial context](/pages/research-responsibly/ethics/colonial-context.md).
-
-### What survived
-
-The VOC archives that survive today are spread over archives in Indonesia, Sri Lanka, India, South Africa, Malaysia, the United Kingdom and the Netherlands. Much has been lost. Each VOC factory and outpost kept its own archive, but most of these local archives have not survived.
-
-### Written sources and accessible sources
-
-History writing has traditionally privileged written sources over other ways of recording and remembering the past, such as oral history, material culture and art. Not every society recorded its history in writing, and not all written sources have been digitised or transcribed.
-
-Making the VOC archives easier to search also carries a risk: that research relies on them more than on other sources from the Indian Ocean world simply because they are more accessible. Prioritising digitised and transcribed collections affects how the history of this period is understood.
+* the documents record events, people and societies as the Dutch East India Company (VOC) saw them, and people outside the company mostly appear when they mattered to it (see also [Colonial context](/pages/research-responsibly/ethics/colonial-context.md));
+* most of the archives kept at the company's settlements have been lost (see [How was the Company's network of correspondence organized?](/pages/research-responsibly/voc-archives-guide.md#how-was-the-companys-network-of-correspondence-organized));
+* written, digitised and transcribed sources such as these are easily given more weight than other ways of recording the past, and than other archives from the Indian Ocean world. By making the VOC archives easier to search, Globalise adds to this risk.
 
 ## What Globalise covers
 
 ### Part of the VOC archives
 
-Globalise does not cover all VOC archives, nor even all of the VOC archive at the Nationaal Archief (Dutch National Archives). It works with the *Overgekomen Brieven en Papieren* (OBP) in series 1.04.02: inventory numbers 1053–4454 and 7527–11024, roughly 6,900 inventory numbers and about 4.8 million pages. The material dates roughly from 1605 to 1794.
-
-Not covered are, for instance, the resolutions of the company's directors, the correspondence sent from the Dutch Republic to Asia, and the archives of the Delft, Rotterdam, Hoorn and Enkhuizen chambers. Nor does the portal include VOC archives held elsewhere in the world. The [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md) lists what is and is not included.
+Globalise does not cover all VOC archives, nor even all of the VOC archive at the Nationaal Archief (Dutch National Archives). It works with the *Overgekomen Brieven en Papieren* (OBP) in series 1.04.02: about 6,900 inventory numbers and about 4.8 million pages, dating roughly from 1605 to 1794. Among other things, the resolutions of the company's directors, the correspondence sent from the Dutch Republic to Asia, and VOC archives held elsewhere in the world are not included. The guide lists [what Globalise covers](/pages/research-responsibly/voc-archives-guide.md#how-much-of-the-10402-series-of-the-voc-archives-does-the-globalise-project-cover) and [what it does not](/pages/research-responsibly/voc-archives-guide.md#what-sections-in-the-10402-series-of-the-voc-archives-does-the-globalise-project-not-cover).
 
 ### Languages and scripts
 
@@ -95,9 +85,7 @@ Content to be developed.
 
 ## Reference data
 
-Reference data and thesauri, such as the datasets on polities, places, people and commodities, were compiled and checked by historians. They are curated, but they are not neutral. They reflect the knowledge, perspectives and expertise of the project team and contributors, and the sources and literature they were built from.
-
-The places dataset is an example. Because the project depends largely on colonial sources in Dutch and English, names used by colonial powers are more likely to be included than local names. GeoNames, the main source for preferred place names, is open and widely used, but it is not always clear where its information comes from or to what extent it reflects a Western view of the world. Experts from India, Indonesia and Taiwan have since reviewed and added to the data to counter this imbalance.
+Reference data and thesauri, such as the datasets on polities, places, people and commodities, were compiled and checked by historians. They are curated, but they are not neutral. They reflect the knowledge, perspectives and expertise of the project team and contributors, and the sources and literature they were built from. Because these are mostly colonial sources in Dutch and English, colonial names and categories are recorded more fully than local ones. The limitations of each dataset are summarised on the [Reference data](/pages/research-responsibly/data/reference-data.md#what-all-reference-datasets-have-in-common) page, and the choice of place names under [Which name is shown](/pages/research-responsibly/data/reference-data.md#which-name-is-shown-preferred-labels).
 
 Even when a dataset is well documented, it can be hard for users to see why a particular value was chosen for a particular entry.
 
