@@ -91,7 +91,7 @@ On the portal, every event annotation is classified with an event type from this
 
 ## Thesauri and vocabularies
 
-The data also uses Globalise's own controlled vocabularies, for instance for the types of text regions on a page, the categories of named entities and the types of documents. These are published in the [Globalise thesaurus](https://thesaurus.globalise.huygens.knaw.nl/).
+The data also uses Globalise's own controlled vocabularies, for instance for the types of text regions on a page, the categories of named entities and the types of documents. These are published in the [Globalise thesaurus](https://thesaurus.globalise.huygens.knaw.nl/), which also defines the concepts of the reference data, such as commodities, units of measure, occupations and place types. For an overview of its vocabularies, see [The Globalise thesaurus](/pages/research-responsibly/data/reference-data.md#the-globalise-thesaurus) on the Reference data page.
 
 <!-- TODO: thesaurus URIs used in the data (e.g. https://data.globalise.huygens.knaw.nl/hdl:20.500.14722/thesaurus:page-number) currently lead to an error page in the thesaurus browser. Fix or explain. -->
 
