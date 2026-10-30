@@ -27,7 +27,7 @@ related: ["project-ambitions", "methods", "voc-archives-guide", "team-and-partne
 
 <!-- Sources: https://globalise.huygens.knaw.nl/project_overview/ ; https://globalise.huygens.knaw.nl/source-corpus/ ; https://docs.globalise.huygens.knaw.nl/mission/mission_researchthemes/ (consulted 2026-10-01) -->
 
-Globalise is a research project that builds a digital research infrastructure for the archives of the Dutch East India Company (VOC). It focuses on one archival series in particular: the *Overgekomen Brieven en Papieren* (OBP), or "letters and papers received". This research portal is where the results of that work come together.
+Globalise is the research portal of the Globalise project, which built a digital research infrastructure for the archives of the Dutch East India Company (VOC). The project focused on one archival series in particular: the *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series). This portal is where the results of that work come together, and it remains online now that the project has ended.
 
 ## The archive
 
@@ -45,9 +45,9 @@ The importance of the OBP has long been recognised, and earlier projects have ma
 
 Even so, most of the OBP could only be read page by page, in the original handwriting, in seventeenth- and eighteenth-century Dutch. Finding every mention of a particular ruler, place, commodity or group of people across millions of pages was practically impossible. This has shaped which histories have been written from these archives, and which have not.
 
-## What Globalise does
+## What the Globalise project did
 
-The Nationaal Archief has digitised almost all of its VOC archives. Building on these scans, the Globalise project has:
+The Nationaal Archief has digitised almost all of its VOC archives. Building on these scans, the Globalise project:
 
 * **transcribed** the almost 5 million pages of the OBP using handwritten text recognition (HTR) software;
 * **identified** people, places, polities (states and other political entities), commodities and other entities in the text, as well as events such as conflicts, treaties and voyages, using a combination of manual annotation and language models;
@@ -56,10 +56,10 @@ The Nationaal Archief has digitised almost all of its VOC archives. Building on 
 
 The [Methods](/pages/about/methods.md) page explains these steps in more detail.
 
-The aim is to move beyond *searchability*, being able to find a word in the text, towards *researchability*: being able to ask historical questions of the archive and receive results with context. Globalise was set up to support new, more diverse and more representative histories based on the VOC archives, especially histories of the societies of Asia and Africa that have often been treated as background to the story of the company. The [Project & ambitions](/pages/about/project/ambitions.md) page explains this in more detail.
+The aim was to move beyond *searchability*, being able to find a word in the text, towards *researchability*: being able to ask historical questions of the archive and receive results with context. The project was set up to support new, more diverse and more representative histories based on the VOC archives, especially histories of the societies of Asia and Africa that have often been treated as background to the story of the company. The [Project & ambitions](/pages/about/project/ambitions.md) page explains this in more detail.
 
-## Who is behind Globalise?
+## Who was behind the Globalise project?
 
-Globalise is based at the Huygens Institute in Amsterdam and is funded by the Dutch Research Council (NWO). It is carried out together with the International Institute of Social History (IISH), the KNAW Humanities Cluster, the University of Amsterdam, Vrije Universiteit Amsterdam and the Nationaal Archief. See [Team & partners](/pages/about/project/team.md) for the people and institutions involved.
+The Globalise project was based at the Huygens Institute in Amsterdam and funded by the Dutch Research Council (NWO). It was carried out together with the International Institute of Social History (IISH), the KNAW Humanities Cluster, the University of Amsterdam, Vrije Universiteit Amsterdam and the Nationaal Archief. See [Team & partners](/pages/about/project/team.md) for the people and institutions involved.
 
-<!-- TODO: add funding programme, grant reference and project period (start January 2022; end date?). -->
+The Globalise project was funded by the Dutch Research Council (NWO) in the funding scheme *Investeringen NWO-groot 2019/2020*, with file number 175.2019.003. The project started in January 2022 and ran for 5 years, until December 2026.

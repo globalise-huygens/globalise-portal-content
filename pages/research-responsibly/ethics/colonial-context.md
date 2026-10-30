@@ -35,20 +35,20 @@ The [guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.m
 * [why the company produced so much correspondence](/pages/research-responsibly/voc-archives-guide.md#why-did-the-voc-generate-so-much-correspondence) and [how its correspondence was organised](/pages/research-responsibly/voc-archives-guide.md#how-was-the-companys-network-of-correspondence-organized);
 * [what to be aware of when reading the archives](/pages/research-responsibly/voc-archives-guide.md#what-do-you-need-to-be-aware-of-when-using-historical-archives-like-the-records-of-the-voc), including the voices of local people that reach us through the company's translations and selections.
 
-This page is about what that colonial context means for the Globalise portal: how the archive's own descriptions shape what you can find, how Globalise tries to look beyond the company's perspective, and how the colonial terminology and categories in the documents are handled in the Globalise data.
+This page is about what that colonial context means for the Globalise portal: how the archive's own descriptions shape what you can find, how the Globalise project tried to look beyond the company's perspective, and how the colonial terminology and categories in the documents are handled in the Globalise data.
 
 ## Beyond the company's perspective
 
-Globalise aims to support research that moves the VOC away from the centre of attention, and treats the polities and societies of the Indian Ocean world as historical subjects in their own right. Doing so depends on understanding how the archive was made, and on making visible the people, places and subjects that the company's own records and finding aids tend to hide. See [Mission, Research Themes and Guiding Questions](/pages/about/project/archive/mission-research-themes.md).
+The Globalise project aimed to support research that moves the VOC away from the centre of attention, and treats the polities and societies of the Indian Ocean world as historical subjects in their own right. Doing so depends on understanding how the archive was made, and on making visible the people, places and subjects that the company's own records and finding aids tend to hide. See [Mission, Research Themes and Guiding Questions](/pages/about/project/archive/mission-research-themes.md).
 
 ## How the archive was described
 
-The finding aids that give access to the VOC archives describe documents mainly from the perspective of the people who created and managed the archive. As the guide explains, company servants, trade and production are therefore the most visible people and subjects in these descriptions, even where the documents also deal with local individuals, communities and other subjects (see [Does the Globalise project work with the entire VOC Archive?](/pages/research-responsibly/voc-archives-guide.md#does-the-globalise-project-work-with-the-entire-voc-archive)).
+The finding aids that give access to the VOC archives describe documents mainly from the perspective of the people who created and managed the archive. As the guide explains, company servants, trade and production are therefore the most visible people and subjects in these descriptions, even where the documents also deal with local individuals, communities and other subjects (see [Did the Globalise project work with the entire VOC Archive?](/pages/research-responsibly/voc-archives-guide.md#did-the-globalise-project-work-with-the-entire-voc-archive)).
 
 On the portal, this matters in two ways:
 
-* **Document titles and types.** Where a document is described in the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/) or the typescript indexes, the portal uses that description as the document's title. The TANAP project also assigned every document to a category, and these categories were explicitly created from the perspective of the VOC. Globalise added a simplified classification of its own, linked to the TANAP categories (see [How the data was produced](/pages/research-responsibly/data/production.md#document-types)).
-* **Going beyond the descriptions.** Globalise identifies people, places, events and other entities within the documents themselves, so that they can be found even where the archival descriptions do not mention them. See [Methods](/pages/about/methods.md).
+* **Document titles and types.** Where a document is described in the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/) or the typescript indexes, the portal uses that description as the document's title. The TANAP project also assigned every document to a category, and these categories were explicitly created from the perspective of the VOC. The Globalise project added a simplified classification of its own, linked to the TANAP categories (see [How the data was produced](/pages/research-responsibly/data/production.md#document-types)).
+* **Going beyond the descriptions.** The Globalise project identified people, places, events and other entities within the documents themselves, so that they can be found even where the archival descriptions do not mention them. See [Methods](/pages/about/methods.md).
 
 ## Colonial terminology and categories
 
@@ -64,7 +64,7 @@ Content to be developed.
 
 ### Place names
 
-The names of places illustrate the problem well. A place can be known by a name given by the VOC or another colonial power, by historical or present-day local names, and by names now widely used in English. Because the project depends largely on colonial sources in Dutch and English, the names used by colonial powers have a higher chance of being recorded than local names, which are often hard to recover without colonial documentation.
+The names of places illustrate the problem well. A place can be known by a name given by the VOC or another colonial power, by historical or present-day local names, and by names now widely used in English. Because the project depended largely on colonial sources in Dutch and English, the names used by colonial powers have a higher chance of being recorded than local names, which are often hard to recover without colonial documentation.
 
 The Globalise places dataset therefore records colonial and local names side by side, and shows each place under its present-day name. How these names were chosen, and the limitations of that choice, are explained under [Which name is shown: preferred labels](/pages/research-responsibly/data/reference-data.md#which-name-is-shown-preferred-labels) and in the [ethics report on the places dataset](/pages/research-responsibly/ethics/policy.md#places-dataset).
 
@@ -76,7 +76,7 @@ Content to be developed.
 
 ## Further reading
 
-* [Guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md): the VOC, its archives and what Globalise makes available
+* [Guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md): the VOC, its archives and what the Globalise project made available
 * [Mission, Research Themes and Guiding Questions](/pages/about/project/archive/mission-research-themes.md): the project's position on VOC historiography
 * [Echoes of genocidal erasure](/pages/about/project/archive/blog/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives.md), Matthias van Rossum's reflection on historical "voices" and digital infrastructure for colonial archives
 * [When Archives Break Hearts](/pages/about/project/archive/blog/when-archives-break-hearts.md), Asawari Luthra on the emotional impact of colonial archives on their readers

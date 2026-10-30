@@ -27,7 +27,7 @@ related: ["ethics-and-colonial-context", "bias-and-limitations", "responsible-us
 
 <!-- Source: Mrinalini Luthra and Amber Zijlma, "GLOBALISE Ethics Policy", version 2.0, 19 February 2025, https://docs.globalise.huygens.knaw.nl/ethics/policy/ (GitHub source docs/ethics/policy.md, last changed 12 March 2025; retrieved 2026-10-01). Licence: CC BY-SA 4.0. The summary below is an editorial condensation; the full text is reproduced unchanged except for formatting (headings one level lower, ORCID icons replaced by text links, inline colour styling removed from tables, the empty template table converted to Markdown). -->
 
-Globalise works with colonial archives and builds a digital infrastructure that shapes how those archives are searched and read. The project's ethics policy sets out the principles that guided this work, and the obligations team members took on towards each other, towards the people and communities whose histories the archive documents, and towards the users of the infrastructure.
+The Globalise project worked with colonial archives and built a digital infrastructure that shapes how those archives are searched and read. The project's ethics policy set out the principles that guided this work, and the obligations team members took on towards each other, towards the people and communities whose histories the archive documents, and towards the users of the infrastructure.
 
 This page summarises the policy and then reproduces it in full.
 

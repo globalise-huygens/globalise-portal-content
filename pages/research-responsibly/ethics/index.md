@@ -48,7 +48,7 @@ The principles that guided the Globalise project, from diversity and inclusion t
 What the colonial origins of the VOC archives mean for the portal: how the archive was described, and how the colonial terminology and categories in the documents are handled in the Globalise data.
 
 **[Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md)**
-What is missing, distorted or uncertain: in the archive itself, in the part of it that Globalise covers, and in the computational processing.
+What is missing, distorted or uncertain: in the archive itself, in the part of it that the Globalise project covered, and in the computational processing.
 
 **[Responsible use](/pages/research-responsibly/ethics/responsible-use.md)**
 Practical guidance for reading, interpreting and reusing material from the portal.

@@ -35,7 +35,7 @@ For the data available through this portal, including how to download it and und
 
 ## Datasets
 
-Globalise publishes its datasets on [DataverseNL](https://dataverse.nl/dataverse/globalise) as soon as first versions are ready. They include the full transcriptions of the *Overgekomen Brieven en Papieren* (OBP), the ground truth used to train the text recognition models, and the reference datasets and thesauri described on the [Methods](/pages/about/methods.md) page. Datasets are listed with the most recent first.
+The Globalise project published its datasets on [DataverseNL](https://dataverse.nl/dataverse/globalise) as soon as first versions were ready. They include the full transcriptions of the *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series), the ground truth used to train the text recognition models, and the reference datasets and thesauri described on the [Methods](/pages/about/methods.md) page. Datasets are listed with the most recent first.
 
 * Arnoult, S., Nijman, B., & van Wissen, L. (2025). Code and data for paper ‘Fine-grained Named-Entity Recognition for the East-India Company domain’ (v1.0.0). <https://doi.org/10.5281/zenodo.17457076>
 * Pepping, Kay; Mundakkal, Sailaja; Kuruppath, Manjusha (22 September 2025). GLOBALISE – VOC Census Records of Cochin (1700-1775). <https://doi.org/10.34894/O12KME>
@@ -69,7 +69,7 @@ The handwritten text recognition and layout models were trained for use with [Lo
 
 ## Publications
 
-Academic articles and conference papers by members of the Globalise team about the project and its methods:
+Academic articles and conference papers by members of the Globalise project team about the project and its methods:
 
 * Verkijk, Stella & Vossen, Piek (2026). Out-Of-Tune rather than Fine-Tuned: How Pre-training, Fine-tuning and Tokenization Affect Semantic Similarity in a Historical, Non-Standardized Domain. In Proceedings of the Second Workshop on Language Models for Low-Resource Languages (LoResLM 2026), pages 515-531, Rabat, Morocco. <https://doi.org/10.18653/v1/2026.loreslm-1.45>
 * Arnoult, Sophie, Nijman, Brecht, & van Wissen, Leon. (2025). Fine-grained Named-Entity Recognition for the East-India Company domain. In T. Arnold, M. Fantoli, & R. Ros (Eds.), Anthology of Computers and the Humanities. Volume 3: Computational Humanities Research 2025 (pp. 952-966). Association for Computers and the Humanities. <https://doi.org/10.63744/DRbhWNTzqNzR>
@@ -91,7 +91,7 @@ Between 2022 and 2026, team members, guest researchers and collaborators wrote [
 
 ## Events
 
-Globalise organised seminars, user panel meetings, data sprints, webinars and an international conference:
+The Globalise project organised seminars, user panel meetings, data sprints, webinars and an international conference:
 
 * GLOBALISE conference: Colonial Pasts, New Approaches and Historiographical Futures. Explorations of GLOBALISE, the Dutch East India Company Archives and the writing of new histories. (3-6 March 2026). Amsterdam/hybrid.
 * GLOBALISE roundtable: The changing archive. (2 December 2025). Online.
@@ -117,6 +117,6 @@ Globalise organised seminars, user panel meetings, data sprints, webinars and an
 
 ## Presentations and teaching
 
-Team members gave more than 75 presentations, workshops and guest lectures about Globalise at conferences, universities and archives in the Netherlands and abroad. A full list is available on the [project website](https://globalise.huygens.knaw.nl/output/#presentations).
+Team members gave more than 75 presentations, workshops and guest lectures about the Globalise project at conferences, universities and archives in the Netherlands and abroad. A full list is available on the [project website](https://globalise.huygens.knaw.nl/output/#presentations).
 
 <!-- TODO: decide whether the full list of presentations and classes should be moved to the archive section, since the project website may not remain online. -->

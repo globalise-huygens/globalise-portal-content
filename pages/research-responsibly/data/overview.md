@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-10-30"
 
 featured: false
 
@@ -54,7 +54,7 @@ Every line and every word of the transcription is linked to its exact position o
 
 ## Entities
 
-Words and phrases in the transcription that refer to people, places, commodities, ships, organisations, dates and documents are highlighted as **entities**. They were recognised by a language model trained by the project, a method called named entity recognition (NER).
+Words and phrases in the transcription that refer to people, places, commodities, ships, organisations, dates and documents are highlighted as **entities**. They were recognised by a language model trained by the Globalise project, a method called named entity recognition (NER).
 
 Each entity is labelled with a category, such as *Name of Person*, *Name of Location*, *Profession, title*, *Name of Commodity* or *Quantity*. The labels describe the form of the word in the text: a place name is labelled as a location, even if in context it refers to a state or ruler. The [technical documentation](/pages/research-responsibly/data/technical-documentation.md#named-entity-recognition) lists all categories.
 
@@ -64,7 +64,7 @@ Entity annotations are model output. They will include errors: words that were m
 
 Some words are highlighted as **events**: actions and situations, such as a ship arriving, goods being traded, a letter being written, or someone being killed. These were also recognised by a language model. Each event is classified according to the Globalise event ontology, a structured list of event types, such as *Arriving*, *Trade*, *Communication* or *Attacking*. See [Data model & ontologies](/pages/research-responsibly/data/data-model.md).
 
-Event detection is one of the most difficult tasks in the project, because events can be described in many different ways, and many are only implied. Treat event annotations with particular care.
+Event detection was one of the most difficult tasks in the project, because events can be described in many different ways, and many are only implied. Treat event annotations with particular care.
 
 ## Links to reference data
 
@@ -76,13 +76,13 @@ Content to be developed.
 
 Pages do not stand alone. The portal organises them in three levels:
 
-* **Collection.** All pages that Globalise works with belong to one collection: the *Overgekomen Brieven en Papieren* (OBP) in series 1.04.02 of the VOC archive at the Nationaal Archief, comprising about 6,900 inventory numbers.
+* **Collection.** All pages on Globalise belong to one collection: the *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series) in series 1.04.02 of the VOC archive at the Nationaal Archief, comprising about 6,900 inventory numbers.
 * **Inventory.** An inventory number usually refers to one bound volume of documents, from a handful to over a thousand pages. Inventory 1056, for example, contains 550 scans of documents concerning VOC settlements such as Bantam, Ambon, Ternate and Coromandel, and is dated 1614.
-* **Document.** Within an inventory, pages are grouped into documents: letters, reports, journals, lists and other items. A volume was not originally divided into documents in a way a computer can read, so Globalise had to identify where documents begin and end. Different methods were used for this, and their results do not always agree: a page may be assigned to more than one document, or to none. See [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
+* **Document.** Within an inventory, pages are grouped into documents: letters, reports, journals, lists and other items. A volume was not originally divided into documents in a way a computer can read, so the Globalise project identified where documents begin and end with a segmentation model, guided by historical indexes where these exist. Documents do not overlap, but they can contain parts, such as enclosures. Covers, blank pages, tables of contents and title pages belong to no document. Titles in square brackets, such as *[Letter, Surat, 26 April 1723]*, were made by the project from the document's text; other titles come from the VOC's own tables of contents. Document boundaries and inferred titles are model output and can be wrong. See [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
 
-Information about inventories, such as their dates, titles and the settlements they concern, comes from the Nationaal Archief's inventory of the VOC archive. Titles and types of documents come from historical tables of contents and finding aids, including the [index compiled by the TANAP project](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/), which Globalise digitised and extended. See also [TANAP](/pages/learn-get-started/resources/related-projects.md#tanap-towards-a-new-age-of-partnership) under Resources.
+Information about inventories, such as their dates, titles and the settlements they concern, comes from the Nationaal Archief's inventory of the VOC archive. Titles and types of documents come from historical tables of contents and finding aids, including the [index compiled by the TANAP project](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/), which the Globalise project digitised and extended. See also [TANAP](/pages/learn-get-started/resources/related-projects.md#tanap-towards-a-new-age-of-partnership) under Resources.
 
-<!-- TODO: confirm which document identification methods are used in the final portal, and how overlapping or missing assignments are shown to users. -->
+<!-- TODO: the segmentation has not yet been integrated into the portal (issue #24). Once it has, check this paragraph against the interface: how parts of documents, title sources and pages outside documents are shown. -->
 
 ## What the data is based on
 

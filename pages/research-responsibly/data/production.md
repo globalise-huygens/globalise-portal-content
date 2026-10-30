@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-10-30"
 
 featured: false
 
@@ -35,7 +35,7 @@ Every step combines computational methods with the work of historians, and every
 
 ## 1. The scans
 
-The process starts with the scans of the *Overgekomen Brieven en Papieren* (OBP) made by the Nationaal Archief (Dutch National Archives): inventory numbers 1053–4454 and 7527–11024 of the VOC archive (series 1.04.02). The Nationaal Archief also provides the descriptive information about each inventory, such as its title, dates and the settlements it concerns.
+The process starts with the scans of the *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series) made by the Nationaal Archief (Dutch National Archives): inventory numbers 1053–4454 and 7527–11024 of the VOC archive (series 1.04.02). The Nationaal Archief also provides the descriptive information about each inventory, such as its title, dates and the settlements it concerns.
 
 ## 2. Recognising the layout and the text
 
@@ -44,7 +44,7 @@ The scans were transcribed with two pieces of open-source software developed at 
 * **Laypa** analyses the layout of each page. It finds the text regions on the page (such as paragraphs, headers and marginal notes) and the baselines of the individual lines of text.
 * **Loghi** reads the handwriting in each line and turns it into text: handwritten text recognition (HTR).
 
-Both programs use models that have to be trained for a specific type of handwriting and layout. Globalise trained its own models on **ground truth**: pages that were transcribed by hand and carefully checked, partly by the Globalise team. The ground truth and the models are published (see [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#layout-analysis-and-text-recognition)).
+Both programs use models that have to be trained for a specific type of handwriting and layout. The Globalise project trained its own models on **ground truth**: pages that were transcribed by hand and carefully checked, partly by the project team. The ground truth and the models are published (see [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#layout-analysis-and-text-recognition)).
 
 The software can only read Latin script. Pages in, for instance, Chinese, Persian or Sinhala script produce meaningless strings of characters.
 
@@ -54,25 +54,61 @@ Earlier versions of the transcriptions were published on DataverseNL in 2023 and
 
 ## 3. Identifying documents
 
-The VOC archive is organised in bound volumes (inventory numbers), each containing many separate documents. Where one document ends and the next begins is not recorded in a form a computer can use, so Globalise had to reconstruct it. The project combined several sources and methods:
+<!-- Sources for this section: README of the documents repository, branch llm-definitive-doc (https://github.com/globalise-huygens/documents/blob/llm-definitive-doc/README.md), and counts from its database after the import of the full segmentation (method "Segmentation model"), queried 2026-10-30. -->
 
-* **Historical finding aids.** Many volumes have tables of contents. The TANAP project used these to describe the individual documents in thousands of OBP volumes, creating the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/). TANAP ran out of funding before it could describe all volumes. To fill part of the gap, Globalise digitised typescript tables of contents that the Nationaal Archief made after compiling its inventory of the VOC archive in the 1960s, and combined both into the [*Digitized Indexes of the Dutch East India Company OBP*](https://doi.org/10.34894/OP20NM). Index entries give the folio numbers on which a document starts and ends; pages were matched to documents by their folio numbers, and remaining gaps between pages of the same document were filled in.
+<!-- TODO: the segmentation has not yet been integrated into the portal (see issue #24). Check this section against the portal once it has been. -->
+
+The VOC archive is organised in bound volumes (inventory numbers), each containing many separate documents. Where one document ends and the next begins is not recorded in a form a computer can use, so the Globalise project had to reconstruct it, for all 6,914 inventory numbers. It did so with a **document segmentation model** that combined the historical finding aids with what can be read on the pages themselves.
+
+* **Historical finding aids.** Many volumes have tables of contents. The TANAP project used these to describe the individual documents in thousands of OBP volumes, creating the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/). TANAP ran out of funding before it could describe all volumes. To fill part of the gap, the Globalise project digitised typescript tables of contents that the Nationaal Archief made after compiling its inventory of the VOC archive in the 1960s, and combined both into the [*Digitized Indexes of the Dutch East India Company OBP*](https://doi.org/10.34894/OP20NM). Index entries describe a document and give the folio numbers on which it starts and ends.
 
   Together, the TANAP index and the typescripts cover all OBP volumes of the Amsterdam Chamber (inventory numbers 1053–4447), but only part of those of the Zeeland Chamber (7527–9179 and 10406–10435). For inventory numbers 9180–10405 and 10436–11024, documents can only be identified in other ways.
-* **General Missives.** For the *Generale Missiven*, the summarising reports sent from Batavia to the Dutch Republic, documents were added on the basis of manually created ground truth.
-* **Page layout.** A baseline method identifies document boundaries automatically from blank pages and from pages with signatures, which usually mark the end of a document. Documents found this way get the first header on their first page as a title.
+* **Reading the pages.** For every scan, the model weighed the signs that a document begins or ends there: opening words (such as *Copia*, *Extract* or a salutation), closing formulas (such as *was geteekent*, or a place and date), signatures, blank pages, page and folio numbers, running headers and the dates in them, the layout of the page, and how much the text resembles that of the neighbouring scans. How much weight each sign gets was learned from 22 inventories in which the documents had been identified by hand.
+* **Placing the index entries.** Where a volume has index entries, the model placed each entry on the scan where its document begins: in most cases by finding the entry's folio numbers on the pages (44% of the entries) or by interpolating between such pages (45%), otherwise by matching the entry's description to the text or by the strongest signs of a new document. The model then looked for further documents that the index does not list, such as enclosures.
+* **Court records.** For volumes of the Councils of Justice of Batavia and the Cape of Good Hope that have no index, the court cases recorded in the *Early Modern Dutch Colonial Court Records* dataset of the Resilient Diversity project were used as documents.
+* **Volumes without an index.** Elsewhere the model relied on the signs on the pages alone.
 
-Because these methods are independent, their results can overlap or differ. A page can therefore belong to more than one document, and some pages do not belong to any document. The data records which method identified each document, and how confident each match between a page and a document is.
+### The result
 
-The project also experimented with classifying pages and detecting where documents begin using language models, and published a dataset for training and evaluating such methods.
+The segmentation produced 508,143 documents:
+
+| | Documents |
+| --- | --- |
+| Documents with an entry in the indexes | 225,230 |
+| Court cases | 2,609 |
+| Documents not listed in any index | 127,651 |
+| Parts of a larger document, such as enclosures | 152,632 |
+
+Documents do not overlap: each scan belongs to at most one document, and parts such as enclosures are recorded as part of the document they belong to. Covers, blank pages, tables of contents and title pages, about 10% of the scans, belong to no document. Of the other scans, about 60% are in documents with an index entry, a third in documents not listed in any index, and 4% in court cases.
+
+Where the same text exists in more than one volume, for instance a letter sent both to the Gentlemen Seventeen and to the Zeeland Chamber, or an enclosure copied into another volume, the project recorded the two versions as a link between the scans that hold them (about 168,000 such links), without treating either as the original.
+
+### Titles and dates
+
+* **Titles from the VOC.** Documents with an index entry, and *Generale Missiven* identified by hand, have the title that the VOC's own tables of contents gave them (225,104 documents).
+* **Court cases** are titled after the dataset they come from: the parties, the court, the place and the year (2,669 documents).
+* **Titles made by the Globalise project.** All other documents (280,239) have a title inferred from their text, in the form *type, place, date*, and shown in square brackets to make clear that it is not a historical title: for example *[Letter, Surat, 26 April 1723]*. The type comes from a classifier (see *Document types* below). Place and date are usually read from the closing formula at the end of the document (*Bantam den 16 maij 1743*). Places are named by their preferred label in the Globalise places dataset (see [Which name is shown](/pages/research-responsibly/data/reference-data.md#which-name-is-shown-preferred-labels)). Where the type is uncertain, the title starts with *Unknown document*; 23,348 documents have no more than that. Registers of papers, which list the contents of a volume, are titled *Register of papers*.
+* **Dates.** About 81% of the documents have a date. For index entries without a date in the enriched index, the dates were read from the entry's description; on entries whose dates were known, this agreed with them for 97% of the begin and end dates.
+
+### How reliable is it?
+
+The model was tested on the hand-segmented inventories, each time on an inventory that it had not been trained on. Where a volume has an index, 78% of the index entries were placed on exactly the right scan, and 91% within one scan of it. Finding where documents begin is much harder without an index: measured by the F1 score (which combines how many of the true document starts the model finds and how many of the starts it proposes are right), the model scored 65 out of 100 with an index and 51 without one. In the *Generale Missiven*, which are long documents identified by hand, it found 88% of the starts where an index was available.
+
+Document boundaries are therefore model output, not established facts. For every document, the data records how it was found: which index entry it corresponds to, and which signs on the pages pointed to its beginning and end.
+
+The project also published the hand-segmented inventories as a dataset for training and evaluating such methods (see [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#document-identification)).
 
 ### Document types
 
-Documents are also classified by type, such as letters, resolutions, journals or lists. The TANAP project assigned a category to every document it described, using a classification built from the perspective of the VOC. Globalise digitised this TANAP classification and created a simplified and normalised classification of its own, which is linked to the TANAP categories. All documents in the Digitized Indexes are classified with the Globalise document types. Both classifications are published as thesauri: [SKOS Thesauri for VOC Archival Document Classification](https://doi.org/10.34894/B2WBZZ).
+Documents are also classified by type, such as letters, resolutions, journals or lists. The TANAP project assigned a category to every document it described, using a classification built from the perspective of the VOC. The Globalise project digitised this TANAP classification and created a simplified and normalised classification of its own, which is linked to the TANAP categories. Both classifications are published as thesauri: [SKOS Thesauri for VOC Archival Document Classification](https://doi.org/10.34894/B2WBZZ).
 
-<!-- TODO: explain how document types are assigned to documents that are not in the indexes (e.g. documents found by the baseline method), and how users can see and filter by document type on the portal. -->
+* Documents with an index entry have the TANAP category of that entry and the corresponding Globalise type.
+* Court cases are classified as *court document*, and *Generale Missiven* without an index entry as *letter*.
+* For other documents, a classifier trained on the documents with an index entry predicted the Globalise type from the opening of the first page and the end of the last page. It assigned a type only when it was sufficiently confident; tested on documents with a known type, it then assigned one to 78% of them and was right for 84% of these.
 
-<!-- TODO: coverage figures follow the TANAP index page (https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/); the description of the Digitized Indexes dataset on DataverseNL gives slightly different ranges. Check and align. Also confirm which of these methods are used for the documents shown on the portal, whether the automatic start-page detection (nlp-start-page-detection) is used, and how confidence and overlaps are shown to users. Consider adding counts (number of documents per method). -->
+In all, about 83% of the documents have a type.
+
+<!-- TODO: explain how users can see and filter by document type on the portal. Coverage figures of the finding aids follow the TANAP index page (https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/); the description of the Digitized Indexes dataset on DataverseNL gives slightly different ranges. Check and align. Add a link to the Early Modern Dutch Colonial Court Records dataset. -->
 
 ## 4. Recognising entities
 
@@ -80,7 +116,7 @@ Named entity recognition (NER) finds words in the text that refer to people, pla
 
 To make this possible, historians in the team first annotated documents by hand, following detailed guidelines. The resulting dataset, described in a [paper by Arnoult, Nijman and Van Wissen (2025)](https://doi.org/10.63744/DRbhWNTzqNzR), contains about 8,000 annotated mentions in 26 documents from 1618 to 1782.
 
-Annotations like these were used to train a language model to recognise entities automatically. The NER models developed in the project build on **GloBERTise**, a language model that Globalise pre-trained from scratch on the transcriptions of the VOC archives, so that it is adapted to early modern Dutch as written in the archive, including its many spelling variants and the errors introduced by text recognition. The trained NER model was then applied to the transcriptions of the whole corpus.
+Annotations like these were used to train a language model to recognise entities automatically. The NER models developed in the project build on **GloBERTise**, a language model that the Globalise project pre-trained from scratch on the transcriptions of the VOC archives, so that it is adapted to early modern Dutch as written in the archive, including its many spelling variants and the errors introduced by text recognition. The trained NER model was then applied to the transcriptions of the whole corpus.
 
 NER labels describe the form of a word in the text, not what it refers to. A place name is labelled as a location even if it refers to a state, and parts of a compound expression are labelled separately. Working out which person, place or polity a word refers to is a separate step: entity linking (step 6).
 

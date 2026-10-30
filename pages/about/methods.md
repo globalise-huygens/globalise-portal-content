@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-10-30"
 
 featured: false
 
@@ -33,11 +33,11 @@ This page gives a high-level overview of how almost 5 million scanned pages of h
 
 ## 1. From scans to text
 
-The starting point is the set of high-quality scans of the *Overgekomen Brieven en Papieren* (OBP) made by the Nationaal Archief (Dutch National Archives).
+The starting point is the set of high-quality scans of the *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series) made by the Nationaal Archief (Dutch National Archives).
 
-These scans were transcribed automatically using **handwritten text recognition (HTR)**: software that recognises handwriting on an image and turns it into machine-readable text. Globalise used Loghi, open-source HTR software developed by the Digital Infrastructure department of the KNAW Humanities Cluster. Loghi first analyses the layout of each page, detecting text regions and the lines of text within them, and then transcribes each line.
+These scans were transcribed automatically using **handwritten text recognition (HTR)**: software that recognises handwriting on an image and turns it into machine-readable text. The Globalise project used Loghi, open-source HTR software developed by the Digital Infrastructure department of the KNAW Humanities Cluster. Loghi first analyses the layout of each page, detecting text regions and the lines of text within them, and then transcribes each line.
 
-To train the HTR models, Globalise team members and others created **ground truth**: a set of pages transcribed and checked by hand, from which the software learns what the handwriting looks like. The ground truth and the trained models have been published openly (see [Outputs](/pages/about/outputs.md)).
+To train the HTR models, members of the project team and others created **ground truth**: a set of pages transcribed and checked by hand, from which the software learns what the handwriting looks like. The ground truth and the trained models have been published openly (see [Outputs](/pages/about/outputs.md)).
 
 Automatic transcriptions are not perfect. The software also cannot read non-Latin scripts, such as Chinese, Persian or Sinhala (see [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md)). When you read a transcription on this portal, always compare it with the scan if the exact wording matters.
 
@@ -45,9 +45,9 @@ Automatic transcriptions are not perfect. The software also cannot read non-Lati
 
 ## 2. From pages to documents
 
-The OBP was bound into volumes, and a single volume can contain hundreds of separate letters, reports, journals and lists. Globalise used existing finding aids, such as historical indexes to the volumes, together with computational methods that classify pages, to identify where documents begin and end and what kind of document they are.
+The OBP was bound into volumes, and a single volume can contain hundreds of separate letters, reports, journals and lists. The Globalise project identified where these documents begin and end with a segmentation model. For every page, the model weighed the signs of a new document, such as opening and closing formulas, signatures, page numbers, blank pages and the layout of the page. Where a volume has a historical index, the model placed each index entry on the page where its document begins, and then looked for documents that the index does not list. The result was about 508,000 documents in all 6,914 volumes. Documents with an index entry keep the title the VOC gave them; the project inferred titles for the others from their text, and a classifier predicted their type. See [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
 
-<!-- TODO: confirm with the team how document segmentation and classification feed into the portal. -->
+<!-- TODO: the segmentation has not yet been integrated into the portal (issue #24). -->
 
 ## 3. Recognising entities and events
 

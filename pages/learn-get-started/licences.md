@@ -29,7 +29,7 @@ related: ["accessing-the-data", "citation-guide", "responsible-use"]
 
 <!-- TODO: this page depends on licence decisions (dependency for LEARN-10 in CONTENT.md). Everything below the placeholders describes the situation as found on 2026-10-01 and must be checked. -->
 
-Globalise aims to make its data as open and reusable as possible. This page explains under which conditions you can reuse the scans, transcriptions, annotations, reference data, models and texts on this portal, and how to credit them.
+The Globalise project aimed to make its data as open and reusable as possible. This page explains under which conditions you can reuse the scans, transcriptions, annotations, reference data, models and texts on this portal, and how to credit them.
 
 ## Licences of the portal data
 
@@ -47,7 +47,7 @@ Content to be developed.
 
 ## Datasets published so far
 
-Datasets that Globalise published on DataverseNL during the project each have their own licence, which is stated in the dataset record:
+Datasets that the Globalise project published on DataverseNL each have their own licence, which is stated in the dataset record:
 
 | Type of dataset | Licence |
 | --- | --- |

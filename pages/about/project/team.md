@@ -29,18 +29,18 @@ related: ["what-is-globalise", "outputs"]
 
 <!-- TODO: this page depends on the final team list (see CONTENT.md). Check names, roles and affiliations before publication. -->
 
-Globalise was carried out by a team of historians, computational linguists, developers, data specialists and outreach staff, working across several research institutions in the Netherlands. It also relied on guest researchers, interns and student assistants, an advisory board of experts from around the world, and collaborations with other research projects.
+The Globalise project was carried out by a team of historians, computational linguists, developers, data specialists and outreach staff, working across several research institutions in the Netherlands. It also relied on guest researchers, interns and student assistants, an advisory board of experts from around the world, and collaborations with other research projects.
 
 ## Partner institutions
 
-Globalise is based at the **Huygens Institute** in Amsterdam and funded by the **Dutch Research Council (NWO)**. The project partners are:
+The Globalise project was based at the **Huygens Institute** in Amsterdam and funded by the **Dutch Research Council (NWO)**. The project partners were:
 
 * [Huygens Institute](https://www.huygens.knaw.nl/), Amsterdam
 * [International Institute of Social History (IISH)](https://iisg.amsterdam/), Amsterdam
 * [KNAW Humanities Cluster](https://huc.knaw.nl/), Digital Infrastructure department, Amsterdam
 * [University of Amsterdam](https://www.uva.nl/)
 * [Vrije Universiteit Amsterdam](https://www.vu.nl/)
-* [Nationaal Archief](https://www.nationaalarchief.nl/) (Dutch National Archives), The Hague, which holds the VOC archives and provided the scans on which Globalise is built
+* [Nationaal Archief](https://www.nationaalarchief.nl/) (Dutch National Archives), The Hague, which holds the VOC archives and provided the scans on which the Globalise project built
 
 ## The team
 
@@ -177,7 +177,7 @@ The advisory board brought together experts in history, archives, linguistics an
 
 ## Collaborations
 
-Globalise worked with other research projects and educational programmes that used, tested or extended its data and methods:
+The Globalise project worked with other research projects and educational programmes that used, tested or extended its data and methods:
 
 * [Enduring Empire](https://www.huygens.knaw.nl/en/projecten/enduring-empire/) – Huygens Institute, Amsterdam; Erasmus School of Economics, Rotterdam (since October 2025)
 * [Necessary Reunions: Remarrying Maps to Text and Reconceptualizing Histories of Early Modern Kerala](https://necessaryreunions.org/) – Huygens Institute, Amsterdam (since March 2025)
@@ -194,4 +194,4 @@ Globalise worked with other research projects and educational programmes that us
 
 ## Researchers and users
 
-Many people outside the team contributed to Globalise. They took part in user panel meetings, data sprints and workshops, gave feedback on the design of this portal, and helped to define commodities, places and other concepts in the archive. The project is grateful to all of them.
+Many people outside the team contributed to the Globalise project. They took part in user panel meetings, data sprints and workshops, gave feedback on the design of this portal, and helped to define commodities, places and other concepts in the archive. The project is grateful to all of them.

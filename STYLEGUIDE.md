@@ -29,7 +29,23 @@ not:
 > GLOBALISE
 
 
-Use **the Globalise project** where necessary for clarity.
+**Globalise** is the name of both the website and the research project that built it. By the time the website goes live, the project will have ended, while the website remains online. Therefore:
+
+* Call the project **the Globalise project** (or *the project*, once it is clear from the context), and write about it in the **past tense**: *The Globalise project transcribed almost 5 million pages.*
+* Use **Globalise** on its own for the website and what it offers, in the **present tense**: *Globalise covers the Overgekomen Brieven en Papieren.* The same goes for outputs that remain available, such as the Globalise data, thesaurus and ontology.
+* Do not change archived texts (blog posts, project documents) or documents reproduced verbatim, such as the full text of the ethics policy.
+
+### The OBP
+
+At first mention on a page, write:
+
+> *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series)
+
+After that, use:
+
+> OBP
+
+Do not use other translations, such as "letters and papers received" or "Copied Letter Series". Names of datasets and inventory sections that contain a translation (for example *Letters and Papers received from the Indies*) are left as they are.
 
 ## 4. VOC
 

@@ -29,7 +29,7 @@ related: ["globalise-data", "how-the-data-was-produced", "data-model-and-ontolog
 
 <!-- TODO: this page depends on the final datasets (dependency "Final datasets" in CONTENT.md). -->
 
-The VOC archives mention thousands of people, places, states and rulers, and ships, as well as goods, units of measure, occupations and groups of people. A keyword search can find a name, but it cannot tell you who someone was, where a place lay, or that *Bantam*, *Banten* and *Bantamm* are the same place. Globalise therefore compiled **reference data**: structured, curated information about the entities and concepts that appear in the archive. **Entity linking** connects the entities and concepts recognised in the text to this reference data.
+The VOC archives mention thousands of people, places, states and rulers, and ships, as well as goods, units of measure, occupations and groups of people. A keyword search can find a name, but it cannot tell you who someone was, where a place lay, or that *Bantam*, *Banten* and *Bantamm* are the same place. The Globalise project therefore compiled **reference data**: structured, curated information about the entities and concepts that appear in the archive. **Entity linking** connects the entities and concepts recognised in the text to this reference data.
 
 ## What reference data is
 
@@ -61,7 +61,7 @@ Reference data is curated, but it is not neutral. It reflects the sources it was
 
 ### The Globalise thesaurus
 
-The Globalise thesaurus is a set of controlled vocabularies, each covering one domain, compiled and maintained by historians in the project. Each concept has a preferred label in Dutch, often also in English and other languages, and alternative labels for spelling variants and synonyms. Most concepts have a definition with a reference to its source, and concepts are arranged in hierarchies of broader and narrower terms: *pepper* falls under *spices* and, several levels up, under *food and live animals*.
+The Globalise thesaurus is a set of controlled vocabularies, each covering one domain, compiled by historians in the Globalise project. Each concept has a preferred label in Dutch, often also in English and other languages, and alternative labels for spelling variants and synonyms. Most concepts have a definition with a reference to its source, and concepts are arranged in hierarchies of broader and narrower terms: *pepper* falls under *spices* and, several levels up, under *food and live animals*.
 
 In October 2026 the thesaurus contained about 8,700 concepts in the following vocabularies. A concept can belong to more than one vocabulary: more than 100 occupations, for example, also appear in the South Asia glossary.
 
@@ -84,7 +84,7 @@ In October 2026 the thesaurus contained about 8,700 concepts in the following vo
 | Not classified | 2,171 | Terms collected from glossaries and other sources that are being placed in a domain vocabulary; all but about 300 already appear in one |
 | Miscellaneous | 73 | Technical terms used in the data, such as the categories of the named entity recognition model, the types of text regions on a page, the two versions of the transcription, the classes of entities, and identifier types |
 
-* **Languages.** Labels are given in more than 90 languages. Nearly 2,900 concepts have a label in a language other than Dutch or English, most often Japanese, Chinese, Indonesian, Vietnamese, Malay, Persian, Javanese, Korean, Arabic and Sinhala. Definitions are mostly in English and Dutch; where Globalise translated a definition, this is marked.
+* **Languages.** Labels are given in more than 90 languages. Nearly 2,900 concepts have a label in a language other than Dutch or English, most often Japanese, Chinese, Indonesian, Vietnamese, Malay, Persian, Javanese, Korean, Arabic and Sinhala. Definitions are mostly in English and Dutch; where the project translated a definition, this is marked.
 * **Sources.** Most definitions cite their source, with a reference to the project's Zotero library.
 * **Links to other vocabularies.** Many concepts are linked to matching concepts in the Getty *Art & Architecture Thesaurus*, the *Cultuurhistorische Thesaurus* of the Rijksdienst voor het Cultureel Erfgoed, Wikidata and, for commodities, the SITC.
 * **Offensive and contested terms.** Terms are recorded as they appear in the sources, including terms that are now offensive. Labels of 79 concepts are marked *[PROBLEMATIC TERM]*. Gendered concepts, such as titles and statuses specific to women, are grouped in collections so that they can be found together. See [Colonial context](/pages/research-responsibly/ethics/colonial-context.md#colonial-terminology-and-categories).
@@ -95,7 +95,7 @@ The thesaurus can be browsed in the [Globalise thesaurus browser](https://thesau
 
 ### Which name is shown: preferred labels
 
-Every entity and concept has one **preferred label** per language, the name under which it is shown, and any number of **alternative labels**: other names, spellings and translations. The archive, the scholarly literature and present-day usage often name the same thing differently, so choosing the preferred label is an editorial decision. Globalise made it differently for places and for concepts. Alternative labels are kept in both cases, so a search for a name that is not the preferred label still finds the entity or concept.
+Every entity and concept has one **preferred label** per language, the name under which it is shown, and any number of **alternative labels**: other names, spellings and translations. The archive, the scholarly literature and present-day usage often name the same thing differently, so choosing the preferred label is an editorial decision. The Globalise project made it differently for places and for concepts. Alternative labels are kept in both cases, so a search for a name that is not the preferred label still finds the entity or concept.
 
 **Places: the modern name.** The preferred label of a place is the name by which it is known today, so that users can find it on present-day maps and in current literature. *Batavia* is therefore listed as *Jakarta*, *Ceylon* as *Sri Lanka*, *Formosa* as *Taiwan* and *Bantam* as *Banten*. The names the VOC used, and other historical and local names, are alternative labels. Following the project's ethics policy, the preferred label was chosen for findability, clarity and ethical considerations.
 
@@ -135,7 +135,7 @@ Every entity and concept has one **preferred label** per language, the name unde
 
 ## The datasets they are based on
 
-The final reference data is built from datasets that Globalise and its collaborators published while the project was under way. Each of these is available on [DataverseNL](https://dataverse.nl/dataverse/globalise) with detailed documentation: a description of the sources and methods, and a *data envelope* that sets out the dataset's scope, known biases and sensitive content. This page summarises what each type of reference data is based on and what you can expect from it. For details, consult the documentation of the individual datasets.
+The final reference data is built from datasets that the Globalise project and its collaborators published while the project was under way. Each of these is available on [DataverseNL](https://dataverse.nl/dataverse/globalise) with detailed documentation: a description of the sources and methods, and a *data envelope* that sets out the dataset's scope, known biases and sensitive content. This page summarises what each type of reference data is based on and what you can expect from it. For details, consult the documentation of the individual datasets.
 
 <!-- Source for this section: descriptions, data envelopes and documentation of the datasets on DataverseNL, downloaded 2026-10-01. -->
 
@@ -205,7 +205,7 @@ Occupations, ranks, statuses and forms of address of persons are concepts in the
 
 > **Final reference data — to be added:** a description of the final ships reference data, the number of records, and how it was compiled from the datasets listed below.
 
-**Based on:** the Dutch-Asiatic Shipping (DAS) database, which records the voyages of VOC ships (and those of its predecessors) between the Netherlands and Asia from 1595 to 1795: 4,722 outbound and 3,359 homebound voyages. Globalise published an enriched version in which individual ships are identified.
+**Based on:** the Dutch-Asiatic Shipping (DAS) database, which records the voyages of VOC ships (and those of its predecessors) between the Netherlands and Asia from 1595 to 1795: 4,722 outbound and 3,359 homebound voyages. The Globalise project published an enriched version in which individual ships are identified.
 
 **What to expect:** ships that sailed between the Netherlands and Asia. Ships that only sailed within Asia are not covered by this source. Uncertain dates and gaps in the original database are inherited. Kinds of ships are concepts in the thesaurus (*Ship types*).
 
@@ -269,6 +269,9 @@ Document descriptions and document types (see [How the data was produced](/pages
 * SKOS Thesauri for VOC Archival Document Classification: the TANAP document classification and a simplified Globalise classification. <https://doi.org/10.34894/B2WBZZ>
 * Overzicht van Generale Missiven in het archief van de VOC, 1.04.02: the *Generale Missiven* identified in the archive, 1618–1793. <https://doi.org/10.34894/SRDMFU>
 * GLOBALISE – VOC Document Segmentation Dataset: manually segmented inventories, for training and evaluating document segmentation. <https://doi.org/10.34894/XAJ12C>
+* Early Modern Dutch Colonial Court Records (Resilient Diversity project): court cases of the Councils of Justice of Batavia and the Cape of Good Hope, used as documents, with their titles, in volumes without an index.
+
+<!-- TODO: add the DOI or URL of the Early Modern Dutch Colonial Court Records dataset. -->
 
 ## How reference data appears on the portal
 

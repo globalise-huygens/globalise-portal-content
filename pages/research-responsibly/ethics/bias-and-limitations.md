@@ -45,13 +45,13 @@ The limitations of the VOC archives themselves carry over to everything on this 
 
 ### Part of the VOC archives
 
-Globalise does not cover all VOC archives, nor even all of the VOC archive at the Nationaal Archief (Dutch National Archives). It works with the *Overgekomen Brieven en Papieren* (OBP) in series 1.04.02: about 6,900 inventory numbers and about 4.8 million pages, dating roughly from 1605 to 1794. Among other things, the resolutions of the company's directors, the correspondence sent from the Dutch Republic to Asia, and VOC archives held elsewhere in the world are not included. The guide lists [what Globalise covers](/pages/research-responsibly/voc-archives-guide.md#how-much-of-the-10402-series-of-the-voc-archives-does-the-globalise-project-cover) and [what it does not](/pages/research-responsibly/voc-archives-guide.md#what-sections-in-the-10402-series-of-the-voc-archives-does-the-globalise-project-not-cover).
+Globalise does not cover all VOC archives, nor even all of the VOC archive at the Nationaal Archief (Dutch National Archives). The Globalise project worked with the *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series) in series 1.04.02: about 6,900 inventory numbers and about 4.8 million pages, dating roughly from 1605 to 1794. Among other things, the resolutions of the company's directors, the correspondence sent from the Dutch Republic to Asia, and VOC archives held elsewhere in the world are not included. The guide lists [what Globalise covers](/pages/research-responsibly/voc-archives-guide.md#how-much-of-the-10402-series-of-the-voc-archives-did-the-globalise-project-cover) and [what it does not](/pages/research-responsibly/voc-archives-guide.md#what-sections-in-the-10402-series-of-the-voc-archives-did-the-globalise-project-not-cover).
 
 ### Languages and scripts
 
 Almost 97% of the pages in the Globalise corpus (about 4.3 million pages) are written in Dutch. The remainder includes pages in other European languages, such as French, English, Latin and Portuguese, and in Asian languages, such as Malay, Persian, Sinhala and Chinese.
 
-The text recognition software used by Globalise cannot read non-Latin scripts. Pages written in, for example, Chinese, Persian or Sinhala are turned into strings of seemingly random characters and cannot be searched for their content. For about 3% of pages, no language could be identified automatically, and pages with too little continuous text, such as tables and blank pages, were left out of the automatic identification. See [The Languages of GLOBALISE](/pages/about/project/archive/blog/the-languages-of-globalise.md) for details.
+The text recognition software used by the Globalise project cannot read non-Latin scripts. Pages written in, for example, Chinese, Persian or Sinhala are turned into strings of seemingly random characters and cannot be searched for their content. For about 3% of pages, no language could be identified automatically, and pages with too little continuous text, such as tables and blank pages, were left out of the automatic identification. See [The Languages of GLOBALISE](/pages/about/project/archive/blog/the-languages-of-globalise.md) for details.
 
 ## Computational processing
 
@@ -67,7 +67,7 @@ Content to be developed.
 
 ### Entities and events
 
-Given the size of the archive, Globalise relies on machine learning to recognise entities (such as people, places and polities) and events in the text. Only part of these annotations could be checked by hand. Annotations on the portal are therefore model output: they can be wrong, incomplete or inconsistent, and they should not be treated as established facts.
+Given the size of the archive, the Globalise project relied on machine learning to recognise entities (such as people, places and polities) and events in the text. Only part of these annotations could be checked by hand. Annotations on the portal are therefore model output: they can be wrong, incomplete or inconsistent, and they should not be treated as established facts.
 
 ### Evaluation of entity and event recognition
 
@@ -77,7 +77,7 @@ Content to be developed.
 
 ### Bias in models
 
-The project's [ethics policy](/pages/research-responsibly/ethics/policy.md) commits to checking its models for discriminatory or biased results, through careful selection of training and test data by people with relevant historical expertise, and through qualitative and quantitative analysis of model output.
+The project's [ethics policy](/pages/research-responsibly/ethics/policy.md) committed it to checking its models for discriminatory or biased results, through careful selection of training and test data by people with relevant historical expertise, and through qualitative and quantitative analysis of model output.
 
 Content to be developed.
 

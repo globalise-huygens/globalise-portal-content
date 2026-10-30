@@ -227,7 +227,7 @@ See also the sections on Southern Africa and Sri Lanka, and the source editions 
 
 ### Editions of VOC sources
 
-Many VOC documents have been published in printed or online editions. Some of these, such as the *Generale Missiven*, are part of the series that Globalise works with.
+Many VOC documents have been published in printed or online editions. Some of these, such as the *Generale Missiven*, are part of the series that Globalise covers.
 
 * Blussé, J. L., M. E. van Opstall, and Ts’ao Yung-Ho, eds. 1986. *De dagregisters van het kasteel Zeelandia, Taiwan 1629-1662*. Vol. 1. Martinus Nijhoff. <http://resources.huygens.knaw.nl/retroboeken/taiwan/#page=0&accessor=toc&view=homePane>. <!-- Blusse1986b -->
 * Blussé, Leonard, Natalie Everts, and Evelien Frech, eds. 1999. *The Formosan Encounter: Notes on Formosa’s Aboriginal Society: A Selection of Documents from Dutch Archival Sources, Volume I: 1623-1635*. Vol. 1. Shung Ye Museum of Formosan Aborigines. <!-- Blusse1999 -->

@@ -7,7 +7,7 @@
   creator: ""
   date: ""
   archival_reference: ""
-  collection: """VOC archives"""
+  collection: "VOC archives"
   rights_note: ""
   notes: ""
 
@@ -39,7 +39,7 @@
 
 - id: "voc-archives-guide-image2"
   file: "/assets/images/resources/voc-archives-guide/image2.jpg"
-  title: "Archival inventory of the Copied Letter Series of the VOC"
+  title: "Archival inventory of the Copied Letters series (OBP) of the VOC"
   credit: "Dave Straatmeyer"
   source: ""
   licence: ""
@@ -472,7 +472,7 @@
   date: "c. 1662"
   archival_reference: ""
   collection: ""
-  rights_note: "The caption reads \"license CCO\", taken to be a typo for CC0."
+  rights_note: 'The caption reads "license CCO", taken to be a typo for CC0.'
   notes: "Caption on the original blog post: Andries Beeckman, Batavia Castle (c. 1662), Rijksmuseum Amsterdam, license CCO."
 
 - id: "archive-closeness-at-a-distance-the-port-town-paradox-image"
@@ -1127,7 +1127,7 @@
 
 - id: "archive-looking-back-and-ahead-access-and-research-in-a-ch-Event1-2048x1218"
   file: "/assets/images/about/archive/blog/looking-back-and-ahead-access-and-research-in-a-changing-archive/Event1-2048x1218.jpg"
-  title: "A screenshot of the online roundtable \"The Changing Archive: Digitization, Translation and HIstorical Research on the Early Modern Indian Ocean World\" with some of the speakers on screen."
+  title: 'A screenshot of the online roundtable "The Changing Archive: Digitization, Translation and HIstorical Research on the Early Modern Indian Ocean World" with some of the speakers on screen.'
   credit: ""
   source: "https://globalise.huygens.knaw.nl/wp-content/uploads/2025/12/Event1-2048x1218.jpg"
   licence: ""
@@ -1252,7 +1252,7 @@
   date: ""
   archival_reference: ""
   collection: ""
-  rights_note: "Caption reads \"photograph by the author\"; the author of the blog post is Linda Robertus. Objects held by the Maritiem muZEEum Zeeland. No licence given."
+  rights_note: 'Caption reads "photograph by the author"; the author of the blog post is Linda Robertus. Objects held by the Maritiem muZEEum Zeeland. No licence given.'
   notes: "Caption on the original blog post: Surgical objects recovered from the wreck of the VOC ship Rooswijk Maritiem muZEEum Zeeland, photograph by the author."
 
 - id: "archive-building-bridges-archives-as-spaces-of-reconnectio-image"
@@ -1438,4 +1438,3 @@
   collection: ""
   rights_note: "Licence as stated for all content of the Globalise documentation website."
   notes: "An enlarged version with background (GLOBALISE-ResearchThemes_bg.png) is stored in the same folder and linked from the page."
-

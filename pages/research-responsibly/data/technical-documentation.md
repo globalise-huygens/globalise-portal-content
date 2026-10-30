@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-10-30"
 
 featured: false
 
@@ -61,13 +61,40 @@ The languages of all pages in Latin script were identified automatically; pages 
 | --- | --- | --- |
 | Globalise documents | Database and scripts for identifying documents, and for exporting the IIIF collection and manifests | <https://github.com/globalise-huygens/documents> |
 | TANAP index and establishment reconstructions | Introduction to the TANAP index, its coverage, and document lists per VOC establishment (Renate Smit, 2025) | <https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/> |
+| Document segmentation model | Code, method and evaluation of the segmentation (`segmentation/`), branch `llm-definitive-doc` | <https://github.com/globalise-huygens/documents/blob/llm-definitive-doc/README.md#document-segmentation-segmentation> |
 | GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799) | Document-level index entries from the TANAP and Nationaal Archief finding aids | <https://doi.org/10.34894/OP20NM> |
+| Early Modern Dutch Colonial Court Records (Resilient Diversity project) | Court cases of the Councils of Justice of Batavia and the Cape, used as documents in volumes without an index | *To be added* |
 | GLOBALISE – VOC Document Segmentation Dataset | Dataset for training and evaluating document segmentation | <https://doi.org/10.34894/XAJ12C> |
 | SKOS Thesauri for VOC Archival Document Classification | Document types: the TANAP classification and the Globalise classification | <https://doi.org/10.34894/B2WBZZ> |
 
 Publication: Schnober et al. (2024), *Page Embeddings: Extracting and Classifying Historical Documents with Generic Vector Representations* (`Schnober2024` in the bibliography).
 
-<!-- TODO: document which identification methods were applied to the portal data, with counts per method and an assessment of their quality. -->
+### The segmentation model
+
+The documents were identified with a single segmentation model, applied to all 6,914 inventory numbers. A plain-language summary and the counts per kind of document are on [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
+
+1. **Scan features.** Predictors describe every scan: opening and closing formulas in the text, blank pages and text length, text that recurs on nearby scans, position in the inventory, signature marks, page and folio numbers (cleaned of misreadings and restarts), running headers and header dates, language changes, marginalia, page layout from the PageXML (where text starts and stops, gaps, headings, catch-words), and GloBERTise page embeddings with kNN start scores (Schnober et al. 2024).
+2. **Scan models.** Logistic regressions on each scan's features and those of its neighbours give the log-odds that a document starts on the scan, ends on it, starts on the same scan where the previous one ends, or that the scan is not part of a document. They were fitted on the 22 hand-segmented inventories, with a prior on document length.
+3. **Table-of-contents alignment.** A monotone dynamic programme places the index entries, in index order, on their start scans: on page and folio numbers found on the scans (exact or interpolated), on text matching the entry's description, and on registers of papers recognised by the entries they list. Titles that announce a number of documents (*Vier brieven van Ternaten ...*) make the model look for that many parts. Entries that cannot be placed this way go to the strongest start evidence between their placed neighbours.
+4. **Segmentation.** A second dynamic programme over all scans, with the placed entries fixed, decides every document's start and end and the type of each boundary (next document on the same scan, the next scan, or after non-document scans). Documents are labelled as index entries, parts of a preceding entry (such as enclosures), unindexed documents, or court cases.
+
+**Evaluation** (cross-validated on the hand-segmented inventories, exact scan):
+
+| | With index | Without index |
+| --- | --- | --- |
+| Start F1 | 65.1 | 50.6 |
+| End F1 | 61.2 | 49.5 |
+| *Generale Missiven*: starts found | 87.6% | 59.6% |
+
+Index entries placed on the right scan: 78.3% in the hand-segmented inventories (91.4% within one scan), 73.7% in the *Generale Missiven*.
+
+**Titles and types.** Documents without a VOC title get an inferred title (*type, place, date*). The type comes from a classifier on the opening of the first page and the end of the last page, trained on documents with an index entry (cross-validated: 84% right for the 78% of documents to which it assigns a type, at a confidence threshold of 0.5); place and date come from the closing formula, read with the Globalise entity annotations. Dates of index entries missing from the enriched index were parsed from the descriptions (97% agreement with the enriched dates where both exist).
+
+**Versions.** Scans holding the same text in two inventories are linked (word 3-gram containment of at least 0.3 between inventories within two years of each other), in about 168,000 links.
+
+<!-- TODO: link the README on main once the llm-definitive-doc branch has been merged. Add the DOI of the Early Modern Dutch Colonial Court Records dataset. -->
+
+<!-- Sources: README of the documents repository (branch llm-definitive-doc) and its database, queried 2026-10-30. -->
 
 ## GloBERTise
 

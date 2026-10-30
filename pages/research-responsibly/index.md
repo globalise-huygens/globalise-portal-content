@@ -33,7 +33,7 @@ Content to be developed.
 Why critical interpretation of the VOC archives and of computationally produced data is essential, and what that means in practice.
 
 **[Guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md)**
-A practical introduction to the VOC, its record-keeping and what the Globalise project makes available.
+A practical introduction to the VOC, its record-keeping and what the Globalise project made available.
 
 **[Data & documentation](/pages/research-responsibly/data/index.md)**
 What the Globalise data is, how it was produced, how it is structured, and how you can access and reuse it.
