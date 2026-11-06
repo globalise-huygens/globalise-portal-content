@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-30"
+dateUpdated: "2026-11-06"
 
 featured: false
 
@@ -63,7 +63,7 @@ The languages of all pages in Latin script were identified automatically; pages 
 | TANAP index and establishment reconstructions | Introduction to the TANAP index, its coverage, and document lists per VOC establishment (Renate Smit, 2025) | <https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/> |
 | Document segmentation model | Code, method and evaluation of the segmentation (`segmentation/`), branch `llm-definitive-doc` | <https://github.com/globalise-huygens/documents/blob/llm-definitive-doc/README.md#document-segmentation-segmentation> |
 | GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799) | Document-level index entries from the TANAP and Nationaal Archief finding aids | <https://doi.org/10.34894/OP20NM> |
-| Early Modern Dutch Colonial Court Records (Resilient Diversity project) | Court cases of the Councils of Justice of Batavia and the Cape, used as documents in volumes without an index | *To be added* |
+| Early Modern Dutch Colonial Court Records (Resilient Diversity project) | Court cases of the Councils of Justice of Batavia and the Cape, used as documents in volumes without an index | <https://doi.org/10.34894/S1BIHJ> |
 | GLOBALISE – VOC Document Segmentation Dataset | Dataset for training and evaluating document segmentation | <https://doi.org/10.34894/XAJ12C> |
 | SKOS Thesauri for VOC Archival Document Classification | Document types: the TANAP classification and the Globalise classification | <https://doi.org/10.34894/B2WBZZ> |
 
@@ -71,30 +71,109 @@ Publication: Schnober et al. (2024), *Page Embeddings: Extracting and Classifyin
 
 ### The segmentation model
 
-The documents were identified with a single segmentation model, applied to all 6,914 inventory numbers. A plain-language summary and the counts per kind of document are on [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
+The documents were identified with a single segmentation model, applied to all 6,914 inventory numbers and stored as the method *Segmentation model* (final run and import: 30 October 2026). A plain-language summary and the counts per kind of document are on [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
 
-1. **Scan features.** Predictors describe every scan: opening and closing formulas in the text, blank pages and text length, text that recurs on nearby scans, position in the inventory, signature marks, page and folio numbers (cleaned of misreadings and restarts), running headers and header dates, language changes, marginalia, page layout from the PageXML (where text starts and stops, gaps, headings, catch-words), and GloBERTise page embeddings with kNN start scores (Schnober et al. 2024).
-2. **Scan models.** Logistic regressions on each scan's features and those of its neighbours give the log-odds that a document starts on the scan, ends on it, starts on the same scan where the previous one ends, or that the scan is not part of a document. They were fitted on the 22 hand-segmented inventories, with a prior on document length.
-3. **Table-of-contents alignment.** A monotone dynamic programme places the index entries, in index order, on their start scans: on page and folio numbers found on the scans (exact or interpolated), on text matching the entry's description, and on registers of papers recognised by the entries they list. Titles that announce a number of documents (*Vier brieven van Ternaten ...*) make the model look for that many parts. Entries that cannot be placed this way go to the strongest start evidence between their placed neighbours.
-4. **Segmentation.** A second dynamic programme over all scans, with the placed entries fixed, decides every document's start and end and the type of each boundary (next document on the same scan, the next scan, or after non-document scans). Documents are labelled as index entries, parts of a preceding entry (such as enclosures), unindexed documents, or court cases.
+**Inputs.**
 
-**Evaluation** (cross-validated on the hand-segmented inventories, exact scan):
+* The index entries of the *Digitized Indexes* (TANAP index and Nationaal Archief typescripts), combined with the corrected TANAP list in the physical order of the volumes. The *Digitized Indexes* list some documents more than once, once for each settlement the indexers filed them under (in inventory 3558, OBP 95419 under *Batavia* and 95420 under *Japan* describe the same report). Entries in the same inventory with the same description, folios and dates were merged into one document, linked to all of their settlements and index identifiers (991 entries in 943 groups).
+* The 933 *Generale Missiven* identified by hand, which override the model (start, extent, title and dates).
+* The court cases of the [*Early Modern Dutch Colonial Court Records*](https://doi.org/10.34894/S1BIHJ) (Resilient Diversity project), used for *Raad van Justitie* volumes without an index. A case with a start and end scan is a fixed document, and the ranges of the individual accused are its parts.
+* The HTR text, the PageXML layout and the page metadata of every scan (folio numbers, headers, signatures, blank pages), and GloBERTise page embeddings. The embeddings cover 95% of the scans; nearly all scans without one are blank.
+* As ground truth, the 22 inventories segmented by hand, published as the [*GLOBALISE – VOC Document Segmentation Dataset*](https://doi.org/10.34894/XAJ12C): documents, parts, documents sharing a scan, and the types of non-document pages.
+
+**Method.**
+
+1. **Scan features.** Predictors describe every scan:
+   * opening and closing formulas in the text, and a closing followed by a new opening on the same page;
+   * how well the text matches an index entry's description;
+   * blank pages, text length, and text that recurs on nearby scans (such as a small sheet scanned on top of a larger page);
+   * position in the inventory and signature marks;
+   * page and folio numbers, cleaned of misreadings, stamps and restarts of the numbering;
+   * running headers and header dates, language changes and marginalia;
+   * page layout from the PageXML: where text starts and stops, gaps, headings and catch-words;
+   * GloBERTise page embeddings: kNN start scores, similarity with the neighbouring scans, and linear probes for first, last and non-document pages.
+2. **Scan models.** Four logistic regressions turn the features into scores per scan. Each answers one question:
+   * **start:** does a document, or a part of one, begin on this scan?
+   * **end:** does a document end on this scan?
+   * **same scan:** given that a document starts here, does the previous one end on this same scan? This is typical of copy-books, in which one letter ends halfway down a page and the next copy begins below it.
+   * **non-document:** is the scan a cover, blank page, table of contents, title page or other page outside the documents?
+
+   Each regression combines 72 features of the scan itself with the same features of its neighbours, because a boundary is often recognised by what lies next to it. For example, a start is likely after a scan that ends with a closing formula, or is followed by a blank page. The weights were fitted on the 22 hand-segmented inventories. A missing feature, such as the layout of a scan without PageXML, counts as neutral.
+
+   The result is a score per scan for each question, expressed as log-odds: 0 means a 50% chance, +2 about 88%, and −2 about 12%. Among the strongest signals are:
+   * for a start: text beginning at the very top of the page, and text that differs from that of the previous scan (measured with the embeddings);
+   * for an end: the page numbering starting again on the next scan;
+   * for both: being near the start or end of the inventory, where covers and indexes are bound.
+
+   On their own, these scores treat each scan separately. A **length prior** adds how plausible a document of a given length is, learned from the documents in the hand-segmented inventories (most are short: half have three scans or fewer). It discourages, for example, splitting a long letter into many short pieces on weak evidence.
+3. **Index alignment.** The index lists the documents of a volume in the order in which they are bound, so their start scans must follow that order: the alignment is *monotone*. It works in two steps.
+
+   First, for every entry, the model lists up to 20 candidate start scans, each with a score:
+   * **exact:** a scan whose page or folio number equals the entry's start folio, with a correction for entries starting on the verso of a leaf;
+   * **interpolated:** scans near the position estimated from the nearest numbered pages, scoring less the further they are from it (the number of scans per folio is estimated per volume, as it differs between paginated and foliated volumes and between single and double scans);
+   * **text:** scans whose opening words match the entry's description;
+   * **register:** for registers of papers, pages recognised by the entries they list.
+
+   Each candidate's score also includes the scan's start score from the scan models, and whether the date in the running header agrees with the entry's date.
+
+   Second, the model chooses one candidate for each entry so that the entries never go backwards in the volume and the total score is highest. Choosing each entry's best candidate on its own would let a single misread folio number pull an entry far out of place. Instead, the total also scores each pair of consecutive entries:
+   * **span:** how well the number of scans between them fits the number of folios that the index gives the first one;
+   * **shared scan:** a cost when both start on the same scan (a letter and its enclosures can, but this costs more the further apart their folios are in the index, and is ruled out after an entry that covers more than one folio);
+   * **skipped entry:** a cost for every entry left without a place, so that entries are only skipped when no candidate fits.
+
+   Trying all combinations would be impossible for volumes with hundreds of entries. A *dynamic programme* finds the best one efficiently: it works through the entries in order and keeps, for every candidate of the current entry, only the best placement of the entries before it.
+
+   Entries without a usable candidate are then placed between their placed neighbours, on the strongest start evidence, drawn towards the position their own folio implies. Titles that announce a number of documents (*Vier brieven van Ternaten ...*; 6.6% of the index titles) make the model look for that many parts: it finds 71% of the starts inside such entries, against 57% without this.
+4. **Segmentation.** A second dynamic programme divides the whole volume into documents and stretches of non-document scans. Of all possible divisions, it chooses the one with the highest total score. The total adds up:
+   * for every document, the start score of its first scan, the end score of its last scan and the length prior;
+   * for every boundary, the same-scan score: the next document starts on the same scan, on the next scan, or after non-document scans;
+   * for every scan outside the documents, the non-document score.
+
+   The placed index entries are fixed starts, a document never starts on a blank scan, and only blank scans (or scans that mostly repeat text from nearby scans) may lie outside documents.
+
+   Because the whole division is scored at once, a single strong signal is not always enough for a boundary. In one case, a scan had a start probability of 79% (+1.32), but the previous scan had an end probability of only 54% (+0.17). Splitting the 32-scan document there into documents of 12 and 20 scans cost 1.91 in the length prior, so the split lost by 0.42 and was not made.
+
+   Documents are then labelled as index entries, court cases, unindexed documents, or parts. A part is a document that falls within the page range of the preceding index entry, such as an enclosure or appendix. Index entries are never parts of each other. Title pages lie outside documents, as in the hand-segmented inventories.
+
+**Evaluation.** The model was cross-validated on the 22 hand-segmented inventories: each inventory was scored with a model fitted on the other 21, including the embedding probes. The *Generale Missiven* were used for evaluation only. With an exact scan match (±1 scan in brackets):
 
 | | With index | Without index |
 | --- | --- | --- |
-| Start F1 | 65.1 | 50.6 |
-| End F1 | 61.2 | 49.5 |
-| *Generale Missiven*: starts found | 87.6% | 59.6% |
+| Top-level starts, F1 | 80.6 (91.3) | 53.0 (66.0) |
+| All starts, including parts, F1 | 69.2 (78.2) | 53.4 (64.0) |
+| All ends, F1 | 63.6 (77.1) | 52.2 (63.8) |
+| End correct, given a correct start | 66.8% (80.6%) | 58.3% (70.6%) |
+| Same-scan boundaries, F1 | 89.3 | 90.0 |
+| Non-document scans, F1 | 69.2 | 67.9 |
+| *Generale Missiven*: starts found | 88.9% (94.0%) | 64.9% (70.4%) |
+| *Generale Missiven*: false starts per 100 scans | 0.14 | 0.15 |
 
-Index entries placed on the right scan: 78.3% in the hand-segmented inventories (91.4% within one scan), 73.7% in the *Generale Missiven*.
+* **Index entries placed on the right scan.** 79.4% in the hand-segmented inventories (91.2% within one scan), and 76.3% in the *Generale Missiven* (81.9%).
+* **Baseline.** For comparison, a baseline that splits on blank pages and signatures finds 71.7% of the starts of the *Generale Missiven*, with 0.35 false starts per 100 scans.
+* **Parts without an index.** In the hand-segmented inventories, some documents are parts of others, such as enclosures. Without an index, the model has no way to tell this, so when it correctly finds where an enclosure begins, it reports that as the start of an ordinary document. Strictly, the top-level score would count such a start as a false start, although the start itself is right. These starts (373) are therefore not counted in the top-level score without an index. Counted as errors, the F1 score would be 47.0 instead of 53.0.
+* **Title pages.** The model still starts a document on its title page in about one in five cases.
+* **Choice of test set.** The *Generale Missiven* are much longer than most documents (median 49 scans, against a median of 3 in the hand-segmented inventories and in the archive as a whole), so they mainly test long documents. Models were therefore chosen on the hand-segmented inventories.
 
-**Titles and types.** Documents without a VOC title get an inferred title (*type, place, date*). The type comes from a classifier on the opening of the first page and the end of the last page, trained on documents with an index entry (cross-validated: 84% right for the 78% of documents to which it assigns a type, at a confidence threshold of 0.5); place and date come from the closing formula, read with the Globalise entity annotations. Dates of index entries missing from the enriched index were parsed from the descriptions (97% agreement with the enriched dates where both exist).
+**Titles, dates and types.**
 
-**Versions.** Scans holding the same text in two inventories are linked (word 3-gram containment of at least 0.3 between inventories within two years of each other), in about 168,000 links.
+* **Who made the title.** Every document records the source of its title (`title_source`): `VOC` (an index entry, or a *Generale Missive* identified by hand), `Resilient Diversity` (court cases) or `inferred`. Titles not given by the VOC are stored in square brackets.
+* **Inferred titles** take the form *type, place, date*.
+  * The type comes from a classifier on the opening of the first page and the end of the last page, trained on documents with an index entry. Cross-validated, it is right for 84% of the documents, and assigns a type to 78% of them at a confidence threshold of 0.5.
+  * Place and date come from the closing formula on the last page or the page before, read with the Globalise entity annotations; failing that, from the last full date on the last page or the date in the running header.
+  * Places are first matched to the **VOC gazetteer**: the Globalise dataset on the [organisational structure of the VOC](https://doi.org/10.34894/2VNEUG). It lists the Company's offices and establishments (247 in all, such as the *comptoir* of Surat or the government of Ambon), with their names and spelling variants, their place in the hierarchy of the Company and, by period, the place where they were located (as a GLOB identifier of the places dataset). The closing formula of a letter usually names such an office (*Gamron*, *Cochin*). A place is matched to an exact label of the gazetteer, then to an exact name or variant in the [Globalise places dataset](https://doi.org/10.34894/UFFFNO), and finally to the closest gazetteer label, to allow for misreadings. It is shown as written, with the preferred label of the places dataset in brackets: *Batavia (Jakarta)*.
 
-<!-- TODO: link the README on main once the llm-definitive-doc branch has been merged. Add the DOI of the Early Modern Dutch Colonial Court Records dataset. -->
+  <!-- TODO: the organisational structure dataset (https://doi.org/10.34894/2VNEUG) has not yet been published on DataverseNL; check the link once it has. -->
+* **Dates of index entries.** Where the enriched index has no date, dates were parsed from the entry's description. On entries whose dates were known, the parser agreed with them for 97% of begin and end dates. Missing years of dates such as *dato 14 September* were inferred from the typescript's year and the neighbouring entries; with years hidden as a test, this was right in 99.3% of cases with a receipt date and 92.1% without.
+* **Identifiers.** Each document is linked to its Globalise document type (and, for index entries, the TANAP type), to its index identifiers (OBP, TANAP, typescript, and OBP NT, the Nationaal Archief's new detailed finding aid), and to the place as a GLOB identifier of the Globalise places dataset (`place_glob_id`). A few places of inferred titles are missing from the places dataset and have no GLOB identifier.
+* **Evidence.** How the model found each document is stored with it as JSON evidence. This covers the index placement, the page numbers and dates read, the start and end probabilities, and their main reasons.
 
-<!-- Sources: README of the documents repository (branch llm-definitive-doc) and its database, queried 2026-10-30. -->
+<!-- TODO: link the README on main once the llm-definitive-doc branch has been merged. -->
+
+<!-- TODO: deposit the segmentation method on DataverseNL (code, fitted model and the required input files, such as the index files, page metadata and embeddings), and link the deposit here. -->
+
+<!-- TODO: check where on the portal a user can find the source of a title (title_source) and the evidence of a document, and refer to it here. -->
+
+<!-- Sources: README of the documents repository (branch llm-definitive-doc), cross-validated evaluation of the final model (evaluate-20261105b.log, 5 November 2026), and its database, queried 2026-11-06. -->
 
 ## GloBERTise
 

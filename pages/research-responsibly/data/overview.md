@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-30"
+dateUpdated: "2026-11-06"
 
 featured: false
 
@@ -78,9 +78,18 @@ Pages do not stand alone. The portal organises them in three levels:
 
 * **Collection.** All pages on Globalise belong to one collection: the *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series) in series 1.04.02 of the VOC archive at the Nationaal Archief, comprising about 6,900 inventory numbers.
 * **Inventory.** An inventory number usually refers to one bound volume of documents, from a handful to over a thousand pages. Inventory 1056, for example, contains 550 scans of documents concerning VOC settlements such as Bantam, Ambon, Ternate and Coromandel, and is dated 1614.
-* **Document.** Within an inventory, pages are grouped into documents: letters, reports, journals, lists and other items. A volume was not originally divided into documents in a way a computer can read, so the Globalise project identified where documents begin and end with a segmentation model, guided by historical indexes where these exist. Documents do not overlap, but they can contain parts, such as enclosures. Covers, blank pages, tables of contents and title pages belong to no document. Titles in square brackets, such as *[Letter, Surat, 26 April 1723]*, were made by the project from the document's text; other titles come from the VOC's own tables of contents. Document boundaries and inferred titles are model output and can be wrong. See [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
+* **Document.** Within an inventory, pages are grouped into documents: letters, reports, journals, lists and other items. A volume was not originally divided into documents in a way a computer can read, so the Globalise project identified where documents begin and end with a segmentation model, guided by historical indexes where these exist. Documents do not overlap, but in volumes with an index they can contain parts, such as enclosures. Covers, blank pages, tables of contents and title pages belong to no document. Titles without brackets come from the VOC's own tables of contents. Titles in square brackets were not given by the VOC: most were made by the project from the document's text, such as *[Letter, Surat, 26 April 1723]*, and those of court cases come from the court records dataset they were taken from. Document boundaries and inferred titles are model output and can be wrong. See [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
 
 Information about inventories, such as their dates, titles and the settlements they concern, comes from the Nationaal Archief's inventory of the VOC archive. Titles and types of documents come from historical tables of contents and finding aids, including the [index compiled by the TANAP project](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/), which the Globalise project digitised and extended. See also [TANAP](/pages/learn-get-started/resources/related-projects.md#tanap-towards-a-new-age-of-partnership) under Resources.
+
+Documents with an entry in these finding aids carry its identifiers, so that you can look a document up in them:
+
+* **TANAP id.** The identifier of the entry in the *Digitized Indexes of the Dutch East India Company OBP*. Despite the name, this covers both the TANAP index and the typescript tables of contents of the Nationaal Archief, which the Globalise project combined into [one dataset](https://doi.org/10.34894/OP20NM).
+* **OBP NT id.** The identifier of the entry in a new version of the *nadere toegang* (detailed finding aid) that the Nationaal Archief made for the OBP. This version has not yet been published by the Nationaal Archief.
+
+Documents are classified by type in two ways. Globalise shows its own classification first: a simplified and normalised version of the TANAP classification. For documents with an index entry, the original TANAP category is also given. Both classifications are explained in the documentation of the [Digitized Indexes](https://doi.org/10.34894/OP20NM).
+
+<!-- TODO: check how the TANAP id and OBP NT id are labelled and displayed on the portal, and link to the NT once the Nationaal Archief has published it. -->
 
 <!-- TODO: the segmentation has not yet been integrated into the portal (issue #24). Once it has, check this paragraph against the interface: how parts of documents, title sources and pages outside documents are shown. -->
 

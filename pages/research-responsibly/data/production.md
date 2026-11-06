@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-30"
+dateUpdated: "2026-11-06"
 
 featured: false
 
@@ -54,49 +54,72 @@ Earlier versions of the transcriptions were published on DataverseNL in 2023 and
 
 ## 3. Identifying documents
 
-<!-- Sources for this section: README of the documents repository, branch llm-definitive-doc (https://github.com/globalise-huygens/documents/blob/llm-definitive-doc/README.md), and counts from its database after the import of the full segmentation (method "Segmentation model"), queried 2026-10-30. -->
+<!-- Sources for this section: README of the documents repository, branch llm-definitive-doc (https://github.com/globalise-huygens/documents/blob/llm-definitive-doc/README.md); import log of the final segmentation (30 October 2026), its output file segments.csv and its database, queried 2026-11-06; cross-validated evaluation of the final model (evaluate-20261105b.log). -->
 
 <!-- TODO: the segmentation has not yet been integrated into the portal (see issue #24). Check this section against the portal once it has been. -->
 
-The VOC archive is organised in bound volumes (inventory numbers), each containing many separate documents. Where one document ends and the next begins is not recorded in a form a computer can use, so the Globalise project had to reconstruct it, for all 6,914 inventory numbers. It did so with a **document segmentation model** that combined the historical finding aids with what can be read on the pages themselves.
+The VOC archive is organised in bound volumes (inventory numbers), and a single volume can contain hundreds of separate letters, reports, journals and lists. Where one document ends and the next begins is not recorded in a form a computer can use, so the Globalise project had to reconstruct it for all 6,914 inventory numbers. It did so with a **document segmentation model**, which combined the historical finding aids with what can be read on the pages themselves.
 
-* **Historical finding aids.** Many volumes have tables of contents. The TANAP project used these to describe the individual documents in thousands of OBP volumes, creating the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/). TANAP ran out of funding before it could describe all volumes. To fill part of the gap, the Globalise project digitised typescript tables of contents that the Nationaal Archief made after compiling its inventory of the VOC archive in the 1960s, and combined both into the [*Digitized Indexes of the Dutch East India Company OBP*](https://doi.org/10.34894/OP20NM). Index entries describe a document and give the folio numbers on which it starts and ends.
+### What the model used
+
+* **Historical finding aids.** Many volumes have a table of contents. The TANAP project used these to describe the individual documents in thousands of OBP volumes, creating the [TANAP index](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/). TANAP ran out of funding before it could describe all volumes. To fill part of the gap, the Globalise project digitised typescript tables of contents that the Nationaal Archief made after compiling its inventory of the VOC archive in the 1960s, and combined both into the [*Digitized Indexes of the Dutch East India Company OBP*](https://doi.org/10.34894/OP20NM). An index entry describes a document and gives the folio numbers on which it starts and ends.
 
   Together, the TANAP index and the typescripts cover all OBP volumes of the Amsterdam Chamber (inventory numbers 1053–4447), but only part of those of the Zeeland Chamber (7527–9179 and 10406–10435). For inventory numbers 9180–10405 and 10436–11024, documents can only be identified in other ways.
-* **Reading the pages.** For every scan, the model weighed the signs that a document begins or ends there: opening words (such as *Copia*, *Extract* or a salutation), closing formulas (such as *was geteekent*, or a place and date), signatures, blank pages, page and folio numbers, running headers and the dates in them, the layout of the page, and how much the text resembles that of the neighbouring scans. How much weight each sign gets was learned from 22 inventories in which the documents had been identified by hand.
-* **Placing the index entries.** Where a volume has index entries, the model placed each entry on the scan where its document begins: in most cases by finding the entry's folio numbers on the pages (44% of the entries) or by interpolating between such pages (45%), otherwise by matching the entry's description to the text or by the strongest signs of a new document. The model then looked for further documents that the index does not list, such as enclosures.
-* **Court records.** For volumes of the Councils of Justice of Batavia and the Cape of Good Hope that have no index, the court cases recorded in the *Early Modern Dutch Colonial Court Records* dataset of the Resilient Diversity project were used as documents.
-* **Volumes without an index.** Elsewhere the model relied on the signs on the pages alone.
+
+  Some documents appear in the indexes more than once, once for each settlement they were filed under. These entries were merged into one document, linked to all of its settlements (991 entries).
+
+* **Signs on the pages.** For every scan, the model weighed the signs that a document begins or ends there: opening words (such as *Copia*, *Extract* or a salutation), closing formulas (such as *was geteekent*, or a place and date), signatures, blank pages, page and folio numbers, running headers and the dates in them, the layout of the page, and how much the text resembles that of the neighbouring scans. How much weight each sign gets was learned from 22 inventories in which members of the project team had identified the documents by hand (published as the [*VOC Document Segmentation Dataset*](https://doi.org/10.34894/XAJ12C)).
+* **Documents identified by hand.** The *Generale Missiven*, the general letters from the Governor-General and Council in Batavia to the Gentlemen Seventeen, had already been identified by hand. These 933 letters were taken over as they are.
+* **Court records.** For volumes of the Councils of Justice of Batavia and the Cape of Good Hope that have no index, the court cases recorded in the [*Early Modern Dutch Colonial Court Records*](https://doi.org/10.34894/S1BIHJ) dataset of the Resilient Diversity project were used as documents.
+
+### How documents were found
+
+Where a volume has index entries, the model first placed each entry, in the order of the index, on the scan where its document begins. In most cases it did so by finding the entry's folio numbers on the pages, or by counting on from the nearest numbered pages. Otherwise it matched the entry's description to the text, or chose the strongest signs of a new document between the entries placed before and after it. Registers of papers, lists of the documents a ship brought in, were recognised by the documents they list.
+
+The model then went through the whole volume and decided where every document starts and ends. Documents that the index does not list, such as enclosures and appendices, became **parts** of the index entry they fall under. Where an index title announces a number of documents (*Vier brieven van Ternaten ...*, "four letters from Ternate"), the model looked for that many parts.
+
+In volumes without an index, the model relied on the signs on the pages alone. It then cannot tell an enclosure from an independent document, so in these volumes every document stands on its own.
 
 ### The result
 
-The segmentation produced 508,143 documents:
+The segmentation produced 508,448 documents:
 
 | | Documents |
 | --- | --- |
-| Documents with an entry in the indexes | 225,230 |
+| Documents with an entry in the indexes | 225,091 |
 | Court cases | 2,609 |
-| Documents not listed in any index | 127,651 |
-| Parts of a larger document, such as enclosures | 152,632 |
+| Documents not listed in any index | 123,552 |
+| Parts of a larger document, such as enclosures | 157,196 |
 
-Documents do not overlap: each scan belongs to at most one document, and parts such as enclosures are recorded as part of the document they belong to. Covers, blank pages, tables of contents and title pages, about 10% of the scans, belong to no document. Of the other scans, about 60% are in documents with an index entry, a third in documents not listed in any index, and 4% in court cases.
+Documents do not overlap: each scan belongs to at most one document, and a part belongs to exactly one larger document. Covers, blank pages, tables of contents and title pages at the start or end of a document, about 7% of the scans, belong to no document. Of the scans in documents, almost three quarters are in documents with an index entry (including their parts), just under a quarter in documents not listed in any index, and 3% in court cases.
 
-Where the same text exists in more than one volume, for instance a letter sent both to the Gentlemen Seventeen and to the Zeeland Chamber, or an enclosure copied into another volume, the project recorded the two versions as a link between the scans that hold them (about 168,000 such links), without treating either as the original.
+Part of the archive exists in more than one version: a letter sent both to the Amsterdam and to the Zeeland Chamber, or an enclosure copied into another volume. Borrowing titles and boundaries from an indexed version for a volume without an index was tested, but proved unreliable; those volumes were segmented by the model itself.
 
-### Titles and dates
+### Titles
 
-* **Titles from the VOC.** Documents with an index entry, and *Generale Missiven* identified by hand, have the title that the VOC's own tables of contents gave them (225,104 documents).
-* **Court cases** are titled after the dataset they come from: the parties, the court, the place and the year (2,669 documents).
-* **Titles made by the Globalise project.** All other documents (280,239) have a title inferred from their text, in the form *type, place, date*, and shown in square brackets to make clear that it is not a historical title: for example *[Letter, Surat, 26 April 1723]*. The type comes from a classifier (see *Document types* below). Place and date are usually read from the closing formula at the end of the document (*Bantam den 16 maij 1743*). Places are named by their preferred label in the Globalise places dataset (see [Which name is shown](/pages/research-responsibly/data/reference-data.md#which-name-is-shown-preferred-labels)). Where the type is uncertain, the title starts with *Unknown document*; 23,348 documents have no more than that. Registers of papers, which list the contents of a volume, are titled *Register of papers*.
-* **Dates.** About 81% of the documents have a date. For index entries without a date in the enriched index, the dates were read from the entry's description; on entries whose dates were known, this agreed with them for 97% of the begin and end dates.
+Every title records who made it:
 
-### How reliable is it?
+* **Titles from the VOC.** Documents with an index entry, and *Generale Missiven* identified by hand, have the title that the VOC's own tables of contents gave them (225,104 documents). For 132 index entries the description is empty, so their documents have no title.
+* **Court cases** are titled after the dataset they come from: the parties, the court, the place and the year, for example *[Advocaat-fiscaal van India mr. Adrianus Bergsma contra Jacobus Bunnegam en Pieter Hildernisse; Raad van Justitie, Batavia, 1733]* (2,669 documents, including the parts of cases).
+* **Titles made by the Globalise project.** All other documents (280,543), including the parts of index entries, have a title inferred from their text, in the form *type, place, date*, for example *[Letter, Surat, 26 April 1723]*.
 
-The model was tested on the hand-segmented inventories, each time on an inventory that it had not been trained on. Where a volume has an index, 78% of the index entries were placed on exactly the right scan, and 91% within one scan of it. Finding where documents begin is much harder without an index: measured by the F1 score (which combines how many of the true document starts the model finds and how many of the starts it proposes are right), the model scored 65 out of 100 with an index and 51 without one. In the *Generale Missiven*, which are long documents identified by hand, it found 88% of the starts where an index was available.
+Titles that were not given by the VOC are shown in square brackets, to make clear that they are not historical titles.
 
-Document boundaries are therefore model output, not established facts. For every document, the data records how it was found: which index entry it corresponds to, and which signs on the pages pointed to its beginning and end.
+<!-- TODO: check where on the portal a user can find the source of a title (VOC, court records or inferred), and how a document's evidence (how it was found) is shown. Describe this here. -->
 
-The project also published the hand-segmented inventories as a dataset for training and evaluating such methods (see [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#document-identification)).
+An inferred title is built as follows:
+
+* The **type** comes from a classifier (see *Document types* below). Where the type is uncertain, the title starts with *Unknown document*. Registers of papers are titled *Register of papers*.
+* The **place and date** are usually read from the closing formula at the end of the document (*Bantam den 16 maij 1743*), or else from the last full date on the last page or the date in the running header. The place is given as it is written, followed by its standard name in brackets where the two differ: *Bantam (Banten)*, *Batavia (Jakarta)*. The standard name is the preferred label in the Globalise places dataset (see [Which name is shown](/pages/research-responsibly/data/reference-data.md#which-name-is-shown-preferred-labels)). Places that could not be identified, and ships (*on board the ...*), are left out.
+* The **sender, addressee and subject** are not part of the title. They could not be determined reliably, partly because translators and copyists sign documents too.
+
+23,552 documents have no more than *[Unknown document]* as their title.
+
+### Dates
+
+Documents with an index entry have the dates of that entry. About 146,000 of the 226,000 index entries were dated in the enriched version of the index. For the others, the project read the dates from the entry's description, which dated about 27,000 more entries. Tested on entries whose dates were known, this agreed with the known begin and end dates in 97% of cases. Where a description gives a day and month but no year (*dato 14 September*), the year was worked out from the typescript and the neighbouring entries; this corrected the year of about 2,400 entries for which the enriched index had guessed it wrongly, sometimes by decades. About 41,500 entries still have no date, because their description contains none (*Journael ende grootboeck van de negotie*).
+
+Documents with an inferred title have the date of that title, and court cases the date of the case. In all, 81% of the documents have a date.
 
 ### Document types
 
@@ -104,11 +127,30 @@ Documents are also classified by type, such as letters, resolutions, journals or
 
 * Documents with an index entry have the TANAP category of that entry and the corresponding Globalise type.
 * Court cases are classified as *court document*, and *Generale Missiven* without an index entry as *letter*.
-* For other documents, a classifier trained on the documents with an index entry predicted the Globalise type from the opening of the first page and the end of the last page. It assigned a type only when it was sufficiently confident; tested on documents with a known type, it then assigned one to 78% of them and was right for 84% of these.
+* For other documents, a classifier trained on the documents with an index entry predicted the Globalise type from the opening of the first page and the end of the last page. It assigned a type only when it was sufficiently confident: tested on documents with a known type, it assigned one to 78% of them and was right for 84% of these.
 
 In all, about 83% of the documents have a type.
 
-<!-- TODO: explain how users can see and filter by document type on the portal. Coverage figures of the finding aids follow the TANAP index page (https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/); the description of the Digitized Indexes dataset on DataverseNL gives slightly different ranges. Check and align. Add a link to the Early Modern Dutch Colonial Court Records dataset. -->
+<!-- TODO: explain how users can see and filter by document type on the portal. Coverage figures of the finding aids follow the TANAP index page (https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/); the description of the Digitized Indexes dataset on DataverseNL gives slightly different ranges. Check and align. -->
+
+### How reliable is it?
+
+The model was tested on the 22 hand-segmented inventories, each time on an inventory it had not been trained on.
+
+* **Placing index entries.** 79% of the index entries were placed on exactly the right scan, and 91% within one scan of it.
+* **Finding where documents begin.** This is measured with the F1 score, which combines how many of the true document starts the model finds and how many of the starts it proposes are right (100 is perfect). For documents at the top level, that is, not counting parts, the model scored 81 out of 100 in volumes with an index and 53 in volumes without one. Allowing a margin of one scan, the scores are 91 and 66.
+* **Finding parts.** Parts such as enclosures are harder to find. Counting the starts of parts as well, the model scored 69 with an index and 53 without one.
+* **Long documents.** In the *Generale Missiven*, which are long documents identified by hand, the model found 89% of the starts where an index was available and 65% where it was not. Because these letters are much longer than most documents in the archive, this mainly shows how well the model handles long documents.
+
+A few errors are typical:
+
+* In about one in five cases where a document has a title page, the model starts the document on the title page instead of the first page of text.
+* Where page numbers are missing or misread, documents not listed in the index can be cut too short or run on too long.
+* In volumes without an index, enclosures appear as documents of their own.
+
+Document boundaries and inferred titles are therefore model output, not established facts. For every document, the data records how it was found: which index entry it corresponds to, how that entry was placed, and which signs on the pages pointed to its beginning and end. When the exact extent of a document matters, check it against the scans.
+
+The project also published the hand-segmented inventories as a dataset for training and evaluating such methods: the [*GLOBALISE – VOC Document Segmentation Dataset*](https://doi.org/10.34894/XAJ12C). Details of the model and its evaluation are in the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#document-identification).
 
 ## 4. Recognising entities
 

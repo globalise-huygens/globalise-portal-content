@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-30"
+dateUpdated: "2026-11-06"
 
 featured: false
 
@@ -64,6 +64,18 @@ All transcriptions on the portal were produced automatically using handwritten t
 Content to be developed.
 
 <!-- TODO: add plain-language results of the HTR evaluation (e.g. character error rate), including any known differences in quality between periods, regions, hands or document types. See also the related TODO on pages/about/methods.md. -->
+
+### Documents and their titles
+
+The archive's volumes were not originally divided into documents in a way a computer can read. The Globalise project reconstructed the documents with a segmentation model, guided by historical indexes where these exist. Where a document begins and ends, and the titles of documents not listed in an index, are therefore model output.
+
+The model is markedly less reliable in volumes without an index. These are mostly volumes of the Zeeland Chamber (inventory numbers 9180–10405 and 10436–11024), which neither the TANAP project nor the Nationaal Archief's typescripts describe. In these volumes, enclosures appear as documents of their own.
+
+Titles in square brackets were not given by the VOC. Those made by the project give no more than the type, place and date of a document.
+
+Titles without brackets come from the existing indexes, which follow the VOC's own tables of contents. They are not neutral descriptions. They reflect the Company's perspective: what it considered a document to be about, whom it named and whom it left unnamed, and which papers it grouped together under one entry. A single entry can cover a letter together with the reports, lists, petitions or translations sent with it. By identifying such parts as documents of their own, the Globalise project aimed to make visible what the VOC grouped together, although parts carry only an inferred title.
+
+Document metadata can contain errors. A document may begin or end on the wrong scan, two documents may have been merged into one or one split into two, and an inferred title or date may be wrong, for instance because the closing formula was misread or does not give the place where the document was written. Research that relies on document metadata, for example by counting documents per type, place or year, should therefore look critically at these aspects, and check the scans where the outcome depends on them. See [How the data was produced](/pages/research-responsibly/data/production.md#3-identifying-documents).
 
 ### Entities and events
 
