@@ -119,17 +119,17 @@ Every entity and concept has one **preferred label** per language, the name unde
 
 > **To be added:** a description of the final reference datasets as used on the portal: per type of reference data, what a record contains, the number of records, the version and date, how the dataset was compiled from the datasets listed below, and where it can be downloaded.
 
-| Reference data | Kind | Final dataset | Number of records | Version and date | Download |
-| --- | --- | --- | --- | --- | --- |
-| Places | Entities | *To be added* | *To be added* | *To be added* | *To be added* |
-| Polities and rulers | Entities | *To be added* | *To be added* | *To be added* | *To be added* |
-| Persons | Entities | *To be added* | *To be added* | *To be added* | *To be added* |
-| Ships | Entities | *To be added* | *To be added* | *To be added* | *To be added* |
-| Organisations | Entities | *To be added* | *To be added* | *To be added* | *To be added* |
-| Ethnicities, religious groups and castes | Concepts | *To be added* | *To be added* | *To be added* | *To be added* |
-| Commodities | Concepts | *To be added* | *To be added* | *To be added* | *To be added* |
-| Weights, measures and currencies | Concepts | *To be added* | *To be added* | *To be added* | *To be added* |
-| Thesaurus (all vocabularies) | Concepts | *To be added* | *To be added* | *To be added* | *To be added* |
+| Reference data                           | Kind     | Final dataset                                                     | Number of records        | Version and date         | Download                                       |
+| ---------------------------------------- | -------- | ----------------------------------------------------------------- | ------------------------ | ------------------------ | ---------------------------------------------- |
+| Places                                   | Entities | *To be added*                                                     | *To be added*            | *To be added*            | *To be added*                                  |
+| Polities and rulers                      | Entities | *To be added*                                                     | *To be added*            | *To be added*            | *To be added*                                  |
+| Persons                                  | Entities | *To be added*                                                     | *To be added*            | *To be added*            | *To be added*                                  |
+| Ships                                    | Entities | *To be added*                                                     | *To be added*            | *To be added*            | *To be added*                                  |
+| Organisations                            | Entities | GLOBALISE - Organisations in the Dutch East India Company Archive | 270 organisational units | Version 1, November 2026 | [DataverseNL](https://doi.org/10.34894/2VNEUG) |
+| Ethnicities, religious groups and castes | Concepts | *To be added*                                                     | *To be added*            | *To be added*            | *To be added*                                  |
+| Commodities                              | Concepts | *To be added*                                                     | *To be added*            | *To be added*            | *To be added*                                  |
+| Weights, measures and currencies         | Concepts | *To be added*                                                     | *To be added*            | *To be added*            | *To be added*                                  |
+| Thesaurus (all vocabularies)             | Concepts | *To be added*                                                     | *To be added*            | *To be added*            | *To be added*                                  |
 
 <!-- TODO: fill in this table and the "Final reference data" notes in the sections below. The datasets are converted into RDF knowledge graphs and JSON-LD with the reference-data-pipeline (https://github.com/globalise-huygens/reference-data-pipeline), which has pipelines for places, persons, organisations, polities, ships, measurements and the thesaurus. Remove the "To be added" placeholders before publication. -->
 
@@ -215,12 +215,13 @@ Occupations, ranks, statuses and forms of address of persons are concepts in the
 
 #### Organisations
 
-> **Final reference data — to be added:** a description of the final organisations reference data, the number of records, and the sources it is based on. No dataset on organisations has been published on DataverseNL.
+The project aimed to describe organisations and organisational units that structured the archive of the Dutch East India Company (VOC). Where relevant to the Person reconstructions, the data also includes other organisations that appear in its archives. They include VOC settlements, administrative areas and governing bodies, as well as organisations such as the English East India Company in Bengal and the States-General.
 
-Types of organisations, and the relationships between organisations, are concepts in the thesaurus (*Organisation-related concepts*).
+**Based on:** the organisation of records in the VOC archives, the [GLOBALISE Namebooks dataset](https://doi.org/10.34894/MD59SC), the [GLOBALISE places dataset](https://doi.org/10.34894/UFFFNO), the [Atlas of Mutual Heritage](https://www.atlasofmutualheritage.nl/), and historical studies of the VOC and its administrative institutions. The latter includes _De Archieven van de Verenigde Oostindische Compagnie, 1602–1795_ (Meilink-Roelofsz et al., 1992) and Niemeijer's introduction to _The Central Administration of the VOC Government and the Local Institutions of Batavia (1619–1811)_. Classifications, locations and relationships are documented using historical and archival sources.
 
-<!-- TODO: describe the sources of the organisation reference data. No dataset on organisations has been published on DataverseNL. -->
+**What to expect:** the dataset contains 270 organisational units. The level of detail varies: some units refer to individual settlements, while others cover broader geographical areas. The dataset includes names and some name variants, classifications, locations, relationships between organisations and references to external databases. Some information, particularly for organisations outside the VOC, is less comprehensive. For more name variants, it is recommended to make use of the connections to the GLOBALISE places dataset, WikiData and the Atlas of Mutual heritage. All these sources contain additional labels and information for the organisations.
 
+- Pepping, Kay; Joseph, Lija; Kuruppath, Manjusha; Nijman, Brecht (2026). _GLOBALISE - Organisations in the Dutch East India Company Archive_. [https://doi.org/10.34894/2VNEUG](https://doi.org/10.34894/2VNEUG)
 ### Concepts
 
 #### Ethnicities, religious groups and castes
