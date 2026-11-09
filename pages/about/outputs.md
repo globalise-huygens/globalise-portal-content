@@ -37,13 +37,14 @@ For the data available through this portal, including how to download it and und
 
 The Globalise project published its datasets on [DataverseNL](https://dataverse.nl/dataverse/globalise) as soon as first versions were ready. They include the full transcriptions of the *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series), the ground truth used to train the text recognition models, and the reference datasets and thesauri described on the [Methods](/pages/about/methods.md) page. Datasets are listed with the most recent first.
 
+* Petram, Lodewijk; Smit, Renate; Pepping, Kay; Wissen, Leon van; Nijman, Brecht; Koolen, Marijn (2026). GLOBALISE – Document Segmentation of the VOC Archives. <https://doi.org/10.34894/P826UY>
+* Pepping, Kay; Smit, Renate; Kuruppath, Manjusha (5 August 2026). GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799), v4. <https://doi.org/10.34894/OP20NM>
 * Arnoult, S., Nijman, B., & van Wissen, L. (2025). Code and data for paper ‘Fine-grained Named-Entity Recognition for the East-India Company domain’ (v1.0.0). <https://doi.org/10.5281/zenodo.17457076>
 * Pepping, Kay; Mundakkal, Sailaja; Kuruppath, Manjusha (22 September 2025). GLOBALISE – VOC Census Records of Cochin (1700-1775). <https://doi.org/10.34894/O12KME>
 * Brink, Femke; Pepping, Kay; Kuruppath, Manjusha (22 September 2025). GLOBALISE – Non-Western people described in the General Missive footnotes. <https://doi.org/10.34894/CGQ4J1>
 * MacKenzie, Madison (22 September 2025). Japanese Individuals relevant to the Dutch East India Company Archives. <https://doi.org/10.34894/PPUJZB>
 * Smit, Renate (22 September 2025). GLOBALISE – VOC Document Segmentation Dataset. <https://doi.org/10.34894/XAJ12C>
 * Verkijk, Stella (7 August 2025). Lexicon for lexical event extraction for GLOBALISE. <https://github.com/globalise-huygens/nlp-event-lexical-approach>
-* Pepping, Kay; Smit, Renate; Kuruppath, Manjusha (14 July 2025). GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799), v2. <https://doi.org/10.34894/OP20NM>
 * Vellinga, Henrike; Pham, Thuy Dung; Brink, Femke; Pepping, Kay; Kuruppath, Manjusha (12 May 2025). GLOBALISE – Ethnicities, Religious Groups and Castes in the Archives of the Dutch East India Company (1602-1799). <https://doi.org/10.34894/RI0KGV>
 * Pham, Thuy Dung; Nijman, Brecht; Land, Ruben; Houwer, Andy; Widmer, Marc; Kuruppath, Manjusha (12 May 2025). GLOBALISE – Places in the Dutch East India Company Archives (1602-1799). <https://doi.org/10.34894/UFFFNO>
 * Pepping, Kay (12 May 2025). Overview of People in the TEPC Inventories (1673-1844). <https://doi.org/10.34894/K5BYMN>

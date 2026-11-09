@@ -89,6 +89,8 @@ Documents with an entry in these finding aids carry its identifiers, so that you
 
 Documents are classified by type in two ways. Globalise shows its own classification first: a simplified and normalised version of the TANAP classification. For documents with an index entry, the original TANAP category is also given. Both classifications are explained in the documentation of the [Digitized Indexes](https://doi.org/10.34894/OP20NM).
 
+<!-- TODO: decide the label of the identifier that covers both the TANAP index and the typescripts. In the documents database and the export this is OBP_INDEX (227,156 identifiers), while TANAP (169,940) and DIGITIZED TYPOSCRIPTS (56,564) are separate contexts. If the portal shows OBP_INDEX, change "TANAP id" above. -->
+
 <!-- TODO: check how the TANAP id and OBP NT id are labelled and displayed on the portal, and link to the NT once the Nationaal Archief has published it. -->
 
 <!-- TODO: the segmentation has not yet been integrated into the portal (issue #24). Once it has, check this paragraph against the interface: how parts of documents, title sources and pages outside documents are shown. -->

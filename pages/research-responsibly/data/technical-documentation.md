@@ -61,11 +61,12 @@ The languages of all pages in Latin script were identified automatically; pages 
 | --- | --- | --- |
 | Globalise documents | Database and scripts for identifying documents, and for exporting the IIIF collection and manifests | <https://github.com/globalise-huygens/documents> |
 | TANAP index and establishment reconstructions | Introduction to the TANAP index, its coverage, and document lists per VOC establishment (Renate Smit, 2025) | <https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/> |
-| Document segmentation model | Code, method and evaluation of the segmentation (`segmentation/`), branch `llm-definitive-doc` | <https://github.com/globalise-huygens/documents/blob/llm-definitive-doc/README.md#document-segmentation-segmentation> |
-| GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799) | Document-level index entries from the TANAP and Nationaal Archief finding aids | <https://doi.org/10.34894/OP20NM> |
-| Early Modern Dutch Colonial Court Records (Resilient Diversity project) | Court cases of the Councils of Justice of Batavia and the Cape, used as documents in volumes without an index | <https://doi.org/10.34894/S1BIHJ> |
-| GLOBALISE – VOC Document Segmentation Dataset | Dataset for training and evaluating document segmentation | <https://doi.org/10.34894/XAJ12C> |
-| SKOS Thesauri for VOC Archival Document Classification | Document types: the TANAP classification and the Globalise classification | <https://doi.org/10.34894/B2WBZZ> |
+| GLOBALISE – Document Segmentation of the VOC Archives | The resulting documents, the evaluation, the method, and the code and inputs needed to reproduce them (5.7 GB) | <https://doi.org/10.34894/P826UY> |
+| GLOBALISE – Digitized Indexes of the Dutch East India Company OBP (1602-1799) | Document-level index entries from the TANAP and Nationaal Archief finding aids (version 4.0 used) | <https://doi.org/10.34894/OP20NM> |
+| Early Modern Dutch Colonial Court Records (Resilient Diversity project) | Court cases of the Councils of Justice of Batavia and the Cape, used as documents in volumes without an index (version 3.0 used) | <https://doi.org/10.34894/S1BIHJ> |
+| Overzicht van Generale Missiven in het archief van de VOC | The *Generale Missiven* identified by hand (version 5.0 used, with corrected first and last scans of 3 missives) | <https://doi.org/10.34894/SRDMFU> |
+| GLOBALISE – VOC Document Segmentation Dataset | Dataset for training and evaluating document segmentation (version 3.0 used) | <https://doi.org/10.34894/XAJ12C> |
+| SKOS Thesauri for VOC Archival Document Classification | Document types: the TANAP classification and the Globalise classification (version 1.0 used) | <https://doi.org/10.34894/B2WBZZ> |
 
 Publication: Schnober et al. (2024), *Page Embeddings: Extracting and Classifying Historical Documents with Generic Vector Representations* (`Schnober2024` in the bibliography).
 
@@ -76,9 +77,9 @@ The documents were identified with a single segmentation model, applied to all 6
 **Inputs.**
 
 * The index entries of the *Digitized Indexes* (TANAP index and Nationaal Archief typescripts), combined with the corrected TANAP list in the physical order of the volumes. The *Digitized Indexes* list some documents more than once, once for each settlement the indexers filed them under (in inventory 3558, OBP 95419 under *Batavia* and 95420 under *Japan* describe the same report). Entries in the same inventory with the same description, folios and dates were merged into one document, linked to all of their settlements and index identifiers (991 entries in 943 groups).
-* The 933 *Generale Missiven* identified by hand, which override the model (start, extent, title and dates).
+* The 933 [*Generale Missiven*](https://doi.org/10.34894/SRDMFU) identified by hand, which override the model (start, extent, title and dates).
 * The court cases of the [*Early Modern Dutch Colonial Court Records*](https://doi.org/10.34894/S1BIHJ) (Resilient Diversity project), used for *Raad van Justitie* volumes without an index. A case with a start and end scan is a fixed document, and the ranges of the individual accused are its parts.
-* The HTR text, the PageXML layout and the page metadata of every scan (folio numbers, headers, signatures, blank pages), and GloBERTise page embeddings. The embeddings cover 95% of the scans; nearly all scans without one are blank.
+* The HTR text and the PageXML layout of [*VOC transcriptions v2*](https://doi.org/10.34894/50ZYWS) (version 1.0), the page metadata of every scan (folio numbers, headers, signatures, blank pages), and GloBERTise page embeddings. The embeddings cover 95% of the scans; nearly all scans without one are blank.
 * As ground truth, the 22 inventories segmented by hand, published as the [*GLOBALISE – VOC Document Segmentation Dataset*](https://doi.org/10.34894/XAJ12C): documents, parts, documents sharing a scan, and the types of non-document pages.
 
 **Method.**
@@ -135,7 +136,7 @@ The documents were identified with a single segmentation model, applied to all 6
 
    Documents are then labelled as index entries, court cases, unindexed documents, or parts. A part is a document that falls within the page range of the preceding index entry, such as an enclosure or appendix. Index entries are never parts of each other. Title pages lie outside documents, as in the hand-segmented inventories.
 
-**Evaluation.** The model was cross-validated on the 22 hand-segmented inventories: each inventory was scored with a model fitted on the other 21, including the embedding probes. The *Generale Missiven* were used for evaluation only. With an exact scan match (±1 scan in brackets):
+**Evaluation.** The model was cross-validated on the 22 hand-segmented inventories, which hold 2,532 document starts: each inventory was scored with a model fitted on the other 21, including the embedding probes. The *Generale Missiven* (920 letters in 545 inventories) were used for evaluation only, and scored by the model fitted on all 22 inventories. With an exact scan match (±1 scan in brackets):
 
 | | With index | Without index |
 | --- | --- | --- |
@@ -160,20 +161,32 @@ The documents were identified with a single segmentation model, applied to all 6
 * **Inferred titles** take the form *type, place, date*.
   * The type comes from a classifier on the opening of the first page and the end of the last page, trained on documents with an index entry. Cross-validated, it is right for 84% of the documents, and assigns a type to 78% of them at a confidence threshold of 0.5.
   * Place and date come from the closing formula on the last page or the page before, read with the Globalise entity annotations; failing that, from the last full date on the last page or the date in the running header.
-  * Places are first matched to the **VOC gazetteer**: the Globalise dataset on the [organisational structure of the VOC](https://doi.org/10.34894/2VNEUG). It lists the Company's offices and establishments (247 in all, such as the *comptoir* of Surat or the government of Ambon), with their names and spelling variants, their place in the hierarchy of the Company and, by period, the place where they were located (as a GLOB identifier of the places dataset). The closing formula of a letter usually names such an office (*Gamron*, *Cochin*). A place is matched to an exact label of the gazetteer, then to an exact name or variant in the [Globalise places dataset](https://doi.org/10.34894/UFFFNO), and finally to the closest gazetteer label, to allow for misreadings. It is shown as written, with the preferred label of the places dataset in brackets: *Batavia (Jakarta)*.
+  * Places are first matched to the **VOC gazetteer**: the Globalise dataset on the [organisational structure of the VOC](https://doi.org/10.34894/2VNEUG). It lists the Company's offices and establishments (247 in all, such as the *comptoir* of Surat or the government of Ambon), with their names and spelling variants, their place in the hierarchy of the Company and, by period, the place where they were located (as a GLOB identifier of the places dataset). The closing formula of a letter usually names such an office (*Gamron*, *Cochin*). A place is matched to an exact label of the gazetteer, then to an exact name or variant in the [Globalise places dataset](https://doi.org/10.34894/UFFFNO) (version 3.0), and finally to the closest gazetteer label, to allow for misreadings. It is shown as written, with the preferred label of the places dataset in brackets: *Batavia (Jakarta)*.
 
   <!-- TODO: the organisational structure dataset (https://doi.org/10.34894/2VNEUG) has not yet been published on DataverseNL; check the link once it has. -->
 * **Dates of index entries.** Where the enriched index has no date, dates were parsed from the entry's description. On entries whose dates were known, the parser agreed with them for 97% of begin and end dates. Missing years of dates such as *dato 14 September* were inferred from the typescript's year and the neighbouring entries; with years hidden as a test, this was right in 99.3% of cases with a receipt date and 92.1% without.
+* **Checks of dates after the segmentation.** Dates that lay more than two years outside the years of the inventory or typescript (1,499) were checked against evidence independent of the entry's description: the document's own text, the previous entry for *Dito* entries, and the years of the typescript and inventory. Of these, 1,194 were kept (mostly periods covered, or older acts the description names), 217 were corrected, 1 was cleared, and 87 were flagged and left alone. This changed the dates of 218 documents and of the index entries they took them from.
+* **Cleaning of titles after the segmentation.** The titles from the typescripts were read by OCR. Their spacing and hyphenation were corrected (*Brie fje* → *Briefje*, *No-vember* → *November*) in 919 documents and the index entries they took them from; their wording was not changed. The segmentation itself read the uncorrected dates and titles, so its boundaries are not affected.
 * **Identifiers.** Each document is linked to its Globalise document type (and, for index entries, the TANAP type), to its index identifiers (OBP, TANAP, typescript, and OBP NT, the Nationaal Archief's new detailed finding aid), and to the place as a GLOB identifier of the Globalise places dataset (`place_glob_id`). A few places of inferred titles are missing from the places dataset and have no GLOB identifier.
 * **Evidence.** How the model found each document is stored with it as JSON evidence. This covers the index placement, the page numbers and dates read, the start and end probabilities, and their main reasons.
 
-<!-- TODO: link the README on main once the llm-definitive-doc branch has been merged. -->
+**Data, code and reproducibility.** Everything is in the deposit [*GLOBALISE – Document Segmentation of the VOC Archives*](https://doi.org/10.34894/P826UY):
 
-<!-- TODO: deposit the segmentation method on DataverseNL (code, fitted model and the required input files, such as the index files, page metadata and embeddings), and link the deposit here. -->
+* the results, with a codebook: the documents, their scans, the direct output of the segmentation, the inferred titles, and the records of the date and title corrections;
+* the Digitized Indexes with each entry's start and end scan;
+* the full evaluation output and its definitions;
+* a description of the method, including the approaches that were tried and dropped;
+* the code and the fitted model, the part of the documents database that the method reads, the transcriptions, the page layout, and the page embeddings or the features computed from them.
+
+Run from the deposit and two published datasets on 6 November 2026, the code reproduced all 636,542 segments with identical boundaries, and the inferred titles and the evaluation exactly. Embeddings computed again from the sources differ slightly, so a segmentation from the sources is close to these results, but not identical.
+
+**Credits.** The segmentation was made in the Globalise project by Lodewijk Petram, with Renate Smit (the ground truth of the hand-segmented inventories and the Globalise document classification), Kay Pepping (the digitisation of the typescripts, the ground truth of the *Generale Missiven*, and segmentation scripts), Leon van Wissen (segmentation scripts and the documents database), Brecht Nijman (segmentation scripts) and Marijn Koolen (the embedding pipeline).
+
+<!-- TODO: the globalise-huygens/documents repository, linked in the table above, will not be kept. The scripts that export the IIIF collection and manifests are not in the deposit: decide where they will be kept, and update the link. -->
 
 <!-- TODO: check where on the portal a user can find the source of a title (title_source) and the evidence of a document, and refer to it here. -->
 
-<!-- Sources: README of the documents repository (branch llm-definitive-doc), cross-validated evaluation of the final model (evaluate-20261105b.log, 5 November 2026), and its database, queried 2026-11-06. -->
+<!-- Sources: README, METHODS and METRICS of the deposit (https://doi.org/10.34894/P826UY, draft of 6 November 2026), README of the documents repository (branch llm-definitive-doc), cross-validated evaluation of the final model (evaluate-20261105b.log, 5 November 2026), and its database, queried 2026-11-06. -->
 
 ## GloBERTise
 

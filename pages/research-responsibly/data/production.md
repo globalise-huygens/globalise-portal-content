@@ -54,7 +54,7 @@ Earlier versions of the transcriptions were published on DataverseNL in 2023 and
 
 ## 3. Identifying documents
 
-<!-- Sources for this section: README of the documents repository, branch llm-definitive-doc (https://github.com/globalise-huygens/documents/blob/llm-definitive-doc/README.md); import log of the final segmentation (30 October 2026), its output file segments.csv and its database, queried 2026-11-06; cross-validated evaluation of the final model (evaluate-20261105b.log). -->
+<!-- Sources for this section: README, METHODS and METRICS of the deposit (https://doi.org/10.34894/P826UY, draft of 6 November 2026); README of the documents repository, branch llm-definitive-doc (https://github.com/globalise-huygens/documents/blob/llm-definitive-doc/README.md); import log of the final segmentation (30 October 2026), its output file segments.csv and its database, queried 2026-11-06; cross-validated evaluation of the final model (evaluate-20261105b.log). -->
 
 <!-- TODO: the segmentation has not yet been integrated into the portal (see issue #24). Check this section against the portal once it has been. -->
 
@@ -69,7 +69,7 @@ The VOC archive is organised in bound volumes (inventory numbers), and a single 
   Some documents appear in the indexes more than once, once for each settlement they were filed under. These entries were merged into one document, linked to all of its settlements (991 entries).
 
 * **Signs on the pages.** For every scan, the model weighed the signs that a document begins or ends there: opening words (such as *Copia*, *Extract* or a salutation), closing formulas (such as *was geteekent*, or a place and date), signatures, blank pages, page and folio numbers, running headers and the dates in them, the layout of the page, and how much the text resembles that of the neighbouring scans. How much weight each sign gets was learned from 22 inventories in which members of the project team had identified the documents by hand (published as the [*VOC Document Segmentation Dataset*](https://doi.org/10.34894/XAJ12C)).
-* **Documents identified by hand.** The *Generale Missiven*, the general letters from the Governor-General and Council in Batavia to the Gentlemen Seventeen, had already been identified by hand. These 933 letters were taken over as they are.
+* **Documents identified by hand.** The *Generale Missiven*, the general letters from the Governor-General and Council in Batavia to the Gentlemen Seventeen, had already been identified by hand, in the [*Overzicht van Generale Missiven*](https://doi.org/10.34894/SRDMFU). These 933 letters were taken over as they are.
 * **Court records.** For volumes of the Councils of Justice of Batavia and the Cape of Good Hope that have no index, the court cases recorded in the [*Early Modern Dutch Colonial Court Records*](https://doi.org/10.34894/S1BIHJ) dataset of the Resilient Diversity project were used as documents.
 
 ### How documents were found
@@ -105,6 +105,8 @@ Every title records who made it:
 
 Titles that were not given by the VOC are shown in square brackets, to make clear that they are not historical titles.
 
+The titles from the typescripts were read by OCR. In 919 of them the spacing and hyphenation were corrected (*Brie fje* became *Briefje*); their wording was not changed.
+
 <!-- TODO: check where on the portal a user can find the source of a title (VOC, court records or inferred), and how a document's evidence (how it was found) is shown. Describe this here. -->
 
 An inferred title is built as follows:
@@ -118,6 +120,8 @@ An inferred title is built as follows:
 ### Dates
 
 Documents with an index entry have the dates of that entry. About 146,000 of the 226,000 index entries were dated in the enriched version of the index. For the others, the project read the dates from the entry's description, which dated about 27,000 more entries. Tested on entries whose dates were known, this agreed with the known begin and end dates in 97% of cases. Where a description gives a day and month but no year (*dato 14 September*), the year was worked out from the typescript and the neighbouring entries; this corrected the year of about 2,400 entries for which the enriched index had guessed it wrongly, sometimes by decades. About 41,500 entries still have no date, because their description contains none (*Journael ende grootboeck van de negotie*).
+
+After the segmentation, the project checked the 1,499 dates that lay more than two years outside the years of the inventory or typescript against other evidence, such as the document's own text. Most were correct, often because the description refers to an older act or a longer period. The dates of 218 documents were corrected or removed, and 87 doubtful dates were left as they were.
 
 Documents with an inferred title have the date of that title, and court cases the date of the case. In all, 81% of the documents have a date.
 
@@ -150,7 +154,7 @@ A few errors are typical:
 
 Document boundaries and inferred titles are therefore model output, not established facts. For every document, the data records how it was found: which index entry it corresponds to, how that entry was placed, and which signs on the pages pointed to its beginning and end. When the exact extent of a document matters, check it against the scans.
 
-The project also published the hand-segmented inventories as a dataset for training and evaluating such methods: the [*GLOBALISE – VOC Document Segmentation Dataset*](https://doi.org/10.34894/XAJ12C). Details of the model and its evaluation are in the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#document-identification).
+The project also published the hand-segmented inventories as a dataset for training and evaluating such methods: the [*GLOBALISE – VOC Document Segmentation Dataset*](https://doi.org/10.34894/XAJ12C). Details of the model and its evaluation are in the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#document-identification). The resulting documents, the method, and the code and files needed to reproduce them are published in the deposit [*GLOBALISE – Document Segmentation of the VOC Archives*](https://doi.org/10.34894/P826UY).
 
 ## 4. Recognising entities
 

@@ -77,8 +77,17 @@ Content to be developed.
 
 Earlier versions of the transcriptions, and the datasets on which the reference data is based, are available on [DataverseNL](https://dataverse.nl/dataverse/globalise). See [Reference data & entity linking](/pages/research-responsibly/data/reference-data.md) for a list.
 
+The documents identified by the Globalise project are available in the deposit [*GLOBALISE – Document Segmentation of the VOC Archives*](https://doi.org/10.34894/P826UY) on DataverseNL, as compressed CSV files with a codebook:
+
+| File | Contents |
+| --- | --- |
+| `results/documents.csv.gz` | All 508,448 documents, with their first and last scan, title and source of the title, dates, place, types and index identifiers |
+| `results/document_scans.csv.gz` | The scans of each document |
+| `results/… - with scans.csv.gz` | The *Digitized Indexes* with each entry's start and end scan |
+
 ## Models and code
 
+* The code and the fitted model of the document segmentation are in the [deposit](https://doi.org/10.34894/P826UY) described under *Bulk downloads*.
 * Models (text recognition, named entity recognition, event detection) are available on [DataverseNL](https://dataverse.nl/dataverse/globalise) and [Hugging Face](https://huggingface.co/globalise).
 * Code is available on GitHub, in the [globalise-huygens](https://github.com/globalise-huygens) organisation and, for text recognition and annotation conversion, the [knaw-huc](https://github.com/knaw-huc) organisation.
 
