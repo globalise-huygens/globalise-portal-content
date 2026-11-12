@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-30"
+dateUpdated: "2026-11-12"
 
 featured: false
 
@@ -46,6 +46,8 @@ Keep track of what you are looking at:
 * reference data and thesauri curated by the project team.
 
 Each of these involves a different degree of interpretation and a different kind of possible error. In particular, do not present a model-generated annotation as an established historical fact. Check transcriptions against the scan, and annotations against the text. See [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md).
+
+If you use an AI assistant to search the data, its answers add another layer: the assistant's own reading, selection and summary of what it found. Follow each of its claims back to the document and the scan before relying on it. See [Using Globalise with an AI assistant](/pages/learn-get-started/ai-assistant.md#checking-the-answers).
 
 ## Be mindful of harmful content
 

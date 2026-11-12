@@ -131,6 +131,10 @@ Advanced search makes it possible to extract small pieces of information from mi
 
 Searches on the portal can tell you what was recorded, where and when. Explaining how and why things happened remains the task of the researcher. See [Responsible use](/pages/research-responsibly/ethics/responsible-use.md).
 
+### Searching with an AI assistant
+
+An AI assistant connected to the [Globalise MCP server](/pages/learn-get-started/ai-assistant.md) works with the same data and inherits all the limitations described on this page. It adds limitations of its own. It decides which searches to run and which results to read, and it may stop before it has found everything. It can misread or misquote a transcription, overstate what the sources say, fill gaps with knowledge from its training, and occasionally invent quotations or sources, all in fluent and confident language. Its translations and summaries have not been checked. The server gives the assistant background on the limitations of the data, with links to this page, but whether the assistant passes them on to you depends on the assistant.
+
 ## Known issues
 
 Content to be developed.

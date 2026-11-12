@@ -327,6 +327,11 @@ The transcriptions, entities and events are converted into W3C Web Annotations w
 
 ## The portal
 
-The source code of the research portal is available at <https://github.com/globalise-huygens/globalise-research-portal>.
+| Component | Description | Link |
+| --- | --- | --- |
+| Globalise research portal | Source code of the portal | <https://github.com/globalise-huygens/globalise-research-portal> |
+| Globalise MCP server | Model Context Protocol server that gives AI assistants read-only access to the search indices and persistent data | <https://github.com/globalise-huygens/globalise-mcp> |
 
-<!-- TODO: add a short description of the portal's technical architecture (search index, MCP server, hosting) once final. -->
+The MCP server is designed to run as a separate service next to the portal, so that heavy use by AI assistants does not slow down the portal itself. It queries the same search indices. To limit the load on them, it caches responses for 15 minutes, limits the number of simultaneous requests, applies timeouts and caps the size of result sets, and limits each client to 60 requests per minute. See [Accessing the data](/pages/research-responsibly/data/access.md#mcp-server).
+
+<!-- TODO: add a short description of the portal's technical architecture (search index, hosting) once final. -->

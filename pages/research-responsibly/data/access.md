@@ -67,7 +67,45 @@ Content to be developed.
 
 ## MCP server
 
-<!-- TODO: describe the Globalise MCP (Model Context Protocol) server: what it gives access to, its address, how to connect it to an AI assistant, and its limitations. Remind users that answers produced by an AI assistant must be checked against the scans and transcriptions, and link to Bias & limitations. User-facing instructions go on the page "Using Globalise with an AI assistant" (/pages/learn-get-started/ai-assistant.md). -->
+<!-- Sources: README and source code of https://github.com/globalise-huygens/globalise-mcp (version 0.1.0, retrieved 2026-11-12). -->
+
+The Globalise MCP server lets AI assistants and other clients that support the [Model Context Protocol](https://modelcontextprotocol.io) search and read the Globalise data. Instructions for users without a technical background, and advice on checking an assistant's answers, are on [Using Globalise with an AI assistant](/pages/learn-get-started/ai-assistant.md).
+
+| | |
+| --- | --- |
+| Address | `https://globalise.nl/mcp` |
+| Transport | Streamable HTTP; stateless |
+| Access | Read-only; no authentication |
+| Rate limit | 60 requests per minute per client |
+| Source code | <https://github.com/globalise-huygens/globalise-mcp> |
+| Status | Prototype (version 0.1.0) |
+
+<!-- TODO: https://globalise.nl/mcp does not work yet. Check that the address works once the server is hosted, and whether it is http or https. Also update the status and version at launch. -->
+
+<!-- TODO: check which clients work with the server (e.g. Claude, ChatGPT, Le Chat, Copilot, Cursor, VS Code), and list them here or on the AI assistant page. -->
+
+**Tools.** The server offers eight tools:
+
+| Tool | What it does |
+| --- | --- |
+| `search_documents` | Full-text and structured search in the documents: words, phrases, wildcards, fuzzy matching, proximity, and fields for tagged entities (by id), roles, annotation types, dates, place of writing, inventory and document type. Returns documents with highlighted snippets and viewer links. |
+| `analyze_distribution` | How a result set is spread over decades, places of writing, document types, professions and archive series, compared with the whole corpus |
+| `count_mentions` | The number of occurrences of the search terms (not documents), with the spellings matched, mentions per decade relative to the size of the corpus, and the documents with most mentions. Exact up to a set number of documents, otherwise estimated from a sample with a 95% interval. |
+| `search_reference_data` | Persons, places, ships, organisations, polities and thesaurus concepts by any spelling, with the number of documents that mention them |
+| `get_record` | Any record by identifier or URI, summarised: names, classifications, dates, sources and linked records |
+| `get_document` | A document's metadata, text (plain or with inline entity tags), tagged entities and scans; can find which scan contains a quoted passage |
+| `get_scan` | One scan: the normalised and diplomatic transcription, annotations, IIIF image and viewer link, and the image itself, either the whole page or a crop around a quoted passage |
+| `globalise_about` | Background for the assistant: the data model, limitations, query syntax and a research workflow, with links to the pages on this website |
+
+The same background texts are also available as MCP resources (`globalise://docs/…`), and the prompt `research_question` starts a research session that follows the recommended workflow.
+
+**Provenance.** Every response includes a `provenance` block with the services queried, the dated version of the search index (for example `annotated-documents.2026.11.05`) and the caveats that apply to that query, such as "names matched by spelling, not by id". Search responses also show how names in the query were resolved to identifiers. Cite the index version together with document and scan identifiers: the search indices are rebuilt from time to time, and results can change.
+
+**Data.** The server reads the same search indices as the portal and the persistent data at `data.globalise.huygens.knaw.nl`. The images come from the Nationaal Archief's IIIF image server. All limitations of the data apply; see [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md). An AI assistant adds its own errors and interpretation, so check every claim against the scans and transcriptions.
+
+**Running it yourself.** The server can also run locally over stdio, for example in Claude Desktop, Claude Code, Cursor or VS Code. It needs Node 26. See the [README](https://github.com/globalise-huygens/globalise-mcp#readme) for instructions.
+
+<!-- TODO: once the package is published on npm, replace the local instructions with `npx -y @globalise/mcp`. -->
 
 ## Bulk downloads
 
