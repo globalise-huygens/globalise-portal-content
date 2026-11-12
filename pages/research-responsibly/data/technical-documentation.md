@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-06"
+dateUpdated: "2026-11-12"
 
 featured: false
 
@@ -53,7 +53,54 @@ Content to be developed.
 
 ### Language identification
 
-The languages of all pages in Latin script were identified automatically; pages in other scripts were identified separately. The method and results are documented in the [language-identification-data](https://github.com/globalise-huygens/language-identification-data) repository and in the blog post [The Languages of GLOBALISE](/pages/about/project/archive/blog/the-languages-of-globalise.md).
+<!-- Sources: README of https://github.com/globalise-huygens/language-identification-data (data last regenerated 4 July 2025); README, Makefile and lexicons of the langdetect pipeline and scripts/gt_classify_language.py in https://github.com/knaw-huc/globalise-tools (retrieved 2026-11-12); counts computed from pages.lang.tsv, non-latin.scripts.tsv and corrections.lang.tsv on 2026-11-12; Arno Bosse, "The Languages of GLOBALISE" (archived blog post). -->
+
+| Component | Description | Link |
+| --- | --- | --- |
+| Language identification data | Language(s) per page, lists of pages with a non-Dutch or unknown language (with their text), pages in non-Latin scripts, and manual corrections | <https://github.com/globalise-huygens/language-identification-data> |
+| langdetect pipeline | Pipeline that produced the automatic identifications, part of globalise-tools | <https://github.com/knaw-huc/globalise-tools/tree/main/pipelines/langdetect> |
+| lingua-cli | Command-line wrapper around [lingua-rs](https://github.com/pemistahl/lingua-rs), language detection with character n-gram models | <https://github.com/proycon/lingua-cli> |
+| lexmatch | Language detection by lexicon lookup | <https://github.com/proycon/lexmatch> |
+
+The language of each page was identified from its transcription, line by line. Only lines in **paragraph** regions were used. Text in other regions, such as marginal notes, headers, signatures, catchwords and page numbers, was set aside, because on most pages the paragraphs hold nearly all of the text.
+
+**Two classifications per line.** Each line was classified in two ways, restricted to ten languages known to occur in the corpus: Dutch, English, French, German, Latin, Italian, Portuguese, Spanish, Danish and Malay in Latin script.
+
+* **lingua** recognises a language from typical combinations of characters. It returns the most likely language and a confidence score. Its models were trained on modern texts; Malay was detected with its model for Indonesian.
+* **lexmatch** looks up each word of at least three characters in a word list per language, and returns the share of the line's words found in each list. Dutch has two lists: one of historical Dutch derived from [ground truth transcriptions of VOC documents](https://zenodo.org/record/6414086), and one of modern Dutch. The Latin list contains the most common Latin words; the other lists contain the 10,000 most frequent words in that language in the OpenSubtitles 2018 corpus (via [FrequencyWords](https://github.com/hermitdave/FrequencyWords)). The [lexicons](https://github.com/knaw-huc/globalise-tools/tree/main/pipelines/langdetect/lexicons) are published with the pipeline.
+
+**Reconciling the two.** The two results were combined with a fixed set of rules ([gt_classify_language.py](https://github.com/knaw-huc/globalise-tools/blob/main/scripts/gt_classify_language.py)), applied in this order:
+
+1. A line with six letters or fewer is too short to classify and counts as unknown.
+2. If the character model's language is among the best lexicon matches and its confidence is at least 0.5, the models agree and that language is assigned.
+3. If the best lexicon match is Dutch with a score of at least 0.5, the line is Dutch, whatever the character model says. This keeps Dutch lines with many French or Latin loan words from being classified as French or Latin.
+4. If the character model says Dutch and the lexicon score is at most 0.5, the line is Dutch.
+5. A line consisting of a single word that is not Dutch counts as unknown, so that a name or a single foreign word does not make a line non-Dutch.
+6. If the character model's confidence is at least 0.9 and higher than the lexicon score, its language is assigned.
+7. If the lexicon score is at least 0.5 and at least as high as the character model's confidence, the best lexicon match is assigned.
+8. Otherwise the line counts as unknown.
+
+**From lines to pages.** For each paragraph region, a language was assigned if it accounts for at least a quarter of the region's lines, with lines classified as unknown included in the count. A language other than Dutch must in addition occur on at least three lines. The first rule allows a region to be assigned two languages, for example when it has Dutch and French in parallel columns. The second keeps short phrases from counting. A page receives every language assigned to any of its paragraph regions, and *unknown* if none was assigned. Languages are recorded as [ISO 639-3](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) codes.
+
+**Non-Latin scripts and manual corrections.** The automatic method cannot identify languages in non-Latin scripts, because Loghi cannot read them. On such pages, Loghi produces Latin characters that look similar, such as digits, and otherwise falls back on rare letters and symbols, such as ꝝ, ȼ or ꝕ. The project searched the transcriptions for unusual combinations of such characters and leafed through volumes whose inventory descriptions mention documents in other languages. The pages found this way are listed in `non-latin.scripts.tsv` (186 pages, including 8 in cipher). A separate list, `corrections.lang.tsv`, contains 884 manual corrections and additions to the automatic identifications. Both are merged into the published `pages.lang.tsv`.
+
+**Results.** `pages.lang.tsv` covers 4,498,686 pages in 6,914 inventory numbers.
+
+| Language(s) of a page | Pages | Share |
+| --- | ---: | ---: |
+| Dutch only | 4,349,193 | 96.7% |
+| Unknown | 136,427 | 3.0% |
+| At least one language other than Dutch | 13,066 | 0.3% |
+
+Pages with each language, alone or together with others: French 5,604; English 3,600; Latin 2,202; Portuguese 583; Malay (Latin and Arabic script) 507; Spanish 273; German 139; Sinhala 113; Danish 31; Chinese 20; Italian 18; Persian 8; Tamil 8; cipher 8; Japanese 6; Bengali 3; Gujarati 2; Buginese 2; Church Slavonic 2; Hebrew 1; Ancient Greek 1.
+
+**Reliability.** The identifications have only been tested qualitatively; there is no quantitative evaluation. According to these tests, precision is very high: Dutch pages are rarely classified as non-Dutch, and non-Dutch pages are almost always assigned the right language. Recall is lower: some pages in other languages are classified as Dutch or unknown, for instance individual pages within a French document. Most unknown pages contain too little text, such as blank pages between documents; others are tables with mostly numbers, or pages bound upside down or sideways. The list of non-Latin-script pages is not exhaustive. Because any threshold for mixed-language pages is a choice, `nondutch-pages.lang.tsv` and `unknown-pages.lang.tsv` include the text of the paragraph regions and a link to each page, so that researchers can apply their own criteria.
+
+**Credits.** Bram Buitendijk, Maarten van Gompel and Arno Bosse (KNAW Humanities Cluster).
+
+<!-- TODO: the identifications were made on the PageXML of the earlier transcriptions (last regenerated 4 July 2025, "after receiving new pagexml data"). Check whether they match the transcriptions on the portal (annotation pages generated September 2026), and whether the pipeline will be run again. Also explain why pages.lang.tsv covers 4,498,686 pages while the corpus has about 4.8 million scans. -->
+
+<!-- TODO: state whether and how the portal shows the language of a page and allows filtering by language, and whether the language data will be deposited on DataverseNL. -->
 
 ## Document identification
 

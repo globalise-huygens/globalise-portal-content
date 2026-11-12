@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-06"
+dateUpdated: "2026-11-12"
 
 featured: false
 
@@ -25,7 +25,7 @@ related: ["globalise-data", "technical-documentation", "data-model-and-ontologie
 
 # How the data was produced
 
-<!-- Sources: project website (https://globalise.huygens.knaw.nl/project_overview/); README of https://github.com/globalise-huygens/documents; Arnoult, Nijman & Van Wissen 2025 (https://doi.org/10.63744/DRbhWNTzqNzR) and https://github.com/globalise-huygens/finegrained-hist-ner; GloBERTise model card (https://huggingface.co/globalise/GloBERTise); Verkijk, Vossen & Sommerauer 2025 (https://doi.org/10.18653/v1/2025.findings-acl.1060); event ontology wiki (https://github.com/globalise-huygens/nlp-event-detection/wiki); provenance metadata in the annotation pages (retrieved 2026-10-01); Arno Bosse, "The Languages of GLOBALISE" (archived blog post). -->
+<!-- Sources: project website (https://globalise.huygens.knaw.nl/project_overview/); README of https://github.com/globalise-huygens/documents; Arnoult, Nijman & Van Wissen 2025 (https://doi.org/10.63744/DRbhWNTzqNzR) and https://github.com/globalise-huygens/finegrained-hist-ner; GloBERTise model card (https://huggingface.co/globalise/GloBERTise); Verkijk, Vossen & Sommerauer 2025 (https://doi.org/10.18653/v1/2025.findings-acl.1060); event ontology wiki (https://github.com/globalise-huygens/nlp-event-detection/wiki); provenance metadata in the annotation pages (retrieved 2026-10-01); Arno Bosse, "The Languages of GLOBALISE" (archived blog post); README of https://github.com/globalise-huygens/language-identification-data and counts computed from its data files (retrieved 2026-11-12). -->
 
 <!-- TODO: check against the final pipeline (dependency "Final pipeline" in CONTENT.md). -->
 
@@ -47,6 +47,14 @@ The scans were transcribed with two pieces of open-source software developed at 
 Both programs use models that have to be trained for a specific type of handwriting and layout. The Globalise project trained its own models on **ground truth**: pages that were transcribed by hand and carefully checked, partly by the project team. The ground truth and the models are published (see [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#layout-analysis-and-text-recognition)).
 
 The software can only read Latin script. Pages in, for instance, Chinese, Persian or Sinhala script produce meaningless strings of characters.
+
+### Identifying languages
+
+Once the pages had been transcribed, the language of each page was identified automatically. Every line in the main text of a page was examined in two ways: by recognising combinations of characters typical of a language, and by looking up its words in word lists for each language, including a list of historical Dutch made from transcriptions of VOC documents. Where the two disagreed, fixed rules decided. A language was recorded for a page only if it occurred on a substantial share of its lines. A name, a phrase or a loan word in another language therefore does not count. Marginal notes and headers were not taken into account.
+
+Pages in non-Latin scripts could not be identified this way. The project found them by searching the transcriptions for the unusual strings of characters that the software produces for such scripts, and by leafing through volumes whose descriptions mention documents in other languages. About 180 pages were identified by hand in this way, in, for example, Sinhala, Chinese, Persian, Tamil and Malay in Arabic script, as well as a few in cipher.
+
+Almost 97% of the pages turned out to be in Dutch only. For 3%, no language could be identified, mostly because they contain little or no running text. About 13,000 pages contain another language, most often French, English or Latin. These identifications have not been checked page by page: pages in another language are sometimes classified as Dutch or unknown. See [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md#languages-and-scripts) and the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#language-identification).
 
 Earlier versions of the transcriptions were published on DataverseNL in 2023 and 2024, and could be searched in a temporary transcriptions viewer.
 

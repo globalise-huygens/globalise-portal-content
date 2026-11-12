@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-06"
+dateUpdated: "2026-11-12"
 
 featured: false
 
@@ -49,9 +49,21 @@ Globalise does not cover all VOC archives, nor even all of the VOC archive at th
 
 ### Languages and scripts
 
-Almost 97% of the pages in the Globalise corpus (about 4.3 million pages) are written in Dutch. The remainder includes pages in other European languages, such as French, English, Latin and Portuguese, and in Asian languages, such as Malay, Persian, Sinhala and Chinese.
+<!-- Sources for this section: README of https://github.com/globalise-huygens/language-identification-data and counts computed from its pages.lang.tsv (data of 4 July 2025, retrieved 2026-11-12); the langdetect pipeline in https://github.com/knaw-huc/globalise-tools. -->
 
-The text recognition software used by the Globalise project cannot read non-Latin scripts. Pages written in, for example, Chinese, Persian or Sinhala are turned into strings of seemingly random characters and cannot be searched for their content. For about 3% of pages, no language could be identified automatically, and pages with too little continuous text, such as tables and blank pages, were left out of the automatic identification. See [The Languages of GLOBALISE](/pages/about/project/archive/blog/the-languages-of-globalise.md) for details.
+Almost 97% of the pages in the Globalise corpus (about 4.35 million pages) are written in Dutch only. About 13,000 pages contain another language, often alongside Dutch. Most of these are in other European languages, especially French, English and Latin, and to a lesser extent Portuguese, Spanish and German. Several hundred contain an Asian language, mostly Malay and Sinhala, and a handful in, for example, Chinese, Persian, Tamil, Japanese, Bengali, Gujarati or Buginese. These numbers reflect what the archive kept and what the project could identify, not the languages actually spoken and written in the places where the VOC was active.
+
+The text recognition software used by the Globalise project cannot read non-Latin scripts. Pages written in, for example, Chinese, Persian or Sinhala are turned into strings of seemingly random characters and cannot be searched for their content. These pages could only be found by hand, and the list of them is certainly incomplete.
+
+The language of each page was identified automatically (see [How the data was produced](/pages/research-responsibly/data/production.md#identifying-languages)). Keep the following in mind:
+
+* The tools used were designed for modern languages, and early modern spelling and text recognition errors make their task harder. Malay, for instance, was detected with a model for modern Indonesian.
+* The method was set up to be cautious. A page in another language is more often classified as Dutch or unknown than a Dutch page as another language. The number of non-Dutch pages is therefore an underestimate.
+* A language is recorded only if it occurs on a substantial share of a page's lines. A name, a phrase or a few lines in another language are not recorded, and neither are marginal notes. When a page mixes languages, deciding which of them it is "in" is always a choice.
+* For about 3% of pages (some 136,000), no language could be identified. Most are blank pages, tables or pages bound upside down or sideways, but pages in languages the method does not cover can also end up here.
+* Languages were identified per page, not per document.
+
+The lists of pages with a non-Dutch or unknown language, including their text, are published, so that you can apply your own criteria. See the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#language-identification) and [The Languages of GLOBALISE](/pages/about/project/archive/blog/the-languages-of-globalise.md).
 
 ## Computational processing
 
