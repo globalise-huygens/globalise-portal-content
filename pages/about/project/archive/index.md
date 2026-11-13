@@ -76,7 +76,7 @@ Each archived page states where and when it was first published. Short notes abo
 * 1 August 2025: [A Gazetteer for the Dutch East India Company Archives: The GLOBALISE Places Dataset](/pages/about/project/archive/blog/a-gazetteer-for-the-dutch-east-india-company-archives-the-globalise-places-dataset.md), by Dung Pham
 * 8 August 2025: [When Archives Break Hearts](/pages/about/project/archive/blog/when-archives-break-hearts.md), by Asawari Luthra
 * 5 November 2025: [Guide to finding places in the GLOBALISE corpus of VOC documents](/pages/about/project/archive/blog/guide-to-finding-places-in-the-globalise-corpus-of-voc-documents.md), by Nikhil Bellarykar
-* 19 December 2025: [Echoes of genocidal erasure: a reflection on historical ‘voices’ and digital infrastructure for colonial archives](/pages/about/project/archive/blog/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives.md), by Matthias van Rossum
+* 19 December 2025: [Echoes of genocidal erasure: a reflection on historical ‘voices’ and digital infrastructure for colonial archives](/pages/about/project/archive/blog/echoes-of-genocidal-erasure.md), by Matthias van Rossum
 * 30 December 2025: [Looking Back and Ahead: Access and Research in a Changing Archive](/pages/about/project/archive/blog/looking-back-and-ahead-access-and-research-in-a-changing-archive.md), by Tara Huveneers
 
 ### 2026

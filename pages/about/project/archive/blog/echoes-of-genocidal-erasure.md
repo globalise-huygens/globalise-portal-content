@@ -3,7 +3,7 @@ title: "Echoes of genocidal erasure: a reflection on historical ‘voices’ and
 subtitle: ""
 summary: "Blog post by Matthias van Rossum, originally published on the Globalise project website on 19 December 2025."
 type: "archived-post"
-slug: "echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives"
+slug: "echoes-of-genocidal-erasure"
 status: "draft"
 
 authors: ["Matthias van Rossum"]

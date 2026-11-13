@@ -78,7 +78,7 @@ Content to be developed.
 
 * [Guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md): the VOC, its archives and what the Globalise project made available
 * [Mission, Research Themes and Guiding Questions](/pages/about/project/archive/mission-research-themes.md): the project's position on VOC historiography
-* [Echoes of genocidal erasure](/pages/about/project/archive/blog/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives.md), Matthias van Rossum's reflection on historical "voices" and digital infrastructure for colonial archives
+* [Echoes of genocidal erasure](/pages/about/project/archive/blog/echoes-of-genocidal-erasure.md), Matthias van Rossum's reflection on historical "voices" and digital infrastructure for colonial archives
 * [When Archives Break Hearts](/pages/about/project/archive/blog/when-archives-break-hearts.md), Asawari Luthra on the emotional impact of colonial archives on their readers
 
 <!-- TODO: consider adding Manjusha Kuruppath, "Prisoners of the (Written and Accessible) Past: Reflections on Bias in the Dutch East India Company Historian's Craft", Combatting Bias, 4 August 2025 (cited in the VOC archives guide; URL to be added). -->
