@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-11-13"
 
 featured: false
 
@@ -25,7 +25,7 @@ related: ["what-is-globalise", "outputs"]
 
 # Team & partners
 
-<!-- Sources: https://globalise.huygens.knaw.nl/team/ ; /governance/ ; /partner-institutions/ ; /institutional-and-project-collaborations/ (consulted 2026-10-01). -->
+<!-- Sources: https://globalise.huygens.knaw.nl/team/ ; /governance/ ; /partner-institutions/ ; /institutional-and-project-collaborations/ (consulted 2026-10-01); /work-with-us/ (consulted 2026-11-13). -->
 
 <!-- TODO: this page depends on the final team list (see CONTENT.md). Check names, roles and affiliations before publication. -->
 
@@ -42,90 +42,125 @@ The Globalise project was based at the **Huygens Institute** in Amsterdam and fu
 * [Vrije Universiteit Amsterdam](https://www.vu.nl/)
 * [Nationaal Archief](https://www.nationaalarchief.nl/) (Dutch National Archives), The Hague, which holds the VOC archives and provided the scans on which the Globalise project built
 
+## Project management
+
+The project was led by a project management team:
+
+* Matthias van Rossum – Project leader (International Institute of Social History)
+* Lodewijk Petram – Project manager (Huygens Institute)
+* Arno Bosse – Team lead, Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Manjusha Kuruppath – Team lead, Historical contextualisation (Huygens Institute)
+* Leon van Wissen – Team lead, Semantic contextualisation (University of Amsterdam)
+
 ## The team
 
 The work was organised in four teams. **Historical contextualisation** created the reference data and thesauri, and annotated documents by hand. **Semantic contextualisation** worked on language models, entity and event recognition, and the ontology that links everything together. **Technical infrastructure** developed text recognition, data processing and this portal. **Project management & user interaction** coordinated the project and its contacts with researchers and the wider public.
 
-The team as listed on the project website in October 2026:
+Everyone who worked in the Globalise team, including former team members, interns and student assistants, in alphabetical order. Team members were based at the Huygens Institute, unless another affiliation is given.
 
-### Project management & user interaction
+* Anjana Aby – Volunteer, Historical contextualisation
+* Sophie Arnoult – Postdoc (Natural language processing), Semantic contextualisation (Vrije Universiteit Amsterdam)
+* Jarno Bakker – Developer (Structured data), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Pierre Barrault – Research data engineer, Semantic contextualisation
+* Sterre Berentzen – Research assistant, Historical contextualisation
+* Tanne van den Berg – Research assistant, Historical contextualisation
+* Arno Bosse – Team lead, Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Femke Brink – Student assistant, Historical contextualisation
+* Hennie Brugman – Developer (Text infrastructure), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Bram Buitendijk – Developer (Text infrastructure), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Sebastiaan van Daalen – Developer (Text infrastructure), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* QiQing Ding – Developer (Structured data), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Robert Goené – Consultant, Technical infrastructure (Clean Code)
+* Maarten van Gompel – Developer (Text infrastructure), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Hannah Goossens – Intern, Semantic contextualisation
+* Maartje Hids – Research assistant, Historical contextualisation
+* Andy Houwer – Intern, Historical contextualisation
+* Tara Huveneers – Intern, Project management & user interaction
+* Hayco de Jong – Developer (Text infrastructure), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Lija Joseph – Intern, Historical contextualisation
+* Stefan Klut – Developer (Handwritten text recognition), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Rutger van Koert – Developer (Handwritten text recognition), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Gerhard de Kok – Postdoc, Semantic contextualisation
+* Manjusha Kuruppath – Team lead, Historical contextualisation
+* Ruben Land – Intern & Student assistant, Historical contextualisation
+* Bas Leenkegt – Developer (Text infrastructure), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Gavin Lip – Intern & Student assistant, Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Johan List – Developer (Structured data), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Mrinalini Luthra – Data ethics specialist, Historical contextualisation
+* Martijn Maas – Developer (Handwritten text recognition), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Philippe Maillard – Student assistant, Historical contextualisation
+* Kerim Meijer – Developer (Structured data), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Sailaja Mundakkal – Intern, Historical contextualisation
+* Brecht Nijman – Junior researcher, Historical contextualisation
+* Eva Otten – Intern, Project management & user interaction
+* Kay Pepping – Junior researcher, Historical contextualisation
+* Lodewijk Petram – Project manager, Project management & user interaction
+* Dung Pham – Junior researcher, Historical contextualisation
+* Ramin Ravansar – Intern, Historical contextualisation
+* Linda Robertus – Intern, Historical contextualisation
+* Matthias van Rossum – Project leader, Project management & user interaction (International Institute of Social History)
+* Jona Schlegel – Developer, Technical infrastructure
+* Renate Smit – Intern & Student assistant, Historical contextualisation
+* Melinda Susanto – Community & outreach manager, Project management & user interaction
+* Lina de Swaaf – Intern, Project management & user interaction
+* Merve Tosun – Coordinator user interaction and outreach, Project management & user interaction
+* Henrike Vellinga – Student assistant & Junior researcher, Historical contextualisation
+* Arlette Verdonk – Intern, Project management & user interaction
+* Stella Verkijk – Developer (Natural language processing), Semantic contextualisation (Vrije Universiteit Amsterdam)
+* Piek Vossen – Professor (Computational linguistics), Semantic contextualisation (Vrije Universiteit Amsterdam)
+* Marc Widmer – Intern, Historical contextualisation
+* Menzo Windhouwer – Developer (Structured data), Technical infrastructure (KNAW Humanities Cluster, Digital Infrastructure)
+* Leon van Wissen – Team lead, Semantic contextualisation (University of Amsterdam)
 
-* Matthias van Rossum – Project leader, International Institute of Social History
-* Lodewijk Petram – Project manager, Huygens Institute
-* Melinda Susanto – Community & outreach manager, Huygens Institute
+## External collaborators
 
-### Technical infrastructure
+Specialist contributors shared their expertise on particular regions, languages and communities:
 
-* Jarno Bakker – Developer (Structured data), KNAW Humanities Cluster, Digital infrastructure
-* Hennie Brugman – Developer (Text infrastructure), KNAW Humanities Cluster, Digital infrastructure
-* Bram Buitendijk – Developer (Text infrastructure), KNAW Humanities Cluster, Digital infrastructure
-* Sebastiaan van Daalen – Developer (Text infrastructure), KNAW Humanities Cluster, Digital infrastructure
-* QiQing Ding – Developer (Structured data), KNAW Humanities Cluster, Digital infrastructure
-* Robert Goené – Consultant, external
-* Maarten van Gompel – Developer (Text infrastructure), KNAW Humanities Cluster, Digital infrastructure
-* Hayco de Jong – Developer (Text infrastructure), KNAW Humanities Cluster, Digital infrastructure
-* Stefan Klut – Developer (Handwritten text recognition), KNAW Humanities Cluster, Digital infrastructure
-* Rutger van Koert – Developer (Handwritten text recognition), KNAW Humanities Cluster, Digital infrastructure
-* Bas Leenkegt – Developer (Text infrastructure), KNAW Humanities Cluster, Digital infrastructure
-* Johan List – Developer (Structured data), KNAW Humanities Cluster, Digital infrastructure
-* Martijn Maas – Developer (Handwritten text recognition), KNAW Humanities Cluster, Digital infrastructure
-* Kerim Meijer – Developer (Structured data), KNAW Humanities Cluster, Digital infrastructure
-* Jona Schlegel – Developer, Huygens Institute
-* Menzo Windhouwer – Developer (Structured data), KNAW Humanities Cluster, Digital infrastructure
-
-### Historical contextualisation
-
-* Manjusha Kuruppath – Team lead, Huygens Institute
-* Brecht Nijman – Junior researcher, Huygens Institute
-* Kay Pepping – Junior researcher, Huygens Institute
-* Dung Pham – Junior researcher, Huygens Institute
-
-### Semantic contextualisation
-
-* Leon van Wissen – Team lead, University of Amsterdam
-* Sophie Arnoult – Postdoc (Natural language processing), Vrije Universiteit Amsterdam
-* Stella Verkijk – Developer (Natural language processing), Vrije Universiteit Amsterdam
-* Pierre Barrault – Research data engineer, Huygens Institute
-* Piek Vossen – Professor (Computational linguistics), Vrije Universiteit Amsterdam
-
-### Former team members
-
-* Lina de Swaaf – Intern, Project management & user interaction (January 2026 – March 2026)
-* Tara Huveneers – Intern, Project management & user interaction (September 2025 – March 2026)
-* Arlette Verdonk – Intern, Project management & user interaction (September 2025 – January 2026)
-* Linda Robertus – Intern, Historical contextualisation (September 2025 – December 2025)
-* Gavin Lip – Intern & Student assistant, Digital infrastructure (April 2024 – November 2025)
-* Arno Bosse – Team lead, Digital infrastructure (January 2022 – September 2025)
-* Renate Smit – Intern & Student assistant, Historical contextualisation (September 2023 – August 2025)
-* Femke Brink – Student assistant, Historical contextualisation (March 2023 – August 2025)
-* Lija Joseph – Intern, Historical contextualisation (May – August 2025)
-* Sailaja Mundakkal – Intern, Historical contextualisation (May – August 2025)
-* Hannah Goossens – Intern, Semantic contextualisation (April – June 2025)
-* Ramin Ravansar – Intern, Historical contextualisation (June – October 2024)
-* Henrike Vellinga – Student assistant & Junior researcher, Historical contextualisation (June 2022 – August 2024)
-* Ruben Land – Intern & Student assistant, Historical contextualisation (February 2023 – August 2024)
-* Philippe Maillard – Student assistant, Historical contextualisation (November 2023 – August 2024)
-* Mrinalini Luthra – Data ethics specialist, Historical contextualisation (February 2023 – June 2024), now working at the Combatting Bias project
-* Eva Otten – Intern, Project management & user interaction (February – June 2024)
-* Tanne van den Berg – Research assistant, Historical contextualisation (March 2023 – March 2024)
-* Merve Tosun – Coordinator user interaction and outreach, Project management & user interaction (January 2022 – January 2024)
-* Marc Widmer – Intern, Historical contextualisation (September 2023)
-* Sterre Berentzen – Research assistant, Historical contextualisation (September 2022 – February 2023)
-* Maartje Hids – Research assistant, Historical contextualisation (February 2022 – January 2023)
-* Andy Houwer – Intern, Historical contextualisation (September – December 2022)
-* Gerhard de Kok – Postdoc, Semantic contextualisation (February – August 2022)
+* Nikhil Bellarykar – Independent researcher, Dutch sources on Maratha history
+* Johny A. Khusyairi – Associate professor, Universitas Airlangga, Surabaya
+* Madison MacKenzie – Former instructor, International Studies, Leiden University
+* Yedda Ljeljeng lja Palemek – Member of the Indigenous Paiwan community, Taiwan
+* Roni Tabroni – Junior researcher, Research Center for Treasures of Religion and Civilization, National Research and Innovation Agency (BRIN), Indonesia
+* Yeh Chunting – Graduate student, National Tsing Hua University, Taiwan
 
 ## Guest researchers
 
 Guest researchers used the Globalise material for their own research and shared their experiences with the team.
 
-* Mathijs Boom – Historian, Utrecht University
-* Ann Heylen – Historian, National Taiwan Normal University (NTNU)
-* Simon Kemper – Data scientist, National Archives of the Netherlands
-* Gerhard de Kok – Historian, Huygens Institute
-* Asawari Luthra – Anthropologist, unaffiliated
-* Leolita Masnun – Anthropologist, unaffiliated
-* Er-wen Yang – Exhibition curator, unaffiliated
+* Mathijs Boom
+* Mohsen Hashemi
+* Ann Heylen
+* Simon Kemper
+* Gerhard de Kok 
+* Asawari Luthra
+* Leolita Masnun
+* Er-wen Yang
+
+## User panel
+
+Members of the user panel tested the portal during its development and gave feedback on its design:
+
+* Muhammad Asyrafi
+* Lotte Baltussen
+* Lennart Bes
+* Susan Broomhall
+* Thomas Dresscher
+* Kate Ekama
+* Alexander Geelen
+* Liesbeth Keijser
+* Paul Phillip van der Linde
+* Ariel Lopez
+* Maarten Manse
+* Tristan Mostert
+* Pichayapat Naisupap
+* Meenu Rabecca
+* Sophie Rose
+* Pouwel van Schooten
+* Alicia Schrikker
+* Lidia Sztahura
+* Bram Tanczos
+* Hanna te Velde
+* Adrian Warsinski
 
 ## Governance
 
@@ -153,7 +188,7 @@ The advisory board brought together experts in history, archives, linguistics an
 * Johan Fourie (Stellenbosch University, South Africa)
 * Ewout Frankema (Wageningen University & Research)
 * Oscar Gelderblom (Antwerp University, Belgium)
-* Robert Goené (Waag | technology & society)
+* Robert Goené (Clean Code)
 * Jos Gommans (Leiden University)
 * Michiel van Groesen (Leiden University)
 * Hans Hägerdal (Linnaeus University, Sweden)
