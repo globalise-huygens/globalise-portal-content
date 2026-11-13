@@ -3,7 +3,7 @@ title: "From acts of resistance and feminist theory to tortoiseshell trade and 1
 subtitle: ""
 summary: "Blog post by Lina de Swaaf, originally published on the Globalise project website on 16 April 2026."
 type: "archived-post"
-slug: "from-acts-of-resistance-and-feminist-theory-to-tortoiseshell-trade-and-17th-century-currency-not-everything-i-learnt-at-the-globalise-conference"
+slug: "not-everything-i-learnt-at-the-globalise-conference"
 status: "draft"
 
 authors: ["Lina de Swaaf"]
