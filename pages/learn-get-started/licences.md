@@ -44,11 +44,17 @@ The Globalise project aimed to make its data as open and reusable as possible. T
 
 ## The scans
 
-The scans are made and served by the Nationaal Archief.
+The scans are made and served by the Nationaal Archief, which makes them available as [public domain and CC0](https://www.nationaalarchief.nl/onderzoeken/open-data/archiefinventarissen-digitale-objecten-en-scans-van-archieven). The documents themselves are in the public domain, and the Nationaal Archief waives any rights in the scans. You may reuse them freely, without asking permission.
 
-Content to be developed.
+Crediting the source is not required, but the Nationaal Archief appreciates it. Use one of these forms:
 
-<!-- TODO: state the rights status of the Nationaal Archief scans of the VOC archive and how to credit them. Captions on the former project website credit these scans as "Nationaal Archief, CC0". -->
+* **Short citation:** NL-HaNA, [abbreviated archive name + period], [access number (*toegangsnummer*)], inv. no. [inventory number], [scan filename].
+* **Full citation:** Nationaal Archief, The Hague, [full archive name], [access number], inv. no. [inventory number], [scan filename].
+
+For example, for scan 125 of inventory number 1056 of the VOC archive:
+
+* NL-HaNA, VOC, 1.04.02, inv. no. 1056, NL-HaNA_1.04.02_1056_0125.
+* Nationaal Archief, The Hague, Archief van de Verenigde Oostindische Compagnie (VOC), 1.04.02, inv. no. 1056, NL-HaNA_1.04.02_1056_0125.
 
 ## Datasets published so far
 

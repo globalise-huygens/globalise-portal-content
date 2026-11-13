@@ -4,11 +4,11 @@ subtitle: ""
 summary: "Guidance for citing Globalise documents, entities, datasets and other outputs."
 type: "guide"
 slug: "citation-guide"
-status: "planned"
+status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-12"
+dateUpdated: "2026-11-13"
 
 featured: false
 
@@ -26,6 +26,22 @@ related: []
 # Citation guide
 
 Content to be developed.
+
+<!-- TODO: add guidance for citing documents, entities, datasets and other Globalise outputs. -->
+
+## Scans from the Nationaal Archief
+
+The scans on this portal are made and served by the Nationaal Archief. To cite a scan, use the forms recommended by the Nationaal Archief:
+
+* **Short citation:** NL-HaNA, [abbreviated archive name + period], [access number (*toegangsnummer*)], inv. no. [inventory number], [scan filename].
+* **Full citation:** Nationaal Archief, The Hague, [full archive name], [access number], inv. no. [inventory number], [scan filename].
+
+For example, for scan 125 of inventory number 1056 of the VOC archive:
+
+* NL-HaNA, VOC, 1.04.02, inv. no. 1056, NL-HaNA_1.04.02_1056_0125.
+* Nationaal Archief, The Hague, Archief van de Verenigde Oostindische Compagnie (VOC), 1.04.02, inv. no. 1056, NL-HaNA_1.04.02_1056_0125.
+
+The scans are in the public domain. See [Licences & reuse](/pages/learn-get-started/licences.md#the-scans).
 
 ## Findings made with an AI assistant
 

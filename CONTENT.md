@@ -86,7 +86,7 @@ The list is non-exhaustive.
 | LEARN-06 | Understanding results | `pages/learn-get-started/searching-browsing/results.md` | What do result fields, highlights and rankings mean? | 600–900 | Project team + developers | Essential | planned | Final UI |
 | LEARN-07 | Using Globalise with an AI assistant | `pages/learn-get-started/ai-assistant.md` | How do users connect an AI assistant to the Globalise MCP server? What can they ask, and how should they check the answers? | 600–900 | Editorial team + developers | Essential | draft | Final MCP server |
 | LEARN-08 | Research workflow | `pages/learn-get-started/research-workflow.md` | How can a user move from a research question to archival evidence, inspecting scans, transcriptions, metadata and annotations along the way? | 700–1,000 | Project team | Recommended | planned | Examples |
-| LEARN-09 | Citation guide | `pages/learn-get-started/citation.md` | How should documents, entities, datasets and portal output be cited? | 200 | Project team | Essential | planned | Persistent IDs |
+| LEARN-09 | Citation guide | `pages/learn-get-started/citation.md` | How should documents, entities, datasets and portal output be cited? | 200 | Project team | Essential | draft | Persistent IDs |
 | LEARN-10 | Licences & reuse | `pages/learn-get-started/licences.md` | What can users reuse and under what conditions? | 500–800 | Editorial team | Essential | draft | Licence decisions |
 
 LEARN-03 to LEARN-06 sit under Searching & browsing (`searching-browsing/`).
