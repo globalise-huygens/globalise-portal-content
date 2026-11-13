@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-12"
+dateUpdated: "2026-11-13"
 
 featured: false
 
@@ -25,7 +25,7 @@ related: ["colonial-context", "responsible-use", "methods", "voc-archives-guide"
 
 # Bias & limitations
 
-<!-- Sources: pages/research-responsibly/voc-archives-guide.md; "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/project/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 and its ethics reports on Primary Sources and the Places Dataset (pages/research-responsibly/ethics/policy.md); Arno Bosse, "The Languages of GLOBALISE" (pages/about/project/archive/blog/the-languages-of-globalise.md). Limitations of the VOC archives themselves are covered in the VOC archives guide; this page links to it rather than repeating it. -->
+<!-- Sources: pages/research-responsibly/voc-archives-guide.md; "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 and its ethics reports on Primary Sources and the Places Dataset (pages/research-responsibly/ethics/policy.md); Arno Bosse, "The Languages of GLOBALISE" (pages/about/archive/blog/the-languages-of-globalise.md). Limitations of the VOC archives themselves are covered in the VOC archives guide; this page links to it rather than repeating it. -->
 
 <!-- TODO: this page depends on the final models and data (dependency "Final models" in CONTENT.md). Check all statements against the final state of the portal before publication. -->
 
@@ -63,7 +63,7 @@ The language of each page was identified automatically (see [How the data was pr
 * For about 3% of pages (some 136,000), no language could be identified. Most are blank pages, tables or pages bound upside down or sideways, but pages in languages the method does not cover can also end up here.
 * Languages were identified per page, not per document.
 
-The lists of pages with a non-Dutch or unknown language, including their text, are published, so that you can apply your own criteria. See the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#language-identification) and [The Languages of GLOBALISE](/pages/about/project/archive/blog/the-languages-of-globalise.md).
+The lists of pages with a non-Dutch or unknown language, including their text, are published, so that you can apply your own criteria. See the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#language-identification) and [The Languages of GLOBALISE](/pages/about/archive/blog/the-languages-of-globalise.md).
 
 ## Computational processing
 
@@ -101,11 +101,11 @@ Content to be developed.
 
 ### Bias in models
 
-The project's [ethics policy](/pages/research-responsibly/ethics/policy.md) committed it to checking its models for discriminatory or biased results, through careful selection of training and test data by people with relevant historical expertise, and through qualitative and quantitative analysis of model output.
+Models learn from the examples they are trained on. Where some kinds of text, names or people are under-represented in those examples, the models tend to recognise them less well. The project's [ethics policy](/pages/research-responsibly/ethics/policy.md) therefore asked for careful selection of training and test data by people with relevant historical expertise, and for attention to discriminatory or biased output.
 
 Content to be developed.
 
-<!-- TODO: report what bias analyses were carried out on the models and what they found. -->
+<!-- TODO: add a plain-language description of where bias in the models is likely and what it may mean for users: for example which hands, periods, regions, languages and document types were under-represented in the training data of the text recognition, segmentation and entity and event recognition models, and whether names of non-Europeans, women or enslaved people are likely to be recognised less well. A quantitative analysis of bias is not feasible; this section describes possible bias, not measured bias. -->
 
 ## Reference data
 
@@ -115,7 +115,7 @@ Even when a dataset is well documented, it can be hard for users to see why a pa
 
 ### Thematic choices
 
-The project could not create reference data for every subject in the archive. It prioritised political and economic subjects, which appear most often in the sources, while drawing attention to lesser-known Asian polities and to the activities of non-European actors. In 2024, the social domain was next in line, after which the project planned to explore the environmental and cultural domains. Any such selection is subjective. See [Mission, Research Themes and Guiding Questions](/pages/about/project/archive/mission-research-themes.md).
+The project could not create reference data for every subject in the archive. It prioritised political and economic subjects, which appear most often in the sources, while drawing attention to lesser-known Asian polities and to the activities of non-European actors. In 2024, the social domain was next in line, after which the project planned to explore the environmental and cultural domains. Any such selection is subjective. See [Mission, Research Themes and Guiding Questions](/pages/about/archive/mission-research-themes.md).
 
 <!-- TODO: update with the final coverage of reference data per domain. The 2024 mission statement says datasets existed or were in preparation for polities, commodities, units of measurement, locations and persons, with the social domain next. -->
 
@@ -130,6 +130,16 @@ An infrastructure that makes an archive easier to search also influences what pe
 Advanced search makes it possible to extract small pieces of information from millions of pages. These are representations of historical realities, shaped by the context of the document they come from: its type, its author and its purpose. The archive does not offer unfiltered historical truths, but fragmented observations and interpretations.
 
 Searches on the portal can tell you what was recorded, where and when. Explaining how and why things happened remains the task of the researcher. See [Responsible use](/pages/research-responsibly/ethics/responsible-use.md).
+
+### Query expansion
+
+The portal expands the words in a search with other spellings and word forms (see [Searching](/pages/learn-get-started/searching-browsing/searching.md#spelling-variants-and-query-expansion)). This helps to find passages that use spellings you did not think of, but it has limits:
+
+* The expansions from word embeddings include words that occur in similar contexts without meaning the same. A search for *kruidnagel* (clove) is expanded with *buskruidt* (gunpowder), for example. Such expansions add irrelevant results, and can inflate counts.
+* The INT Historical Lexicon covers general historical Dutch. It has no forms for many words that are specific to the VOC archives, and none for words in other languages, including the many words from Asian languages that appear in the documents.
+* Neither source finds every spelling or every misreading in the transcriptions. A search that finds nothing, even with expansion, does not prove that something is not in the archive.
+
+Because results depend on which expansions are switched on, note them when you report search results or counts.
 
 ### Searching with an AI assistant
 

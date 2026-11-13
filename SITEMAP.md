@@ -29,14 +29,13 @@ Learn & get started
     └── Videos
 
 About GLOBALISE
-├── Project & team
-│   ├── What is Globalise?
-│   ├── Project & ambitions
-│   ├── Team & partners
-│   └── Archive (project documents and blog posts)
-└── Methods & outputs
-    ├── Methods
-    └── Outputs
+├── What is Globalise?
+├── Ambitions
+├── Position
+├── Methods
+├── Outputs
+├── Team & partners
+└── Archive (project documents and blog posts)
 
 Research responsibly
 ├── Ethics & colonial context
@@ -89,14 +88,13 @@ Contact · Release notes · Privacy · Cookies · Accessibility · Disclaimer ·
 ### About GLOBALISE
 
 * [About GLOBALISE](pages/about/index.md) (ABOUT-01)
-  * Project & team
-    * [What is Globalise?](pages/about/project/index.md) (ABOUT-02)
-    * [Project & ambitions](pages/about/project/ambitions.md) (ABOUT-03)
-    * [Team & partners](pages/about/project/team.md) (ABOUT-04)
-    * [Archive](pages/about/project/archive/index.md) (ABOUT-05), with the archived project documents and blog posts (ARCH-01 to ARCH-28)
-  * Methods & outputs
-    * [Methods](pages/about/methods.md) (ABOUT-06)
-    * [Outputs](pages/about/outputs.md) (ABOUT-07)
+  * [What is Globalise?](pages/about/what-is-globalise.md) (ABOUT-02)
+  * [Ambitions](pages/about/ambitions.md) (ABOUT-03)
+  * [Position](pages/about/position.md) (ABOUT-08)
+  * [Methods](pages/about/methods.md) (ABOUT-06)
+  * [Outputs](pages/about/outputs.md) (ABOUT-07)
+  * [Team & partners](pages/about/team.md) (ABOUT-04)
+  * [Archive](pages/about/archive/index.md) (ABOUT-05), with the archived project documents and blog posts (ARCH-01 to ARCH-29)
 
 ### Research responsibly
 

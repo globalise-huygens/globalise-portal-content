@@ -25,7 +25,7 @@ related: ["voc-archives-guide", "colonial-context", "bias-and-limitations", "cit
 
 # Responsible use
 
-<!-- Sources: pages/research-responsibly/voc-archives-guide.md (section "What do you need to be aware of when using historical archives like the records of the VOC?"); "Mission, Research Themes and Guiding Questions" v1.0, section "Harnessing Big Data Responsibly" (pages/about/project/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 (pages/research-responsibly/ethics/policy.md). General advice on reading the VOC archives critically is in the VOC archives guide; this page links to it and adds what is specific to the portal. -->
+<!-- Sources: pages/research-responsibly/voc-archives-guide.md (section "What do you need to be aware of when using historical archives like the records of the VOC?"); "Mission, Research Themes and Guiding Questions" v1.0, section "Harnessing Big Data Responsibly" (pages/about/archive/mission-research-themes.md); Globalise Ethics Policy v2.0 (pages/research-responsibly/ethics/policy.md). General advice on reading the VOC archives critically is in the VOC archives guide; this page links to it and adds what is specific to the portal. -->
 
 Globalise makes it possible to search millions of pages of colonial archives in ways that were not possible before. That brings new opportunities, and new responsibilities. The Globalise project tried to be transparent about its sources, methods and limitations, but it could not anticipate every way in which the material will be used. This page offers practical guidance for reading, interpreting and reusing what you find.
 
@@ -57,7 +57,7 @@ The archives contain descriptions of violence, enslavement and exploitation, and
 
 Content to be developed.
 
-<!-- TODO: guidance on working with and for communities connected to the histories in the archive. Possible sources: Asawari Luthra's blog post "When Archives Break Hearts" and Tara Huveneers's "Building Bridges: Archives as Spaces of Reconnection" (both in pages/about/project/archive/blog/), and the Combatting Bias ethical commitments. Needs editorial decision on scope. -->
+<!-- TODO: guidance on working with and for communities connected to the histories in the archive. Possible sources: Asawari Luthra's blog post "When Archives Break Hearts" and Tara Huveneers's "Building Bridges: Archives as Spaces of Reconnection" (both in pages/about/archive/blog/), and the Combatting Bias ethical commitments. Needs editorial decision on scope. -->
 
 ## Citing Globalise
 

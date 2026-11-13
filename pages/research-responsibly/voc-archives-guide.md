@@ -51,7 +51,7 @@ The sixteenth to eighteenth centuries marked the advent of European colonialism 
 
 These archives record the VOC’s aggressive and transformative colonial and trading presence in Asia and Africa, and even the exploration of Australia. As the VOC governed, traded and interacted extensively with individuals, societies and polities in the worlds of the Indian Ocean, Indonesian Archipelago and East Asian Seas, the archives are a valuable source for studying the histories of the regions that the Company was involved or interested in. They provide information about a startlingly wide range of subjects ranging from politics and trade to science, religion, culture, food, weather and disease. The remarkable size of the archive means that we are yet to discover the full extent of the richness and diversity of its contents. The size of the archive, together with previous historiographical trends, has meant that historians who have researched the archive until now have focussed their attention on a limited, but gradually widening range of subjects. 
 
-We hope that the transparency rendered to the archive by creating accessible machine transcriptions for a large part of it by the Globalise project together with its semantic and contextual enrichments will lead to a more extensive exploration of its potential. To read more on what themes the Globalise project aimed to encourage research on, see Matthias van Rossum and Manjusha Kuruppath’s long read [Mission, Research Themes and Guiding Questions](https://docs.globalise.huygens.knaw.nl/mission/mission_researchthemes/) and Matthias van Rossum’s blogpost [Echoes of Genocidal Erasure](https://globalise.huygens.knaw.nl/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/). 
+We hope that the transparency rendered to the archive by creating accessible machine transcriptions for a large part of it by the Globalise project together with its semantic and contextual enrichments will lead to a more extensive exploration of its potential. To read more on what themes the Globalise project aimed to encourage research on, see Matthias van Rossum and Manjusha Kuruppath’s long read [Mission, Research Themes and Guiding Questions](/pages/about/archive/mission-research-themes.md) and Matthias van Rossum’s blogpost [Echoes of Genocidal Erasure](/pages/about/archive/blog/echoes-of-genocidal-erasure.md). 
 
 ## What do you need to be aware of when using historical archives like the records of the VOC?
 
@@ -67,7 +67,7 @@ We hope that the transparency rendered to the archive by creating accessible mac
 4) The VOC archives, because of the way in which they were created, always carry reiterations of information. The same event can be written about in more than one document. For example, an event recorded in the daily diary of a settlement, might again be discussed in the resolutions of the government at the settlement level, and discussed again in its correspondence with Batavia. Most occurrences therefore will be discussed at multiple levels in what Jos Gommans calls the ‘Company’s paper trail.’[^5] To appreciate how the event was written and thought about, following this paper trail is vital.  
 5) What can wider historiography about the region or event contribute to your knowledge about the information contained in the document you are reading? 
 
-**Violent, Painful and Problematic Pasts**: The VOC archives record events that occurred 300 to 400 years ago. They are a window into a period of history that was fraught with violent words and deeds. The archive carries records of a wide range of distressing events including enslavement, conflict, judicial punishment, exploitation, marginalization, problematic characterizations and language which can be painful and discomforting to read and come to terms with. To learn more about how the VOC archive can affect its readers, see Asawari Luthra’s blogpost [When Archives Break Hearts](https://globalise.huygens.knaw.nl/when-archives-break-hearts/), and to know more about how the Globalise project engaged with the VOC archives, see the section on Primary Sources in Mrinalini Luthra and Amber Zijlma’s report on [Globalise Ethics Policy](https://docs.globalise.huygens.knaw.nl/ethics/policy/). 
+**Violent, Painful and Problematic Pasts**: The VOC archives record events that occurred 300 to 400 years ago. They are a window into a period of history that was fraught with violent words and deeds. The archive carries records of a wide range of distressing events including enslavement, conflict, judicial punishment, exploitation, marginalization, problematic characterizations and language which can be painful and discomforting to read and come to terms with. To learn more about how the VOC archive can affect its readers, see Asawari Luthra’s blogpost [When Archives Break Hearts](/pages/about/archive/blog/when-archives-break-hearts.md), and to know more about how the Globalise project engaged with the VOC archives, see the section on Primary Sources in Mrinalini Luthra and Amber Zijlma’s report on [Globalise Ethics Policy](/pages/about/archive/ethics-policy.md). 
 
 ## Why did the VOC generate so much correspondence?
 
@@ -175,7 +175,7 @@ The Globalise corpus mostly bears handwritten textual material in early modern D
 
 ## What languages are the archives in?
 
-Most of the archive is written in early modern Dutch, but the archive also has documents written in languages like Malay, Persian and Sinhala. The archive also features documents that are written in non-European languages but in Latin script. European language documents like English, Portuguese and Spanish also feature in the archive. Read [Arno Bosse’s blogpost](https://globalise.huygens.knaw.nl/the-languages-of-globalise/) for more information on which languages are represented in the archive.   
+Most of the archive is written in early modern Dutch, but the archive also has documents written in languages like Malay, Persian and Sinhala. The archive also features documents that are written in non-European languages but in Latin script. European language documents like English, Portuguese and Spanish also feature in the archive. Read [Arno Bosse’s blogpost](/pages/about/archive/blog/the-languages-of-globalise.md) for more information on which languages are represented in the archive.   
 
 ![Scan of a page from the VOC archives showing text in both Sinhala (left) and Dutch (right) languages](/assets/images/resources/voc-archives-guide/image1.jpg)
 
@@ -195,7 +195,7 @@ The archive bears material roughly from the 1605 to 1794 period, and bears corre
 
 ## OK. I’m now ready to research the archives. Where do I begin?
 
-See Melinda Susanto’s [informative guide](https://globalise.huygens.knaw.nl/transcriptions-viewer-how-to-guide/) on undertaking research using the transcription viewer. 
+See Melinda Susanto’s [informative guide](/pages/about/archive/blog/transcriptions-viewer-how-to-guide.md) on undertaking research using the transcription viewer. 
 
 ## Glossary of Terms and Acronyms used in this article
 
@@ -253,22 +253,22 @@ Wayan Jarrah Sastrawan, *The Precarious Past: Historical Practices in Pre-Modern
 
 ### Long Reads, Blogposts and Datasets mentioned in this Article (Globalise and Associated Projects)
 
-Arno Bosse, “The Languages of GLOBALISE,” GLOBALISE (blog), 2024, accessed January 9, 2026, [https://globalise.huygens.knaw.nl/the-languages-of-globalise/](https://globalise.huygens.knaw.nl/the-languages-of-globalise/) 
+Arno Bosse, “The Languages of GLOBALISE,” GLOBALISE (blog), 2024, originally published at https://globalise.huygens.knaw.nl/the-languages-of-globalise/, [archived copy on the Globalise portal](/pages/about/archive/blog/the-languages-of-globalise.md) 
 
-Asawari Luthra, “When Archives Break Hearts,” GLOBALISE (blog), 2025, accessed January 9, 2026, [https://globalise.huygens.knaw.nl/when-archives-break-hearts/](https://globalise.huygens.knaw.nl/when-archives-break-hearts/) 
+Asawari Luthra, “When Archives Break Hearts,” GLOBALISE (blog), 2025, originally published at https://globalise.huygens.knaw.nl/when-archives-break-hearts/, [archived copy on the Globalise portal](/pages/about/archive/blog/when-archives-break-hearts.md) 
 
 Kay Pepping, Renate Smit, and Manjusha Kuruppath, 2025, “GLOBALISE \- Digitized Indexes of the Dutch East India Company OBP (1602-1799)”, [https://hdl.handle.net/10622/LVOQTG](https://hdl.handle.net/10622/LVOQTG)  
 IISH Data Collection, V2. 
 
 Manjusha Kuruppath, “Prisoners of the (Written and Accessible) Past: Reflections on Bias in the Dutch East India Company Historian’s Craft.” Combatting Bias (blog), 2025 accessed May 31, 2026, [https://combattingbias.huygens.knaw.nl/news/historicalbias/](https://combattingbias.huygens.knaw.nl/news/historicalbias/) 
 
-Matthias van Rossum and Manjusha Kuruppath, “GLOBALISE Mission, Research Themes and Guiding Questions,” 2024, accessed January 9, 2026, [https://docs.globalise.huygens.knaw.nl/mission/mission\_researchthemes/](https://docs.globalise.huygens.knaw.nl/mission/mission_researchthemes/).
+Matthias van Rossum and Manjusha Kuruppath, “GLOBALISE Mission, Research Themes and Guiding Questions,” 2024, originally published at https://docs.globalise.huygens.knaw.nl/mission/mission\_researchthemes/, [archived copy on the Globalise portal](/pages/about/archive/mission-research-themes.md).
 
-Matthias van Rossum, “Echoes of Genocidal Erasure: A Reflection on Historical ‘Voices’ and Digital Infrastructure for Colonial Archives,” 2025, accessed January 9, 2026, [https://globalise.huygens.knaw.nl/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/](https://globalise.huygens.knaw.nl/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/)
+Matthias van Rossum, “Echoes of Genocidal Erasure: A Reflection on Historical ‘Voices’ and Digital Infrastructure for Colonial Archives,” 2025, originally published at https://globalise.huygens.knaw.nl/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/, [archived copy on the Globalise portal](/pages/about/archive/blog/echoes-of-genocidal-erasure.md)
 
-Melinda Susanto, “Transcriptions Viewer: How-to Guide, Huygens Institute,” 2025, accessed January 9, 2026, [https://globalise.huygens.knaw.nl/transcriptions-viewer-how-to-guide/](https://globalise.huygens.knaw.nl/transcriptions-viewer-how-to-guide/) 
+Melinda Susanto, “Transcriptions Viewer: How-to Guide, Huygens Institute,” 2025, originally published at https://globalise.huygens.knaw.nl/transcriptions-viewer-how-to-guide/, [archived copy on the Globalise portal](/pages/about/archive/blog/transcriptions-viewer-how-to-guide.md) 
 
-Mrinalini Luthra and Amber Zijlma, “GLOBALISE Ethics Policy,” 2025, accessed January 9, 2026, [https://docs.globalise.huygens.knaw.nl/ethics/policy/](https://docs.globalise.huygens.knaw.nl/ethics/policy/) 
+Mrinalini Luthra and Amber Zijlma, “GLOBALISE Ethics Policy,” 2025, originally published at https://docs.globalise.huygens.knaw.nl/ethics/policy/, [archived copy on the Globalise portal](/pages/about/archive/ethics-policy.md) 
 
 Renate Smit, “TANAP Index and Establishment Reconstructions,” 2025, accessed January, 23, 2026, [https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/) 
 

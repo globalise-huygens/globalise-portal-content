@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-12"
+dateUpdated: "2026-11-13"
 
 featured: false
 
@@ -325,11 +325,42 @@ Content to be developed.
 
 The transcriptions, entities and events are converted into W3C Web Annotations with scripts in the [globalise-tools](https://github.com/knaw-huc/globalise-tools) repository of the KNAW Humanities Cluster. The annotation pages on the portal record the exact version of the script used. See [Data model & ontologies](/pages/research-responsibly/data/data-model.md).
 
+## Query expansion
+
+<!-- Sources: Kweepeer README, PLAN.md and man pages kweepeer(1) and kweepeer(5) (https://github.com/knaw-huc/kweepeer, retrieved 2026-11-13); issue globalise-huygens/glob-portal-infomodel#97; module list and responses of https://kweepeer.globalise.nl, retrieved 2026-11-13. -->
+
+| Component | Description | Link |
+| --- | --- | --- |
+| Kweepeer | Interactive query expansion service (KNAW Humanities Cluster), written in Rust; licence AGPL-3.0 | <https://github.com/knaw-huc/kweepeer> |
+| Kweepeer service for Globalise | The instance used by the portal | <https://kweepeer.globalise.nl> |
+| INT Historisch Lexicon | Historical spellings and word forms of Dutch words (Instituut voor de Nederlandse Taal) | <https://ivdnt.org/> |
+| Globalise word embeddings | Word embeddings trained on the transcriptions of the VOC archives | <!-- TODO: add link --> |
+
+<!-- TODO: confirm which embeddings model the service uses (possibly derived from the GLOBALISE Word2vec Experiment, https://doi.org/10.5281/zenodo.15038313), how it was trained and on which version of the transcriptions, and add a link. -->
+
+To help researchers deal with the spelling variation in the archive, the portal expands the words in a search with other spellings and word forms. The suggestions come from **Kweepeer** (from *kweepeer*, Dutch for quince), a query expansion service developed for Globalise by Maarten van Gompel at the KNAW Humanities Cluster. How users work with the expansions is described under [Searching](/pages/learn-get-started/searching-browsing/searching.md#spelling-variants-and-query-expansion).
+
+**How it works.** The portal sends the words of a search to Kweepeer as a query in Lucene syntax. Kweepeer parses the query, looks up each word in its expansion modules, and returns the suggestions per word and per module, together with a template of the query in which each word can be replaced by its expansions. Kweepeer does not search the index itself. The portal shows the suggestions to the user, builds the final query from the original words and the expansions the user keeps, and sends it to the search index. Each word is replaced by a disjunction of the word and its expansions (an *OR* query), so that the structure of the original query, such as *AND* between words, is kept. Words that refer to entities from the reference data, chosen from the suggestions while typing, are not sent to Kweepeer.
+
+**Modules.** Kweepeer can combine several kinds of expansion: lookup in lists of variants, spelling variants within a given edit distance, anagram hashing with [analiticcl](https://github.com/proycon/analiticcl), and semantic similarity with word embeddings. Several of these were tested during development. The project chose the two modules that gave the most relevant results for the VOC archives, and only these are enabled in the service the portal uses:
+
+* **INT Historisch Lexicon** (`inthislex`, a lookup module). A list of Dutch words with the historical spellings and inflected forms in which they occur, compiled by the Instituut voor de Nederlandse Taal. The module returns every form listed for a word, which can be more than twenty (for example 21 for *nagel*), and nothing for words that are not in the lexicon. It was used earlier in Nederlab and Golden Agents; INT gave permission for its use in Globalise.
+* **Globalise word embeddings** (`embeddings`, a finalfusion module). A model of word vectors trained on the transcriptions of the VOC archives. For each word, the module returns the ten words whose vectors are closest to it, with their similarity scores. The number is a setting of the service (`k = 10`, the default). Because the model was trained on the automatic transcriptions, its nearest neighbours include spelling variants that occur in the archive, transcription errors, case variants and words with punctuation attached, but also words that occur in similar contexts without meaning the same, such as *buskruidt* (gunpowder) for *kruidnagel* (clove).
+
+<!-- TODO: add the credit for the INT Historisch Lexicon in the wording agreed with INT, and its exact name, version and link. -->
+
+**Control by the user.** Because both modules can suggest unwanted forms, the expansions are not applied silently. The user can switch expansion on and off for each word, for each module, and for each expanded form.
+
+**Credits.** Maarten van Gompel (Digital Infrastructure department, KNAW Humanities Cluster) and Robert Goené (Clean Code).
+
+<!-- TODO: add the people who integrated Kweepeer into the portal. -->
+
 ## The portal
 
 | Component | Description | Link |
 | --- | --- | --- |
 | Globalise research portal | Source code of the portal | <https://github.com/globalise-huygens/globalise-research-portal> |
+| Kweepeer | Query expansion service. See [Query expansion](#query-expansion) | <https://github.com/knaw-huc/kweepeer> |
 | Globalise MCP server | Model Context Protocol server that gives AI assistants read-only access to the search indices and persistent data | <https://github.com/globalise-huygens/globalise-mcp> |
 
 The MCP server is designed to run as a separate service next to the portal, so that heavy use by AI assistants does not slow down the portal itself. It queries the same search indices. To limit the load on them, it caches responses for 15 minutes, limits the number of simultaneous requests, applies timeouts and caps the size of result sets, and limits each client to 60 requests per minute. See [Accessing the data](/pages/research-responsibly/data/access.md#mcp-server).

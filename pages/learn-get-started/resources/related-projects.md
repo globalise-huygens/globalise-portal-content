@@ -84,4 +84,4 @@ A [snapshot of the TANAP website from 2018](https://github.com/globalise-huygens
 
 Content to be developed.
 
-<!-- TODO: add other related projects and databases. Candidates mentioned elsewhere in this repository: the published Generale Missiven (resources.huygens.knaw.nl/vocgeneralemissiven), Dutch-Asiatic Shipping, VOC Opvarenden, Bookkeeper-General Batavia, Monsoon Traders, Exploring Slave Trade in Asia (ESTA), Atlas of Mutual Heritage, the Combatting Bias project, Necessary Reunions, and the institutional and project collaborations listed on /pages/about/project/team.md. -->
+<!-- TODO: add other related projects and databases. Candidates mentioned elsewhere in this repository: the published Generale Missiven (resources.huygens.knaw.nl/vocgeneralemissiven), Dutch-Asiatic Shipping, VOC Opvarenden, Bookkeeper-General Batavia, Monsoon Traders, Exploring Slave Trade in Asia (ESTA), Atlas of Mutual Heritage, the Combatting Bias project, Necessary Reunions, and the institutional and project collaborations listed on /pages/about/team.md. -->

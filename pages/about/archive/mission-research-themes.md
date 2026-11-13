@@ -24,12 +24,12 @@ hero:
   source: ""
   licence: ""
 
-related: ["archive", "project-ambitions"]
+related: ["archive", "ambitions"]
 ---
 
 # Mission, Research Themes and Guiding Questions
 
-> **Archived document.** This statement was originally published on the [Globalise documentation website](https://docs.globalise.huygens.knaw.nl/mission/mission_researchthemes/) (version 1.0, dated 18 October 2024; last revised in the documentation repository on 20 November 2024). It is reproduced here without changes to the text. It is licensed under a [Creative Commons BY-SA 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). For a shorter introduction, see [Project & ambitions](/pages/about/project/ambitions.md).
+> **Archived document.** This statement was originally published on the former Globalise documentation website, docs.globalise.huygens.knaw.nl, at [docs.globalise.huygens.knaw.nl/mission/mission_researchthemes/](https://docs.globalise.huygens.knaw.nl/mission/mission_researchthemes/) (version 1.0, dated 18 October 2024; last revised in the documentation repository on 20 November 2024). It is reproduced here without changes to the text. Like all content of the documentation website, it is available under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence. For a shorter introduction, see [Ambitions](/pages/about/ambitions.md).
 
 <!-- Source: https://github.com/globalise-huygens/docs.globalise.huygens.knaw.nl/blob/main/docs/mission/mission_researchthemes.md (retrieved 2026-10-01). Formatting changes only: ORCID icons (2) replaced by text links; the centred HTML image block replaced by a Markdown image linking to the enlarged version. -->
 

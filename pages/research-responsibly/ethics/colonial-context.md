@@ -25,7 +25,7 @@ related: ["voc-archives-guide", "bias-and-limitations", "responsible-use", "miss
 
 # Colonial context
 
-<!-- Sources: pages/research-responsibly/voc-archives-guide.md (Manjusha Kuruppath); "Mission, Research Themes and Guiding Questions" v1.0 (Matthias van Rossum and Manjusha Kuruppath, pages/about/project/archive/mission-research-themes.md); Globalise Ethics Policy v2.0, including the ethics report on the Places Dataset (Ruben Land and Manjusha Kuruppath), pages/research-responsibly/ethics/policy.md. The history of the VOC and its archives is covered in the VOC archives guide; this page only summarises it and links to the relevant sections, to avoid overlap. -->
+<!-- Sources: pages/research-responsibly/voc-archives-guide.md (Manjusha Kuruppath); "Mission, Research Themes and Guiding Questions" v1.0 (Matthias van Rossum and Manjusha Kuruppath, pages/about/archive/mission-research-themes.md); Globalise Ethics Policy v2.0, including the ethics report on the Places Dataset (Ruben Land and Manjusha Kuruppath), pages/research-responsibly/ethics/policy.md. The history of the VOC and its archives is covered in the VOC archives guide; this page only summarises it and links to the relevant sections, to avoid overlap. -->
 
 The archives of the Dutch East India Company (VOC) are colonial archives. The VOC was not only a trading company: it waged wars, governed territories and their populations, and was a colonial power in Taiwan, Java, the Moluccas, Sri Lanka, parts of Malabar and at the Cape of Good Hope. Its records describe the past as the company and its personnel encountered, interpreted and wrote about it.
 
@@ -39,7 +39,7 @@ This page is about what that colonial context means for the Globalise portal: ho
 
 ## Beyond the company's perspective
 
-The Globalise project aimed to support research that moves the VOC away from the centre of attention, and treats the polities and societies of the Indian Ocean world as historical subjects in their own right. Doing so depends on understanding how the archive was made, and on making visible the people, places and subjects that the company's own records and finding aids tend to hide. See [Mission, Research Themes and Guiding Questions](/pages/about/project/archive/mission-research-themes.md).
+The Globalise project aimed to support research that moves the VOC away from the centre of attention, and treats the polities and societies of the Indian Ocean world as historical subjects in their own right. Doing so depends on understanding how the archive was made, and on making visible the people, places and subjects that the company's own records and finding aids tend to hide. See [Mission, Research Themes and Guiding Questions](/pages/about/archive/mission-research-themes.md).
 
 ## How the archive was described
 
@@ -77,8 +77,8 @@ Content to be developed.
 ## Further reading
 
 * [Guide to the VOC archives](/pages/research-responsibly/voc-archives-guide.md): the VOC, its archives and what the Globalise project made available
-* [Mission, Research Themes and Guiding Questions](/pages/about/project/archive/mission-research-themes.md): the project's position on VOC historiography
-* [Echoes of genocidal erasure](/pages/about/project/archive/blog/echoes-of-genocidal-erasure.md), Matthias van Rossum's reflection on historical "voices" and digital infrastructure for colonial archives
-* [When Archives Break Hearts](/pages/about/project/archive/blog/when-archives-break-hearts.md), Asawari Luthra on the emotional impact of colonial archives on their readers
+* [Mission, Research Themes and Guiding Questions](/pages/about/archive/mission-research-themes.md): the project's position on VOC historiography
+* [Echoes of genocidal erasure](/pages/about/archive/blog/echoes-of-genocidal-erasure.md), Matthias van Rossum's reflection on historical "voices" and digital infrastructure for colonial archives
+* [When Archives Break Hearts](/pages/about/archive/blog/when-archives-break-hearts.md), Asawari Luthra on the emotional impact of colonial archives on their readers
 
 <!-- TODO: consider adding Manjusha Kuruppath, "Prisoners of the (Written and Accessible) Past: Reflections on Bias in the Dutch East India Company Historian's Craft", Combatting Bias, 4 August 2025 (cited in the VOC archives guide; URL to be added). -->

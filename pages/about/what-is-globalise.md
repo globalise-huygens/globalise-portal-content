@@ -20,7 +20,7 @@ hero:
   source: ""
   licence: ""
 
-related: ["project-ambitions", "methods", "voc-archives-guide", "team-and-partners"]
+related: ["ambitions", "methods", "voc-archives-guide", "team-and-partners"]
 ---
 
 # What is Globalise?
@@ -56,10 +56,10 @@ The Nationaal Archief has digitised almost all of its VOC archives. Building on 
 
 The [Methods](/pages/about/methods.md) page explains these steps in more detail.
 
-The aim was to move beyond *searchability*, being able to find a word in the text, towards *researchability*: being able to ask historical questions of the archive and receive results with context. The project was set up to support new, more diverse and more representative histories based on the VOC archives, especially histories of the societies of Asia and Africa that have often been treated as background to the story of the company. The [Project & ambitions](/pages/about/project/ambitions.md) page explains this in more detail.
+The aim was to move beyond *searchability*, being able to find a word in the text, towards *researchability*: being able to ask historical questions of the archive and receive results with context. The project was set up to support new, more diverse and more representative histories based on the VOC archives, especially histories of the societies of Asia and Africa that have often been treated as background to the story of the company. The [Ambitions](/pages/about/ambitions.md) page explains this in more detail.
 
 ## Who was behind the Globalise project?
 
-The Globalise project was based at the Huygens Institute in Amsterdam and funded by the Dutch Research Council (NWO). It was carried out together with the International Institute of Social History (IISH), the KNAW Humanities Cluster, the University of Amsterdam, Vrije Universiteit Amsterdam and the Nationaal Archief. See [Team & partners](/pages/about/project/team.md) for the people and institutions involved.
+The Globalise project was based at the Huygens Institute in Amsterdam and funded by the Dutch Research Council (NWO). It was carried out together with the International Institute of Social History (IISH), the KNAW Humanities Cluster, the University of Amsterdam, Vrije Universiteit Amsterdam and the Nationaal Archief. See [Team & partners](/pages/about/team.md) for the people and institutions involved.
 
 The Globalise project was funded by the Dutch Research Council (NWO) in the funding scheme *Investeringen NWO-groot 2019/2020*, with file number 175.2019.003. The project started in January 2022 and ran for 5 years, until December 2026.

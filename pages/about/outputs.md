@@ -88,7 +88,7 @@ Academic articles and conference papers by members of the Globalise project team
 
 ## Blog posts
 
-Between 2022 and 2026, team members, guest researchers and collaborators wrote [blog posts](/pages/about/project/archive/index.md#blog-posts) about the project's work, from the creation of the first datasets and the training of text recognition models to reflections on working with colonial archives. Together, they give an overview of how the project developed.
+Between 2022 and 2026, team members, guest researchers and collaborators wrote [blog posts](/pages/about/archive/index.md#blog-posts) about the project's work, from the creation of the first datasets and the training of text recognition models to reflections on working with colonial archives. Together, they give an overview of how the project developed.
 
 ## Events
 

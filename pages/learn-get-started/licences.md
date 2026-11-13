@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-11-13"
 
 featured: false
 
@@ -33,9 +33,14 @@ The Globalise project aimed to make its data as open and reusable as possible. T
 
 ## Licences of the portal data
 
-Content to be developed.
+| Data on the portal | Licence |
+| --- | --- |
+| Transcriptions | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (no rights reserved) |
+| Reference data | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Entity and event annotations | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Document and inventory descriptions | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 
-<!-- TODO: state the licence(s) that apply to the data on the portal: transcriptions, entity and event annotations, document and inventory descriptions, and the final reference data. Note that the IIIF collection and the hdl manifests currently carry CC0 (http://creativecommons.org/publicdomain/zero/1.0/), while the manifests under /manifests/inventories/ carry the Public Domain Mark; the annotation pages carry no rights statement. -->
+<!-- TODO: the IIIF collection and the hdl manifests currently carry CC0, the manifests under /manifests/inventories/ carry the Public Domain Mark, and the annotation pages carry no rights statement. Align these rights statements with the licences above. -->
 
 ## The scans
 
@@ -62,9 +67,7 @@ Always check the licence in the record of the dataset you use.
 
 ## Texts on this portal
 
-Content to be developed.
-
-<!-- TODO: decide on the licence for the editorial texts of the portal. Note: pages adapted from or reproducing the Globalise documentation website (Ethics policy, Mission, Research Themes and Guiding Questions, Project & ambitions) are subject to CC BY-SA 4.0. See issue #10. -->
+The texts on this portal are available under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) licence. You may share and adapt them for any purpose, provided you credit the source (see [How to credit Globalise](#how-to-credit-globalise)). This includes the archived blog posts and the documents archived from the project's former documentation website, which were published under the same licence. For images, see below.
 
 ## Images on this portal
 
@@ -72,6 +75,8 @@ Images on content pages, such as illustrations in themes and archived blog posts
 
 ## How to credit Globalise
 
-Content to be developed.
+When you reuse texts or data from this portal under CC BY 4.0, credit them as:
 
-<!-- TODO: give a short attribution statement for reusing Globalise data, and link to /pages/learn-get-started/citation.md. -->
+> Globalise portal, <https://globalise.nl/>
+
+Where possible, also link to the page or record you used. Transcriptions are CC0 and need no credit, but we appreciate it if you mention the source. To cite specific documents, entities or datasets in research, see the [Citation guide](/pages/learn-get-started/citation.md).

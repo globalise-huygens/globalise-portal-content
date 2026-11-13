@@ -167,7 +167,7 @@ There is no scan page numbered **915v,** but this refers to the reverse page aft
 
 ## **2. Finding a specific type of document**
 
-The VOC administrative infrastructure is built around specific types of documents. Each inventory number represents a volume compiled of multiple documents. The former TANAP website had been a conventional entrypoint to the VOC archives for many scholars. **Renate Smit** writes about TANAP indexes in [From ABC to VOC Volume: Utilizing Traditional Finding Aids for the GLOBALISE Infrastructure](/pages/about/project/archive/blog/from-abc-to-voc-volume-utilizing-traditional-finding-aids-for-the-globalise-infrastructure.md).
+The VOC administrative infrastructure is built around specific types of documents. Each inventory number represents a volume compiled of multiple documents. The former TANAP website had been a conventional entrypoint to the VOC archives for many scholars. **Renate Smit** writes about TANAP indexes in [From ABC to VOC Volume: Utilizing Traditional Finding Aids for the GLOBALISE Infrastructure](/pages/about/archive/blog/from-abc-to-voc-volume-utilizing-traditional-finding-aids-for-the-globalise-infrastructure.md).
 
 GLOBALISE Docs preserves some of these [TANAP resources](https://docs.globalise.huygens.knaw.nl/tanap/) including PDF lists of available [establishment reconstructions](https://docs.globalise.huygens.knaw.nl/tanap/tanap-index-establishment-reconstructions/#list-of-available-establishment-reconstructions).
 
@@ -219,7 +219,7 @@ When reviewing search results, take note in which VOC establishment were the eve
 
 For other types of recurring events, for example **embassies to courts**, try combinations of ‘**gezant**’ (the term for ambassador), the geographic location, or the date of the embassy if known. Depending on the region, ‘**reis**’ or ‘**hofreis**’ may also yield relevant results.
 
-Finally, aside from searching for historical events according to time, place or key actors involved, the Transcriptions Viewer now also enables searching through **event types**. **Stella Verkijk** writes about this approach: [‘Yes okay – but what were they doing? How a lexical approach to event extraction can provide some first answers’](/pages/about/project/archive/blog/yes-okay-but-what-were-they-doing.md). There is a table of event queries at the end of Stella’s post, try it out yourself!
+Finally, aside from searching for historical events according to time, place or key actors involved, the Transcriptions Viewer now also enables searching through **event types**. **Stella Verkijk** writes about this approach: [‘Yes okay – but what were they doing? How a lexical approach to event extraction can provide some first answers’](/pages/about/archive/blog/yes-okay-but-what-were-they-doing.md). There is a table of event queries at the end of Stella’s post, try it out yourself!
 
 ## **4. Finding a location or polity**
 
@@ -275,7 +275,7 @@ To start, click the **play icon**, one at a time, from the top of the page. Each
 
 [Running the Word2Vec model in Google CoLab](https://colab.research.google.com/github/globalise-huygens/lab.globalise.huygens.knaw.nl/blob/main/docs/experiments/GLOBALISE_Word2Vec_Lab.ipynb)
 
-GLOBALISE guest researcher **Ann Heylen** writes about exploratory searches using the Word2Vec tool, and how this led her down the trail of an unexpected story: [Incognito Royalty on the Princes Roijael](/pages/about/project/archive/blog/incognito-royalty-on-the-princes-roijael.md).
+GLOBALISE guest researcher **Ann Heylen** writes about exploratory searches using the Word2Vec tool, and how this led her down the trail of an unexpected story: [Incognito Royalty on the Princes Roijael](/pages/about/archive/blog/incognito-royalty-on-the-princes-roijael.md).
 
 For more inspiration, browse our [thesaurus of commodities](https://thesaurus.globalise.huygens.knaw.nl/en/) to explore various objects found in the VOC archives. For textiles, the [Dutch Textile Trade Project](https://dutchtextiletrade.org/textiles/) as well as the [Textile Databases](https://warwick.ac.uk/fac/arts/history/ghcc/eac/databases/textiles/) provide useful terminology for search queries in the Transcriptions Viewer.
 
@@ -305,7 +305,7 @@ This is a suggested workflow on how to conduct a search query in case of minimal
 
 5\. Translate the transcription back into your preferred language using a translation tool of your choice.
 
-You may also try to enter search terms in other languages (transliterated into the Latin alphabet) into the search field. You may be surprised at what you will find! Aside from Dutch, there are many languages in the VOC archives, even if their numbers within the entirety of the GLOBALISE corpus may be relatively small. **Arno Bosse** writes more about this in [The Languages of GLOBALISE](/pages/about/project/archive/blog/the-languages-of-globalise.md).
+You may also try to enter search terms in other languages (transliterated into the Latin alphabet) into the search field. You may be surprised at what you will find! Aside from Dutch, there are many languages in the VOC archives, even if their numbers within the entirety of the GLOBALISE corpus may be relatively small. **Arno Bosse** writes more about this in [The Languages of GLOBALISE](/pages/about/archive/blog/the-languages-of-globalise.md).
 
 Looking through historical dictionaries or wordlists may also prove useful, depending on the research topic:\
 De Hautman, Frederic. [Spraeck ende woord-boeck](https://books.google.nl/books?id=PEPLbvrTQ70C) (Amsterdam,1603/4)\

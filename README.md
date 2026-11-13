@@ -13,7 +13,7 @@ The navigation bar has four sections. Each corresponds to a folder under `pages/
 | [Home](pages/home.md) | `pages/home.md` | Introduce Globalise and provide entry points into search, Collections and Themes | Essential |
 | [Explore](pages/explore/index.md) | `pages/explore/` | [Collections](pages/explore/collections/README.md) and [Themes](pages/explore/themes/README.md): structured entry points into the material and examples of historical research | Essential |
 | [Learn & get started](pages/learn-get-started/index.md) | `pages/learn-get-started/` | How to use the portal (searching and browsing, using an AI assistant via the MCP server, research workflow, citation guide, licences and reuse), plus [Resources](pages/learn-get-started/resources/index.md): bibliography, related projects, and videos | Essential |
-| [About GLOBALISE](pages/about/index.md) | `pages/about/` | Project & team (`project/`: what Globalise is, ambitions, team, and an [Archive](pages/about/project/archive/index.md) of project documents and blog posts) and methods & outputs | Essential |
+| [About GLOBALISE](pages/about/index.md) | `pages/about/` | What Globalise is, its ambitions and position, methods, outputs, team & partners, and an [Archive](pages/about/archive/index.md) of project documents and blog posts | Essential |
 | [Research responsibly](pages/research-responsibly/index.md) | `pages/research-responsibly/` | [Ethics & colonial context](pages/research-responsibly/ethics/index.md), the [guide to the VOC archives](pages/research-responsibly/voc-archives-guide.md) and [Data & documentation](pages/research-responsibly/data/index.md) | Essential |
 | Footer | `pages/footer/` | Contact, release notes, privacy, cookies, accessibility, disclaimer and colophon | Essential |
 
@@ -55,17 +55,18 @@ pages/
 │
 ├── about/
 │   ├── index.md
-│   ├── project/
-│   │   ├── index.md            (what is Globalise?)
-│   │   ├── ambitions.md
-│   │   ├── team.md
-│   │   └── archive/
-│   │       ├── index.md
-│   │       ├── mission-research-themes.md
-│   │       └── blog/
-│   │           └── <one file per archived blog post>.md
+│   ├── what-is-globalise.md
+│   ├── ambitions.md
+│   ├── position.md
 │   ├── methods.md
-│   └── outputs.md
+│   ├── outputs.md
+│   ├── team.md
+│   └── archive/
+│       ├── index.md
+│       ├── mission-research-themes.md
+│       ├── ethics-policy.md
+│       └── blog/
+│           └── <one file per archived blog post>.md
 │
 ├── research-responsibly/
 │   ├── index.md
@@ -107,7 +108,7 @@ assets/
 ├── images/
 │   ├── README.md
 │   ├── image-metadata.yml
-│   ├── about/archive/                 (images for the archived pages in pages/about/project/archive/)
+│   ├── about/archive/                 (images for the archived pages in pages/about/archive/)
 │   └── resources/voc-archives-guide/  (images for pages/research-responsibly/voc-archives-guide.md)
 ├── references/
 │   └── references.bib

@@ -1,14 +1,14 @@
 ---
-title: "Project & ambitions"
+title: "Ambitions"
 subtitle: ""
-summary: "The ambitions of Globalise to broaden access to colonial archival material and support new research."
+summary: "What the Globalise project set out to do, how it went about it, and what it achieved."
 type: "page"
-slug: "project-ambitions"
+slug: "ambitions"
 status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-11-13"
 
 featured: false
 
@@ -23,9 +23,9 @@ hero:
 related: ["what-is-globalise", "methods", "ethics-policy", "colonial-context"]
 ---
 
-# Project & ambitions
+# Ambitions
 
-<!-- Source: Matthias van Rossum and Manjusha Kuruppath, "Mission, Research Themes and Guiding Questions", version 1.0, 18 October 2024, https://docs.globalise.huygens.knaw.nl/mission/mission_researchthemes/ (CC BY-SA 4.0). This page is a condensed adaptation. -->
+<!-- Source: Matthias van Rossum and Manjusha Kuruppath, "Mission, Research Themes and Guiding Questions", version 1.0, 18 October 2024, https://docs.globalise.huygens.knaw.nl/mission/mission_researchthemes/ (CC BY 4.0). This page is a condensed adaptation. -->
 
 The archives of the Dutch East India Company (VOC) are among the richest sources for the early modern history of Asia, Africa and the Indian Ocean world. The Globalise project was set up to make these archives available in new ways, and to change what kind of history can be written from them. This page describes the project's three main ambitions and the research themes that guided its work.
 
@@ -75,4 +75,12 @@ Any such selection is subjective. The themes reflect the content of the source m
 
 Making an archive easier to search also influences what people search for, what they find and which histories get written. Given the colonial bias of the VOC archives, this brings responsibilities. The project's curated data reflects the knowledge and perspectives of the people who made it, and much of the annotation was done automatically and could only be partly checked by hand. The project therefore aimed to be transparent about its methods, its choices and its limitations. These issues are discussed in the section on [Ethics & colonial context](/pages/research-responsibly/ethics/index.md).
 
-The full statement of the project's mission and research themes, including the detailed research queries for each domain, is available in the archive: [Mission, Research Themes and Guiding Questions](/pages/about/project/archive/mission-research-themes.md).
+The full statement of the project's mission and research themes, including the detailed research queries for each domain, is available in the archive: [Mission, Research Themes and Guiding Questions](/pages/about/archive/mission-research-themes.md).
+
+## What the project achieved, and what it did not
+
+Content to be developed.
+
+<!-- TODO: reflect on how the ambitions above worked out: what the project achieved and what it did not, and why. For example: which thematic domains have reference data (political, economic, social) and which do not (environmental and cultural?); what became of the planned ontology-based infrastructure, the guiding questions and the research queries per domain. Link to Outputs, Methods and Reference data rather than repeating them. Sources to reflect on include the archived Mission statement, and Petram & Van Rossum (2022) in the International Journal of Maritime History (https://doi.org/10.1177/08438714221112873) and the Tijdschrift voor Zeegeschiedenis. Once written, shorten "Thematic choices" on the Bias & limitations page to a summary with a link here (see #19). -->
+
+<!-- TODO: the section "Building responsibly" overlaps with the new Position page (/pages/about/position.md). Move or shorten it once that page is written. -->

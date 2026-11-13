@@ -25,7 +25,7 @@ related: ["ethics-policy", "colonial-context", "bias-and-limitations", "responsi
 
 # Ethics & Colonial Context
 
-<!-- Sources: pages/research-responsibly/voc-archives-guide.md; Globalise Ethics Policy v2.0 (https://docs.globalise.huygens.knaw.nl/ethics/policy/); "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/project/archive/mission-research-themes.md). -->
+<!-- Sources: pages/research-responsibly/voc-archives-guide.md; Globalise Ethics Policy v2.0 (https://docs.globalise.huygens.knaw.nl/ethics/policy/); "Mission, Research Themes and Guiding Questions" v1.0 (pages/about/archive/mission-research-themes.md). -->
 
 The documents on this portal come from the archives of the Dutch East India Company (VOC), a trading company that was also a colonial power. They were written by and for the company, by people with their own political, religious and racial prejudices and agendas. They are an invaluable source for the history of Asia, Africa and the Indian Ocean world, but they cannot be read at face value.
 
