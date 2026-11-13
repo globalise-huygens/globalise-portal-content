@@ -17,7 +17,7 @@ originalPublication:
 featured: false
 
 hero:
-  src: "/assets/images/about/archive/blog/from-acts-of-resistance-and-feminist-theory-to-tortoiseshell-trade-and-17th-century-currency-not-everything-i-learnt-at-the-globalise-conference/Conferenceimpression-thumbnail-youtube.jpeg"
+  src: "/assets/images/about/archive/blog/not-everything-i-learnt-at-the-globalise-conference/Conferenceimpression-thumbnail-youtube.jpeg"
   alt: ""
   caption: "Screenshot"
   credit: ""
@@ -39,14 +39,14 @@ related: ["archive"]
 
 Digital archives open up histories in an unprecedented way; however, they also come with a series of complex questions and difficulties, both for archival institutions and users. Digital colonial archives have another dimension of complexity to them, as they both allow one to shed light on underdocumented societies, but also pose a complex risk of giving in to the perspective and bias from the authors of the archives, namely the colonisers. To open up discussions about the further unlocking of colonial archives and present the possibilities of digitalisation along the lines of the GLOBALISE project, we hosted the conference ***Colonial Pasts, New Approaches and Historiographical Futures*** from 3 to 6 March. As someone who has been working with GLOBALISE for the past few months, but who, before that, was quite unfamiliar with colonial history or archival research, I will share some of my personal highlights and findings here.
 
-![](/assets/images/about/archive/blog/from-acts-of-resistance-and-feminist-theory-to-tortoiseshell-trade-and-17th-century-currency-not-everything-i-learnt-at-the-globalise-conference/Conferenceimpression-thumbnail-youtube-1.jpeg)
+![](/assets/images/about/archive/blog/not-everything-i-learnt-at-the-globalise-conference/Conferenceimpression-thumbnail-youtube-1.jpeg)
 
 *[Globalise conference impression video\
 ](https://www.youtube.com/watch?v=dp6hoLjfIkg)Video credits: Poorvi Garag / Globalise project. Licence: CC-BY 4.0.*
 
 ## Keynote lectures
 
-![](/assets/images/about/archive/blog/from-acts-of-resistance-and-feminist-theory-to-tortoiseshell-trade-and-17th-century-currency-not-everything-i-learnt-at-the-globalise-conference/MatthiasvanRossum_keynotelecture_thumbnail_youtube-2048x1058.jpg)
+![](/assets/images/about/archive/blog/not-everything-i-learnt-at-the-globalise-conference/MatthiasvanRossum_keynotelecture_thumbnail_youtube-2048x1058.jpg)
 
 *[Keynote lecture by Matthias van Rossum\
 ](https://www.youtube.com/watch?v=Fdnbv7kh39U)Video credits: Poorvi Garag / Globalise project. Licence: CC-BY 4.0.*
@@ -57,7 +57,7 @@ The GLOBALISE project leader, [Matthias van Rossum](https://orcid.org/0000-0002-
 
 On the following day, [Ann Stoler](https://www.newschool.edu/nssr/faculty/ann-stoler/), Willy Brandt Distinguished University Professor of Historical Studies and Anthropology at The New School for Social Research, gave her keynote lecture, *On bearing Archival truths – their burdens of colonial proof*. Stoler showed that colonial archives are anything but neutral. Instead, they are sites where power, knowledge, and emotion intertwine. By tracing moments of hesitation and contradiction, in other words, moments where officials judged not just what people did but also how they felt, Stoler revealed how colonial rule depended on unstable ‘regimes of truth’. Her approach challenges historians to move beyond reading archives for information and instead interrogate how truth itself was produced, contested, and enforced. This perspective opens new pathways for studying colonial history and rethinking archival research as a critical practice.
 
-![](/assets/images/about/archive/blog/from-acts-of-resistance-and-feminist-theory-to-tortoiseshell-trade-and-17th-century-currency-not-everything-i-learnt-at-the-globalise-conference/TonioAndrade_keynotelecture_thumbnail_youtube-1-2048x1057.jpg)
+![](/assets/images/about/archive/blog/not-everything-i-learnt-at-the-globalise-conference/TonioAndrade_keynotelecture_thumbnail_youtube-1-2048x1057.jpg)
 
 *[Keynote lecture by Tonio Andrade\
 ](https://www.youtube.com/watch?v=0pG_9gKVjag)Video credits: Poorvi Garag / Globalise project. Licence: CC-BY 4.0.*
@@ -74,7 +74,7 @@ Matthias van Rossum, [Lija Joseph](https://orcid.org/0009-0006-9773-9427), [Anna
 
 My main takeaways from the roundtables were that, firstly, the existence of colonial bias must be remembered and fought against at all times. There are so many ways in which archives, especially digitalised archives, tempt users to go the easy way, reaching for the so-called “low-hanging fruit” or the first digital hit. That temptation is incredibly dangerous, as the lives and experiences of the subaltern are hidden beneath the coloniser’s words, and they are key to fighting against the colonial view of the world. Secondly, that collaboration is primary in ensuring a fair and accessible archive and history. Not only between academics, but between communities as a whole. Only by sharing our histories will we be able to get the complete picture of the past.
 
-![Final roundtable session at Globalise conference, March 2026. Photo credits: Poorvi Garag / Globalise project. Licence CC-BY 4.0.](/assets/images/about/archive/blog/from-acts-of-resistance-and-feminist-theory-to-tortoiseshell-trade-and-17th-century-currency-not-everything-i-learnt-at-the-globalise-conference/IMG_6605.jpeg)
+![Final roundtable session at Globalise conference, March 2026. Photo credits: Poorvi Garag / Globalise project. Licence CC-BY 4.0.](/assets/images/about/archive/blog/not-everything-i-learnt-at-the-globalise-conference/IMG_6605.jpeg)
 
 *Final roundtable session at Globalise conference\
 Photo credits: Poorvi Garag / Globalise project. Licence: CC-BY 4.0.*
@@ -91,7 +91,7 @@ Additionally, there were three different GLOBALISE workshops. *Transcriptions an
 
 Lastly, I attended two of our performance lectures, which showed different ways of approaching archival research and opened our eyes to the countless ways in which history can be explored. [Carmen Draxler](https://www.instagram.com/silberring/), a visual researcher and designer, presented her project *»Mother-of-Oil«*, an archival research project that traces the colonial roots of the Dutch-British oil company Shell in Indonesia. By following the stories of seashells from the Indo-Pacific, the research unfolds as a relational map of archival material that reveals Shell’s entanglement with the VOC.
 
-![Carmen Draxler during her performance lecture »Mother-of-Oil« Image credits: Lina de Swaaf / Globalise project. Licence: CC-BY 4.0.](/assets/images/about/archive/blog/from-acts-of-resistance-and-feminist-theory-to-tortoiseshell-trade-and-17th-century-currency-not-everything-i-learnt-at-the-globalise-conference/DSCF7366.jpg)
+![Carmen Draxler during her performance lecture »Mother-of-Oil« Image credits: Lina de Swaaf / Globalise project. Licence: CC-BY 4.0.](/assets/images/about/archive/blog/not-everything-i-learnt-at-the-globalise-conference/DSCF7366.jpg)
 
 *Carmen Draxler during her performance lecture *»Mother-of-Oil«*\
 Image credits: Lina de Swaaf / Globalise project. Licence: CC-BY 4.0.*
@@ -106,7 +106,7 @@ We are incredibly grateful to have hosted this conference, and even more gratefu
 
 Lastly, I want to thank our team one last time, as they put in an unbelievable amount of effort into not only this conference, but the GLOBALISE project as a whole. We are excited to see what the future holds and are looking forward to the new age of research.
 
-![The Globalise team at the end of the conference Image credits: Poorvi Garag / Globalise project. Licence: CC-BY 4.0.](/assets/images/about/archive/blog/from-acts-of-resistance-and-feminist-theory-to-tortoiseshell-trade-and-17th-century-currency-not-everything-i-learnt-at-the-globalise-conference/IMG_6812.jpg)
+![The Globalise team at the end of the conference Image credits: Poorvi Garag / Globalise project. Licence: CC-BY 4.0.](/assets/images/about/archive/blog/not-everything-i-learnt-at-the-globalise-conference/IMG_6812.jpg)
 
 *The Globalise team at the end of the conference\
 Image credits: Poorvi Garag / Globalise project. Licence: CC-BY 4.0.*

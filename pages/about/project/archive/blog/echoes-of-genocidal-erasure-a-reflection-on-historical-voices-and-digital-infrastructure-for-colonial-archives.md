@@ -17,7 +17,7 @@ originalPublication:
 featured: false
 
 hero:
-  src: "/assets/images/about/archive/blog/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/NG-1985-7-2-15-slaafgemaakte-kok.jpg"
+  src: "/assets/images/about/archive/blog/echoes-of-genocidal-erasure/NG-1985-7-2-15-slaafgemaakte-kok.jpg"
   alt: "Detail from a drawing of a woman cooking in the background."
   caption: "A woman cooking in a European house in Batavia, likely an enslaved person.
 Detail from the sketchbook of Jan Brandes, dl. 2 (1808), p. 23."
@@ -46,7 +46,7 @@ The fog of colonial history has obscured many marginalized voices that deserve t
 
 The actions of one woman present such a case of archival traces that reveal her strive for freedom. In the archive she appears derogatorily named as ‘Maria Cabbecabbe Poespas’. For lack of any archival references to her original name(s), we will call her here by this given name, Maria.
 
-![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/NG-1985-7-2-15-slaafgemaakte-kok.jpg)
+![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure/NG-1985-7-2-15-slaafgemaakte-kok.jpg)
 
 *A woman cooking in a European house in Batavia, likely an enslaved person.* *Detail from the sketchbook of Jan Brandes, dl. 2 (1808), p. 23.* Collection of Rijksmuseum, [NG-1985-7-2-15](https://id.rijksmuseum.nl/200242630). Public domain.
 
@@ -54,7 +54,7 @@ A hasty reader could easily have glossed over her silenced voice and the horrify
 
 We can find this slave master, Joseph Jacobs, frequently in the archive. He recurs, for example, in [household registers](https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1205_0940) of 1654, which list all heads of households and the persons belonging to this household in order to describe ‘the souls living in entire of Banda’. He was categorized as an ‘inland’ (non-European) burgher, and mentioned as living in Selamon (Pulau Banda Besar) while [owning 38 enslaved persons](https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1205_0941). Given the high number of enslaved it is likely he was a planter. He was also [active in local trade](https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1199_1039) and was not hesitant to use such voyages to transport the captured runaway slaves of other burghers back to Banda for their punishment by the Court of Justice of the VOC.
 
-![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/1205_0750.jpeg)
+![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure/1205_0750.jpeg)
 
 It is the voice of this slave owning-planter and burgher that we see reflected in these sources. The governor explains in the summary that he ruled that Maria should not be granted her freedom. He explicitly follows, and almost seems to cite, [the reasoning of Joseph Jacobs](https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1205_0750) that ‘he had not treated her badly, but only used her for \[services in\] his house and as a kitchen maid’ (see the above image). And even more so that ‘he had bought her, and that as such \[he\] would not like to place the mentioned woman in freedom’.
 
@@ -62,7 +62,7 @@ But even though the records echo the perspectives of a governor and planter, it 
 
 The missive seems to suggest that Maria had done so not via her owner, but by directly approaching the governor or his clerks. The summary of the governor thus [notes](https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1205_0749) that ‘we have made known \[to the burgher Joseph Jacobs\] *the request of a certain Lamey or Golden Lion Island woman*, called Maria Cabbecabbe Poespas, and also have made known Your Honourable directions.’ It is unclear whether she had written a request or visited a servant of the governor in person. But it is clear that this request of Maria – unfortunately lost in the fog of colonial history – stood at the beginning of the investigation, the reporting and the ruling of the governor through which we learn parts of her life story today.
 
-![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/1205_0749.jpeg)
+![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure/1205_0749.jpeg)
 
 ## **Afterlives of a genocide**
 
@@ -102,7 +102,7 @@ In similar fashion, we can find in this bundle information on the Lamey massacre
 
 This document, as was not uncommon in the colonial self-fashioning of the Company ruling elite, even (absurdly) portrayed the aftermath of the genocide and deportation as a humane intervention. Putmans reported that the survivors were spread over Taiwan and Batavia, and that in doing so – and I quote his words – ‘placed in freedom’ with the Sinkan people, on Banda and elsewhere.
 
-![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/1120_0021.jpeg)
+![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure/1120_0021.jpeg)
 
 Later references brought forward even more grotesque claims. The Council of the Indies would not much later decide that the deported Lamey islanders in Batavia would be ‘[given out to well-mannered citizens, on the condition that in addition to cost and clothing they would receive education in the foundations of the Christian religion, that they would be baptized, that each to their own would learn a trade, and that each one of them would be bound to their master for the period of six subsequent years, after which they would be returned to the Company and be placed in freedom.](https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1122_0450)’
 
@@ -116,7 +116,7 @@ Was this the context to which she herself referred, eighteen years later, when s
 
 After all, the six years of service had long passed. So even according to the Company’s own rulings, Maria should have been free for twelve years. That this had not happened is actually not that strange for two reasons. Firstly, the ‘humane façade’ dressed up by the Council of the Indies after its genocide, namely the policy of ‘civilizing’ and in time ‘freeing’ the conquered Lamey, was likely never intended to be enforced as a practice. Secondly, in the context of commodified (or ‘colonial’) slavery – in which enslaved individuals like Maria could be sold and resold – the background and conditions of enslavement of individuals, including the possibilities to be freed, were easily erased. The case of Maria actually demonstrates [how different regimes of enslavement fed into each other](https://doi.org/10.1017/S0010417521000153). It was Maria herself who, with her request for freedom, challenged a *status quo* that would have otherwise perpetuated her enslavement.
 
-![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure-a-reflection-on-historical-voices-and-digital-infrastructure-for-colonial-archives/theevisite_brandes-2048x1392.jpeg)
+![](/assets/images/about/archive/blog/echoes-of-genocidal-erasure/theevisite_brandes-2048x1392.jpeg)
 
 *From the sketchbook of Jan Brandes, dl. 2 (1808), p. 23.* Collection of Rijksmuseum, [NG-1985-7-2-15](https://id.rijksmuseum.nl/200242630). Public domain.
 
