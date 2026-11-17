@@ -49,6 +49,7 @@ Research responsibly
     ├── How the data was produced
     ├── Reference data & entity linking
     ├── Data model & ontologies
+    ├── Event ontology
     ├── Technical documentation
     └── Accessing the data
 
@@ -110,6 +111,7 @@ Contact · Release notes · Privacy · Cookies · Accessibility · Disclaimer ·
     * [How the data was produced](pages/research-responsibly/data/production.md) (DATA-03)
     * [Reference data & entity linking](pages/research-responsibly/data/reference-data.md) (DATA-04)
     * [Data model & ontologies](pages/research-responsibly/data/data-model.md) (DATA-05)
+    * [Event ontology](pages/research-responsibly/data/event-ontology.md) (DATA-08)
     * [Technical documentation](pages/research-responsibly/data/technical-documentation.md) (DATA-06)
     * [Accessing the data](pages/research-responsibly/data/access.md) (DATA-07)
 

@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-11-16"
 
 featured: false
 
@@ -20,7 +20,7 @@ hero:
   source: ""
   licence: ""
 
-related: ["globalise-data", "accessing-the-data", "technical-documentation", "reference-data"]
+related: ["globalise-data", "event-ontology", "accessing-the-data", "technical-documentation", "reference-data"]
 ---
 
 # Data model & ontologies
@@ -74,16 +74,18 @@ Content to be developed.
 
 ## The event ontology
 
-Events are classified according to the Globalise event ontology. It builds on the Circumstantial Event Ontology (CEO), and is documented in the [event ontology wiki](https://github.com/globalise-huygens/nlp-event-detection/wiki), which also serves as the reference for annotators.
+Events are classified according to the Globalise event ontology. It builds on the Circumstantial Event Ontology (CEO). The definitions of all event classes, grouped into the seven categories used on the portal, are on the [Event ontology](/pages/research-responsibly/data/event-ontology.md) page. The [event ontology wiki](https://github.com/globalise-huygens/nlp-event-detection/wiki) contains the guidelines for annotators.
 
 The ontology distinguishes between:
 
-* **static events**: situations that hold for some time, such as *being at a place*, *having in possession*, *being in a relationship*, *being leader*, *being employed*, *being in conflict*, *being dead* or *having a medical condition*;
-* **dynamic events**: events that change such a situation. For example, *Leaving*, *Arriving*, *Voyage* and *Transportation* are kinds of *Translocation*, which changes where someone or something is; *Buying*, *Selling* and *Trade* change who possesses something.
+* **static events**: situations that hold for some time, such as [*being at a place*](/pages/research-responsibly/data/event-ontology.md#BeingAtAPlace), [*having in possession*](/pages/research-responsibly/data/event-ontology.md#HavingInPossession), [*being in a relationship*](/pages/research-responsibly/data/event-ontology.md#BeingInARelationship), [*being leader*](/pages/research-responsibly/data/event-ontology.md#BeingLeader), [*being employed*](/pages/research-responsibly/data/event-ontology.md#BeingEmployed), [*being in conflict*](/pages/research-responsibly/data/event-ontology.md#BeingInConflict), [*being dead*](/pages/research-responsibly/data/event-ontology.md#BeingDead) or [*having a medical condition*](/pages/research-responsibly/data/event-ontology.md#HavingAMedicalCondition);
+* **dynamic events**: events that change such a situation. For example, [*Leaving*](/pages/research-responsibly/data/event-ontology.md#Leaving), [*Arriving*](/pages/research-responsibly/data/event-ontology.md#Arriving), [*Voyage*](/pages/research-responsibly/data/event-ontology.md#Voyage) and [*Transportation*](/pages/research-responsibly/data/event-ontology.md#Transportation) are kinds of [*Translocation*](/pages/research-responsibly/data/event-ontology.md#Translocation), which changes where someone or something is; [*Buying*](/pages/research-responsibly/data/event-ontology.md#Buying), [*Selling*](/pages/research-responsibly/data/event-ontology.md#Selling) and [*Trade*](/pages/research-responsibly/data/event-ontology.md#Trade) change who possesses something.
 
 Each event type has **arguments**: the roles that people, things and places play in it. A *Translocation*, for example, has a *Patient* (the person or object that moves), an *Agent* (who carries out the movement, such as a ship's captain) and an *Instrument* (such as a ship), and may mention a *Source*, a *Target* and a *Path*.
 
-On the portal, every event annotation is classified with an event type from this ontology. In the data, the type links to its definition in the wiki.
+On the portal, every event annotation is classified with an event type from this ontology. In the data, the type currently links to its definition in the wiki.
+
+<!-- TODO: once the w3id URIs for event classes (e.g. https://w3id.org/globalise/BeingAtAPlace) redirect to the Event ontology page, update this sentence and the event annotations to use them. -->
 
 <!-- TODO: check whether event arguments (participants, places, times) are included in the event annotations on the portal; currently the annotations only contain the event type and the word(s) that evoke the event. -->
 

@@ -20,7 +20,7 @@ hero:
   source: ""
   licence: ""
 
-related: ["globalise-data", "how-the-data-was-produced", "data-model-and-ontologies", "reference-data", "technical-documentation", "accessing-the-data", "licences-and-reuse", "release-notes"]
+related: ["globalise-data", "how-the-data-was-produced", "data-model-and-ontologies", "event-ontology", "reference-data", "technical-documentation", "accessing-the-data", "licences-and-reuse", "release-notes"]
 ---
 
 # Data & Documentation
@@ -44,6 +44,9 @@ The curated datasets about people, places, polities, commodities and other entit
 
 **[Data model & ontologies](/pages/research-responsibly/data/data-model.md)**
 Identifiers, the standards the data follows (IIIF, Web Annotation, Linked Art), the Globalise ontology and the event ontology.
+
+**[Event ontology](/pages/research-responsibly/data/event-ontology.md)**
+Definitions of all event types that are recognised in the archives, grouped into seven categories.
 
 **[Technical documentation](/pages/research-responsibly/data/technical-documentation.md)**
 Software, models, training data, code and publications for each step.
