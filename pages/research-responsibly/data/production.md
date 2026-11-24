@@ -202,7 +202,7 @@ Content to be developed.
 
 <!-- TODO: add the figures for the final run: date, number of scans translated, skipped (blank, garbled, illegible) and translated again. -->
 
-Most people who use the archives cannot read early modern Dutch. To help them, the Globalise project translated the transcriptions into modern English with a large language model, Claude Haiku 5.5 by Anthropic. The translation of a scan is shown in the viewer as a view of its own, next to the two views of the transcription.
+To help people with limited knowledge of (early modern) Dutch, the Globalise project translated the transcriptions into modern English with a large language model, Claude Haiku 5.5. The translation of a scan is shown in the viewer as a view of its own, next to the two views of the transcription.
 
 The model did not translate page by page. Each inventory was translated as one continuous text, in portions of about 20 scans, so that a sentence or a letter running from one page onto the next was translated as a whole. With each portion, the model received:
 
@@ -217,6 +217,8 @@ The model was instructed to translate everything, and to stay close to the origi
 Blank pages and pages whose transcription is only noise were not translated. Tables were translated as far as they contain words; a column of figures without words is replaced by *[no translation available for table contents]*.
 
 Every translation was checked automatically: whether every scan was translated, and whether the English under a scan belongs to that page rather than to the page before or after it. Scans that failed these checks were translated again.
+
+Annotations were not carried over to the translations.
 
 The translations have not been checked by people. The project compared a sample with published translations made by historians; see [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md#translation). Details are in the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#machine-translation).
 
