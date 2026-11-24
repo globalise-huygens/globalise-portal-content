@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-23"
+dateUpdated: "2026-11-24"
 
 featured: false
 
@@ -46,6 +46,10 @@ The limitations of the VOC archives themselves carry over to everything on this 
 ### Part of the VOC archives
 
 Globalise does not cover all VOC archives, nor even all of the VOC archive at the Nationaal Archief (Dutch National Archives). The Globalise project worked with the *Overgekomen Brieven en Papieren* (OBP; in English the Copied Letters series) in series 1.04.02: about 6,900 inventory numbers and about 4.8 million pages, dating roughly from 1605 to 1794. Among other things, the resolutions of the company's directors, the correspondence sent from the Dutch Republic to Asia, and VOC archives held elsewhere in the world are not included. The guide lists [what Globalise covers](/pages/research-responsibly/voc-archives-guide.md#how-much-of-the-10402-series-of-the-voc-archives-did-the-globalise-project-cover) and [what it does not](/pages/research-responsibly/voc-archives-guide.md#what-sections-in-the-10402-series-of-the-voc-archives-did-the-globalise-project-not-cover).
+
+### Incomplete inventories
+
+A few inventory numbers are not complete in Globalise, because not all of their scans are available online from the Nationaal Archief. Inventories 1212, 1286 and 1310 begin at scan 993: the first 992 scans of each are missing, and with them their transcriptions, annotations and translations. The Globalise project has reported this issue to the Nationaal Archief. The original volumes are held by the Nationaal Archief; for the missing pages, contact the Nationaal Archief.
 
 ### Languages and scripts
 
@@ -175,7 +179,7 @@ An AI assistant connected to the [Globalise MCP server](/pages/learn-get-started
 
 ## Known issues
 
-Content to be developed.
+* Inventories 1212, 1286 and 1310 are incomplete: their first 992 scans are not available. See [Incomplete inventories](#incomplete-inventories).
 
 <!-- TODO: list known gaps and errors in the data and the portal (e.g. missing or problematic inventories, layout types that are poorly recognised), or link to where these are tracked. -->
 
