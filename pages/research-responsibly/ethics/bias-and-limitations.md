@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-13"
+dateUpdated: "2026-11-23"
 
 featured: false
 
@@ -99,6 +99,30 @@ Content to be developed.
 
 <!-- TODO: add plain-language results of the evaluation of the entity and event recognition models, and describe what kinds of errors are most common. -->
 
+### Translation
+
+The English translations on the portal were made by a large language model, Claude Haiku 5.5, and have not been checked by people. They are a help for reading and finding your way in the archive, not a substitute for the original.
+
+**A translation reads more confidently than the original.** The transcription of a page is often noisy: misread letters, abbreviations, broken words, notes in the margin running through the text. The translation turns this into fluent, grammatical English. That fluency is not a sign of reliability. Where the model could not make sense of the transcription, it does not always say so: it may smooth over a passage, choose one reading of an ambiguous sentence, or produce a plausible sentence that is not what the document says. If you use a piece of information from a translation, check it against the scan. If you cannot read the original, look at least at whether the names, numbers and dates in the translation can be found in the transcription.
+
+What to watch out for in particular:
+
+* **Errors in the transcription carry through.** A misread word becomes a mistranslated word. Names of people and ships are kept as transcribed, misreadings included. Place names are standardised where the model was confident which place is meant, with the transcribed spelling in square brackets, but the identification can be wrong.
+* **Difficult syntax.** Early modern Dutch letters and resolutions contain long sentences with chains of conditions, double negations and the verb at the very end. The model was instructed to keep this structure, but it sometimes misses it, and then who did what to whom can come out wrong.
+* **Notes in the margin.** Margin notes were separated from the running text automatically before translation, and are given at the end of the page's translation. Notes that only repeat the running text were left out. The separation does not always succeed, especially on pages with tables, registers or several columns: a note can still end up in the middle of a sentence, or part of the main text can be treated as a note.
+* **Page boundaries.** Each page has its own translation, but sentences and documents run on from one page to the next. Where a sentence crosses a page break, part of it can be translated on the wrong page, and occasionally the translation under a page belongs to the page before or after it. The project checked for this automatically and translated such pages again, but the check does not catch every case. If a translation does not seem to match its page, look at the pages around it.
+* **What is left out.** Page numbers, catchwords and headers that are repeated on every page were removed, and so were margin notes that repeat the running text. Columns of figures are replaced by *[no translation available for table contents]*. Blank pages and pages whose transcription is unreadable were not translated, nor were pages in non-Latin scripts.
+* **Words for people.** Categories of people, such as *Moor*, *inlander* or *heiden*, are translated literally, in their period meaning, without comment. Words for enslaved people are translated as "enslaved person" or "enslaved people". The model received a short explanation of such terms from the Globalise thesaurus, but it can still choose the wrong meaning. See [Colonial context](/pages/research-responsibly/ethics/colonial-context.md).
+* **Context the model does not have.** The model translated about 20 pages at a time. It does not know what was written in other volumes, or what historians know about the people and events involved.
+
+Unlike the models for entity and event recognition (see [Bias in models](#bias-in-models)), the translation model was not trained by the project. It is a general-purpose commercial model, trained on large amounts of text from the internet and other sources. Its biases cannot be traced back to the archive, and it may bring modern assumptions and phrasing into its translations.
+
+<!-- TODO: once the translations are searchable on the portal (if they will be), add that a search in English finds only what the model translated, and that an English search term can miss a passage that was translated differently. -->
+
+### Evaluation of translation
+
+There are no quantitative measures of the quality of the translations. The project compared them with published translations by historians of eleven diplomatic letters from Asian rulers, among them the kings of Siam, to the VOC government in Batavia (1668–1769), from the *Harta Karun* series of the Arsip Nasional Republik Indonesia and the Corts Foundation. The machine translations were somewhat weaker: the model failed on some difficult syntax, and it lacked the context the historians had, so that some names of places and people came out wrong, mostly because of errors in the transcription. On the other hand, the machine translations are more literal and follow the original more closely, which makes them easier to check against the scan. See the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#evaluation-of-the-translations).
+
 ### Bias in models
 
 Models learn from the examples they are trained on. Where some kinds of text, names or people are under-represented in those examples, the models tend to recognise them less well. The project's [ethics policy](/pages/research-responsibly/ethics/policy.md) therefore asked for careful selection of training and test data by people with relevant historical expertise, and for attention to discriminatory or biased output.
@@ -147,7 +171,7 @@ Because results depend on which expansions are switched on, note them when you r
 
 ### Searching with an AI assistant
 
-An AI assistant connected to the [Globalise MCP server](/pages/learn-get-started/ai-assistant.md) works with the same data and inherits all the limitations described on this page. It adds limitations of its own. It decides which searches to run and which results to read, and it may stop before it has found everything. It can misread or misquote a transcription, overstate what the sources say, fill gaps with knowledge from its training, and occasionally invent quotations or sources, all in fluent and confident language. Its translations and summaries have not been checked. The server gives the assistant background on the limitations of the data, with links to this page, but whether the assistant passes them on to you depends on the assistant.
+An AI assistant connected to the [Globalise MCP server](/pages/learn-get-started/ai-assistant.md) works with the same data and inherits all the limitations described on this page. It adds limitations of its own. It decides which searches to run and which results to read, and it may stop before it has found everything. It can misread or misquote a transcription, overstate what the sources say, fill gaps with knowledge from its training, and occasionally invent quotations or sources, all in fluent and confident language. The translations and summaries it makes itself have not been checked, and are not the same as the [translations](#translation) shown in the viewer. The server gives the assistant background on the limitations of the data, with links to this page, but whether the assistant passes them on to you depends on the assistant.
 
 ## Known issues
 

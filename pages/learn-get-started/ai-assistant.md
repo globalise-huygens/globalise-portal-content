@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-12"
+dateUpdated: "2026-11-23"
 
 featured: false
 
@@ -92,7 +92,9 @@ What it cannot do well:
 * answer questions about anything outside the Globalise corpus. If the assistant goes beyond what it found, for instance with background from its own training, ask it to say so;
 * prove that something is *not* in the archive. A search that finds nothing may have missed spellings or misread text;
 * read pages in non-Latin scripts, such as Chinese or Persian, which the text recognition could not read;
-* give reliable translations. The assistant translates and summarises on its own; these translations have not been checked.
+* give reliable translations. The assistant translates and summarises on its own; these translations have not been checked. They are not the same as the machine translations shown in the Globalise viewer, which have not been checked either (see [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md#translation)).
+
+<!-- TODO: check whether the MCP server returns the viewer's translations (e.g. in get_scan); if so, say here that the assistant can use them, and add them to the tool table on pages/research-responsibly/data/access.md. -->
 
 ## Checking the answers
 

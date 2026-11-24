@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-30"
+dateUpdated: "2026-11-23"
 
 featured: false
 
@@ -74,6 +74,12 @@ Finally, entities and events recognised in the text are **linked** to the refere
 On the portal, you can see whether a piece of information comes from the transcription, from a model, or from curated reference data. See [Understanding results](/pages/learn-get-started/searching-browsing/results.md) for how to read this.
 
 <!-- TODO: confirm that provenance (manual / model / user) is indeed visible in the portal interface, and adjust the paragraph above if needed. -->
+
+## 6. Translating into English
+
+To make the archive accessible to people who do not read early modern Dutch, the transcriptions were translated into modern English with a large language model. The model translated each volume as a continuous text, so that sentences and letters running over several pages were translated as a whole. It was given what the earlier steps had produced: where documents begin, the language of each page, explanations of VOC and Asian terms from the thesauri, and the standard spelling of place names from the reference data. It was instructed to stay close to the original and to keep names of people as written.
+
+The translations are shown in the viewer next to the transcription. They have not been checked by people, and they read more fluently than the often noisy transcriptions they are based on. Check the scan before relying on a translation. See [How the data was produced](/pages/research-responsibly/data/production.md#7-translating-the-text) and [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md#translation).
 
 ## Limitations
 

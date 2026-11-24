@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-10-01"
+dateUpdated: "2026-11-23"
 
 featured: false
 
@@ -25,17 +25,17 @@ related: ["globalise-data", "how-the-data-was-produced", "data-model-and-ontolog
 
 # Data & Documentation
 
-The Globalise portal combines images of original archival documents with data produced by the Globalise project: transcriptions, documents, entities, events and reference data. This section explains what that data is, how it was made, how it is structured, and how you can access and reuse it.
+The Globalise portal combines images of original archival documents with data produced by the Globalise project: transcriptions, translations, documents, entities, events and reference data. This section explains what that data is, how it was made, how it is structured, and how you can access and reuse it.
 
 The pages are written for different readers. The first two are for anyone who wants to understand what they see on the portal. The others go into more technical detail, for researchers and developers who want to evaluate or reuse the data.
 
 ## Understanding the data
 
 **[What's in the data](/pages/research-responsibly/data/overview.md)**
-What the scans, transcriptions, entities, events and documents on the portal are, and where each comes from.
+What the scans, transcriptions, translations, entities, events and documents on the portal are, and where each comes from.
 
 **[How the data was produced](/pages/research-responsibly/data/production.md)**
-The steps from scans of handwritten pages to transcriptions, documents and annotations, in plain language.
+The steps from scans of handwritten pages to transcriptions, documents, annotations and translations, in plain language.
 
 **[Reference data & entity linking](/pages/research-responsibly/data/reference-data.md)**
 The curated datasets about people, places, polities, commodities and other entities, the datasets they are based on, and how the text is linked to them.
@@ -59,4 +59,4 @@ Changes to the data, models and portal.
 
 ## Limitations
 
-Most of the data on the portal, including the transcriptions, documents, entities and events, was produced by computational methods and contains errors. The reference data was compiled by historians, but it is not neutral either. Read [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md) before drawing conclusions from the data.
+Most of the data on the portal, including the transcriptions, translations, documents, entities and events, was produced by computational methods and contains errors. The reference data was compiled by historians, but it is not neutral either. Read [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md) before drawing conclusions from the data.

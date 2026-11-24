@@ -1,14 +1,14 @@
 ---
 title: "How the data was produced"
 subtitle: ""
-summary: "An overview of the pipeline from archival scans to transcriptions, annotations and other Globalise data products."
+summary: "An overview of the pipeline from archival scans to transcriptions, translations, annotations and other Globalise data products."
 type: "page"
 slug: "how-the-data-was-produced"
 status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-12"
+dateUpdated: "2026-11-23"
 
 featured: false
 
@@ -29,7 +29,7 @@ related: ["globalise-data", "technical-documentation", "data-model-and-ontologie
 
 <!-- TODO: check against the final pipeline (dependency "Final pipeline" in CONTENT.md). -->
 
-This page describes, step by step, how almost 5 million scans of handwritten pages became the transcriptions, documents and annotations on the portal. It is written for readers who want to understand the process without technical detail. Specifications, model versions and links to code are on the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md) page.
+This page describes, step by step, how almost 5 million scans of handwritten pages became the transcriptions, documents, annotations and translations on the portal. It is written for readers who want to understand the process without technical detail. Specifications, model versions and links to code are on the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md) page.
 
 Every step combines computational methods with the work of historians, and every step introduces its own errors and uncertainties. Errors made early in the process carry through to later steps: a word that was misread cannot be correctly recognised as a name. See [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md).
 
@@ -194,6 +194,32 @@ Content to be developed.
 
 <!-- TODO: describe how entity annotations were linked to records in the Globalise reference data (methods and metrics to be added). Summarise here and give details on /pages/research-responsibly/data/reference-data.md. -->
 
-## 7. Publishing the results
+## 7. Translating the text
 
-Finally, the transcriptions, entities and events were converted into a standard format for annotations on images and texts (W3C Web Annotations), organised per page, and published together with descriptions of the inventories and documents (as IIIF manifests). Each annotation file records how, when and with which software it was created. See [Data model & ontologies](/pages/research-responsibly/data/data-model.md) and [Accessing the data](/pages/research-responsibly/data/access.md).
+<!-- Sources: README, prompt (prompts/translate_collection.md), scripts and run reports of https://github.com/globalise-huygens/globalise-translation-experiments (retrieved 2026-11-23); comparison of the curated runs with the published translations in two volumes of the Harta Karun series (ANRI & Corts Foundation, 2015 and 2016: Asian rulers, and the Kingdom of Siam). -->
+
+<!-- TODO: the translation-experiments repository may not remain available. Once the translations, code and prompt have a permanent home (e.g. a dataset on DataverseNL or Zenodo), point to it here and in the Technical documentation instead of the repository. -->
+
+<!-- TODO: add the figures for the final run: date, number of scans translated, skipped (blank, garbled, illegible) and translated again. -->
+
+Most people who use the archives cannot read early modern Dutch. To help them, the Globalise project translated the transcriptions into modern English with a large language model, Claude Haiku 5.5 by Anthropic. The translation of a scan is shown in the viewer as a view of its own, next to the two views of the transcription.
+
+The model did not translate page by page. Each inventory was translated as one continuous text, in portions of about 20 scans, so that a sentence or a letter running from one page onto the next was translated as a whole. With each portion, the model received:
+
+* the text of the pages, rebuilt from the layout analysis so that notes in the margin are set apart from the running text, words hyphenated over a line break are joined, and headers repeated at the top of every page are left out;
+* where documents begin, with their titles where these are known (step 3);
+* the language of pages that are not (only) in Dutch (step 2);
+* short explanations of words whose meaning in the VOC and Asian context is not obvious, such as ethnic, religious and caste categories, ranks and offices, ship types, textiles, units and coins, taken from the Globalise thesaurus and the entity annotations (steps 4 to 6);
+* the standard spelling of place names, taken from the Globalise places dataset.
+
+The model was instructed to translate everything, and to stay close to the original: its sentence structure, word order and formal phrasing. Names of people and ships are kept exactly as transcribed. Place names are given in the spelling the VOC records use most, never in a modern form, with the spelling of the source in square brackets, as in "Masulipatnam [Mazulipatn:]". Numbers, dates, currencies and units are kept as they are. Words for enslaved people are translated as "enslaved person" or "enslaved people"; other categories of people are translated literally, in their period meaning, without comment. Uncertain readings are marked *[uncertain: …]*, unreadable passages *[illegible]*.
+
+Blank pages and pages whose transcription is only noise were not translated. Tables were translated as far as they contain words; a column of figures without words is replaced by *[no translation available for table contents]*.
+
+Every translation was checked automatically: whether every scan was translated, and whether the English under a scan belongs to that page rather than to the page before or after it. Scans that failed these checks were translated again.
+
+The translations have not been checked by people. The project compared a sample with published translations made by historians; see [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md#translation). Details are in the [Technical documentation](/pages/research-responsibly/data/technical-documentation.md#machine-translation).
+
+## 8. Publishing the results
+
+Finally, the transcriptions, translations, entities and events were converted into a standard format for annotations on images and texts (W3C Web Annotations), organised per page, and published together with descriptions of the inventories and documents (as IIIF manifests). Each annotation file records how, when and with which software it was created. See [Data model & ontologies](/pages/research-responsibly/data/data-model.md) and [Accessing the data](/pages/research-responsibly/data/access.md).

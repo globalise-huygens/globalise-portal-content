@@ -1,14 +1,14 @@
 ---
 title: "What's in the data"
 subtitle: "What you see on the portal"
-summary: "What the scans, transcriptions, entities, events and documents on the portal are, and where they come from."
+summary: "What the scans, transcriptions, translations, entities, events and documents on the portal are, and where they come from."
 type: "page"
 slug: "globalise-data"
 status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-06"
+dateUpdated: "2026-11-23"
 
 featured: false
 
@@ -29,7 +29,7 @@ related: ["how-the-data-was-produced", "data-model-and-ontologies", "accessing-t
 
 <!-- TODO: check this page against the final portal interface (dependency "Final data model" in CONTENT.md), in particular the names of interface elements such as "right panel". -->
 
-When you open a page on the Globalise portal, you see several kinds of information side by side: an image of the original page, a transcription of its text, and highlighted words that have been recognised as people, places, commodities or events. These come from different sources and were produced in different ways. This page explains what each of them is.
+When you open a page on the Globalise portal, you see several kinds of information side by side: an image of the original page, a transcription of its text, an English translation, and highlighted words that have been recognised as people, places, commodities or events. These come from different sources and were produced in different ways. This page explains what each of them is.
 
 As an example, we use one page from the archive: scan [NL-HaNA_1.04.02_1056_0125](https://data.globalise.huygens.knaw.nl/hdl:20.500.14722/canvas:NL-HaNA_1.04.02_1056_0125), a page from inventory number 1056 of the VOC archive, which the archive's inventory dates to 1614.
 
@@ -51,6 +51,14 @@ The transcription comes in more than one form:
 <!-- TODO: explain in plain language what "normalised" means here (e.g. reading order, joining of lines and hyphenated words), and which version the portal shows by default. -->
 
 Every line and every word of the transcription is linked to its exact position on the scan, so the portal can show where on the page a piece of text was found. The software also divided the page into **text regions** and labelled them, for instance as a header, a paragraph, a marginal note, a page number or a catchword (a word at the foot of a page repeating the first word of the next page).
+
+## The translation
+
+The viewer also shows an English translation of each page, as a view of its own next to the two views of the transcription. The translation was made automatically from the transcription by a large language model, and has not been checked by people. It reads more fluently than the transcription it is based on, but it carries over the transcription's errors and adds errors of its own. Use it to find your way in a document, and check the scan before you rely on anything it says. See [Bias & limitations](/pages/research-responsibly/ethics/bias-and-limitations.md#translation) and [How the data was produced](/pages/research-responsibly/data/production.md#7-translating-the-text).
+
+Names of people and ships are kept as transcribed. Place names are given in the spelling most common in the VOC records, followed by the spelling of the transcription in square brackets, as in "Batavia [Bataria]". Blank pages, pages whose transcription is unreadable and pages in non-Latin scripts have no translation.
+
+<!-- TODO: check this section against the viewer once the translation view is live: its name, whether it is shown per page or per document, and the note for users shown with it (issue #52). -->
 
 ## Entities
 
@@ -102,6 +110,7 @@ Documents are classified by type in two ways. Globalise shows its own classifica
 | Scan | Nationaal Archief | Digitised by the Nationaal Archief, displayed via its IIIF image server |
 | Transcription | Globalise | Automatic text recognition (Laypa and Loghi) |
 | Text regions | Globalise | Automatic layout analysis (Laypa) |
+| Translation | Globalise | Machine translation of the transcription with a large language model (Claude Haiku 5.5), using the Globalise thesaurus and places dataset |
 | Entities | Globalise | Named entity recognition model, trained on manually annotated documents |
 | Events | Globalise | Event detection model, trained on manually annotated documents |
 | Documents | Globalise, based on historical finding aids | Combination of finding aids and automatic methods |

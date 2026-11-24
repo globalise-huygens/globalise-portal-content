@@ -8,7 +8,7 @@ status: "draft"
 
 authors: []
 datePublished: ""
-dateUpdated: "2026-11-13"
+dateUpdated: "2026-11-23"
 
 featured: false
 
@@ -321,9 +321,60 @@ Content to be developed.
 | Reference data pipeline | Converts dataset workbooks into RDF knowledge graphs and JSON-LD | <https://github.com/globalise-huygens/reference-data-pipeline> |
 | Source datasets | Datasets on DataverseNL | See [Reference data & entity linking](/pages/research-responsibly/data/reference-data.md) |
 
+## Machine translation
+
+<!-- Sources: README, prompt (prompts/translate_collection.md), scripts (translate_collection.py, page_filters.py, pagexml_text.py, running_headers.py, term_matcher.py, place_matcher.py, page_shift.py) and run reports of https://github.com/globalise-huygens/globalise-translation-experiments (retrieved 2026-11-23); curated-translations/matches.csv in the same repository. -->
+
+<!-- TODO: the translation-experiments repository may not remain available. Replace the links to it with a permanent location for the translations, the code, the prompt and the glossary files (e.g. DataverseNL or Zenodo), and add the dataset to the table below. -->
+
+<!-- TODO: add the figures for the final run (date, scans translated, skipped, retried, overlaid by redo runs) and confirm the settings used for it (effort, thinking). -->
+
+| Component | Description | Link |
+| --- | --- | --- |
+| Claude Haiku 5.5 | Large language model (Anthropic) used for the translation; thinking off, effort `high`, requests sent through the Message Batches API | <https://www.anthropic.com/claude> |
+| Translation pipeline | Scripts that prepare the text, glossary and requests, and check and collect the results | <https://github.com/globalise-huygens/globalise-translation-experiments> |
+| Translation prompt | The instructions given to the model | [`prompts/translate_collection.md`](https://github.com/globalise-huygens/globalise-translation-experiments/blob/main/prompts/translate_collection.md) |
+
+**Units of translation.** Each inventory was translated as one continuous sequence of scans, in requests of up to 40,000 characters (about 20 scans). A request is closed where a document begins once it is half full, so the model sees whole letters and resolutions where possible. Each request carries the end of the previous page as context (not translated), marks where documents begin (with their titles, from the [document segmentation](#document-identification)) and the language of scans that are not (only) Dutch (from the [language identification](#language-identification)). The model returns one translation per scan.
+
+**Page text.** The text was rebuilt from the PageXML rather than taken from the normalised page text, in which the lines of a marginal note are often sorted into the paragraph next to it, so that notes end up in the middle of a sentence. Per page, lines that share a left and right edge form columns; the column with the most text is the main block, and lines beside it form margin notes, which are sent after the main text of the scan. Double scans are split at the gutter. Page numbers, catchwords and signature marks are left out, and words hyphenated over a line break are joined. This was checked on two random samples of 300 inventories (1,500 scans each): margin notes on prose pages come out right; complex layouts, such as two-column registers and accounts, are the weak spot.
+
+**Running headers.** Copy books repeat the source and date of a letter at the top of every page ("Van Siam onder den 8=e Januarij 1704:"). Such headers were removed before translation: a short line counts as a header when a nearly identical line (allowing for transcription errors) occurs on one of the three scans before or after it. In a sample of 400 inventories (275,000 scans), 25–30% of the scans had one. In the test set described below, about 94% of the copy-book headers were removed.
+
+**Page filters.** Only pages without usable text were skipped: blank pages (fewer than 20 characters) and pages of garbled text (of the words, fewer than 25% have four or more letters, and fewer than 10 such words in all). In two test inventories, 37 of 385 (VOC 3773) and 127 of 1,112 scans (VOC 3598) were skipped, nearly all blank. Pages that the model could only render as *[illegible]* were marked as skipped too. Tables, accounts and lists were translated: headings, labels and entries are translated, bare columns of figures are not.
+
+**Glossary.** In each request, words whose meaning in the VOC and Asian context may not be obvious are marked, and explained in a glossary with their Dutch and English label and a short definition. The terms come from:
+
+* the [Globalise thesaurus](/pages/research-responsibly/data/reference-data.md), matched against the page text with fuzzy matching that allows for spelling variants, inflection and transcription errors: all ethnic, religious and caste categories, and the unfamiliar terms among commodities, ship types, occupations, units of measure and financial terms;
+* the entity annotations that link a word to the thesaurus, which add spellings the matcher misses (47.0 million linked annotations in 6,913 inventories, 41.9 million of them to 1,709 distinct concepts; export of 16 November 2026);
+* lists reviewed by the project: which concepts to explain, corrections of English labels and definitions, links that are often wrong, and terms the thesaurus lacks.
+
+Place names are matched against the [Globalise places dataset](/pages/research-responsibly/data/reference-data.md). A capitalised spelling variant of a known place is glossed with its standard name: the spelling the VOC corpus uses most, not the modern name. Forts, buildings, Dutch town names (in the corpus mostly ship names) and names shared by different places are not used. Person names are never normalised.
+
+**Output and checks.** For each scan, the model returns the first five words of the scan's transcription (`begins`) and the English (`english`). The pipeline checks that every scan is present and that the `begins` anchor fits this page rather than another page in the request. A second check compares the words that survive translation unchanged (numbers, names, terms kept in the source's spelling) with the transcription of the scan and of the two pages on either side, to find English that belongs to a neighbouring page (a "shift") or that runs on into the next page (an "overlap"). Scans that fail a check are translated again, if necessary on their own, with the English of the neighbouring pages given for orientation only.
+
+The output is one English text per scan, with the model and the time of translation.
+
+### Evaluation of the translations
+
+There are no quantitative measures of translation quality. The project compared the translations with published translations made by historians, from two volumes in the *Harta Karun* series of the Arsip Nasional Republik Indonesia (ANRI) and the Corts Foundation, which give the Dutch text and an English translation of letters from Asian rulers to the High Government in Batavia:
+
+* Hendrik E. Niemeijer et al., *The Diplomatic Correspondence between Asian Rulers and Batavia Castle during the 17th and 18th centuries: The Digital Reconstruction of a Lost Treasure* (Arsip Nasional Republik Indonesia (ANRI) & The Corts Foundation, 2015): three letters, from the Susuhunan of Mataram, the Sultan of Maguindanao and the King of Bone (1697–1700);
+* Hendrik E. Niemeijer et al., *The Diplomatic Correspondence between The Kingdom of Siam and The Castle of Batavia during the 17th and 18th centuries* (Arsip Nasional Republik Indonesia (ANRI) & The Corts Foundation, 2016): eight letters from the kings of Siam and their Phrakhlang (1668–1769).
+
+Copies of these eleven letters were found in fourteen places in the Globalise collection, together 195 scans. Several of the Siam letters are given in modernised spelling in the publication, which makes a word-by-word comparison with the transcription harder.
+
+<!-- TODO: add links to the two Harta Karun volumes. -->
+
+The machine translations are somewhat weaker than the published ones. The model fails on some difficult syntax, and it lacks the context the historians had, so some names of places and people are wrong; this is mostly a consequence of errors in the transcription. On the other hand, the machine translation is more literal and follows the original closely, which makes it easier to compare with the scan.
+
+The check for English under the wrong page flagged between 2.4% and 10.0% of the scans in the test runs, and between 2.4% and 5.1% in the runs on the diplomatic letters. Of 30 flagged scans checked by hand, about nine in ten were real shifts or overlaps. Flagged scans were translated again, but the check does not find every case.
+
 ## Publishing annotations
 
 The transcriptions, entities and events are converted into W3C Web Annotations with scripts in the [globalise-tools](https://github.com/knaw-huc/globalise-tools) repository of the KNAW Humanities Cluster. The annotation pages on the portal record the exact version of the script used. See [Data model & ontologies](/pages/research-responsibly/data/data-model.md).
+
+<!-- TODO: describe how the translations are published (e.g. as Web Annotations per scan, like the transcriptions) and with which script, once this is decided. -->
 
 ## Query expansion
 
