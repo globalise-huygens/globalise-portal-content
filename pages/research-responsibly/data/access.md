@@ -73,14 +73,14 @@ The Globalise MCP server lets AI assistants and other clients that support the [
 
 | | |
 | --- | --- |
-| Address | `https://globalise.nl/mcp` |
+| Address | `https://mcp.globalise.nl/mcp` |
 | Transport | Streamable HTTP; stateless |
 | Access | Read-only; no authentication |
 | Rate limit | 60 requests per minute per client |
 | Source code | <https://github.com/globalise-huygens/globalise-mcp> |
 | Status | Prototype (version 0.1.0) |
 
-<!-- TODO: https://globalise.nl/mcp does not work yet. Check that the address works once the server is hosted, and whether it is http or https. Also update the status and version at launch. -->
+<!-- Address checked 2026-11-26: https://mcp.globalise.nl/mcp answers MCP requests over https; http redirects to https. TODO: update the status and version at launch (the hosted server still reported version 0.1.0 on 2026-11-26). -->
 
 <!-- TODO: check which clients work with the server (e.g. Claude, ChatGPT, Le Chat, Copilot, Cursor, VS Code), and list them here or on the AI assistant page. -->
 

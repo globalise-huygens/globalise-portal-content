@@ -4,7 +4,7 @@ This document is the editorial  plan for the Globalise research portal.
 
 It records the pages that need to be produced, their purpose, intended audience, suggested content, responsibility and dependencies.
 
-Collections and Themes are included in the structure, but their substantive content will primarily be commissioned from external contributors.
+Research guides are included in the structure, but their substantive content will primarily be commissioned from external contributors.
 
 ## Status vocabulary
 
@@ -24,38 +24,32 @@ Collections and Themes are included in the structure, but their substantive cont
 | HOME-01 | Home                 | `pages/home.md`            | What is Globalise? What can I search? Where should I start?                                           | 200 words + cards | Editorial team                         | Essential | planned | Final UI             |
 | HOME-02 | What can I search?   | Component on Home          | What archival material, metadata, entities and other data can users search? What are the limitations? | 150 words         | Project team                      | Essential | planned | Final data model & search index     |
 | HOME-03 | Content warning      | Component + link to Ethics | What kind of colonial material might users encounter?                                                 | 50 words          | Manjusha                  | Essential | planned | none          |
-| HOME-04 | Featured Collections | Component                  | Provide visual entry points into Collections                                                          | —                     | External contributors + editorial team | Essential | planned | Collection selection |
-| HOME-05 | Featured Themes      | Component                  | Demonstrate research applications                                                                     | —                     | External contributors   + editorial team                | Essential | planned | Theme selection      |
+| HOME-04 | Explore the data     | Component                  | Provide visual entry points into the archive and the reference data                                   | —                     | External contributors + editorial team | Essential | planned | Final UI |
+| HOME-05 | Featured guides      | Component                  | Demonstrate research applications through selected research guides                                    | —                     | External contributors   + editorial team                | Essential | planned | Guide selection      |
 
 ## 2. Explore
 
+Explore offers two routes into the material: tiles that open the data (the archive and the reference data), and research guides written by researchers. The former Collections and Themes are merged into Research guides.
+
 | ID | Page | File | Purpose / key questions | Suggested length | Owner / source | Priority | Status | Dependencies |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| EXPLORE-01 | Explore | `pages/explore/index.md` | Orient users to Collections and Themes | 100–300 | Editorial team | Recommended | planned | Collection and theme selection |
+| EXPLORE-01 | Explore | `pages/explore/index.md` | Orient users to the data entry points and the research guides | 100–300 | Editorial team | Recommended | draft | Final UI; guide selection |
+| EXPLORE-02 | Explore the data | Component on `pages/explore/index.md` | Tiles linking to the Catalogue (the archive) and directly to the results tabs in Search for Places, Persons, Ships, Polities & rulers, Organisations and Thesaurus | One line per tile | Editorial team + development team | Essential | draft | Search URLs per entity type |
 
-### 2.1 Collections
+### 2.1 Research guides
 
-| ID      | Page                   | File                          | Purpose / key questions                                                 | Suggested length         | Owner / source        | Priority  | Status  | Dependencies         |
-| ------- | ---------------------- | ----------------------------- | ----------------------------------------------------------------------- | ------------------------ | --------------------- | --------- | ------- | -------------------- |
-| COLL-01 | Collections overview   | `pages/explore/collections/README.md` | Explain what Collections are and how they support discovery             | 300–500 words            | Editorial team        | Essential | planned | Collection selection |
-| COLL-02 | Individual Collections | `pages/explore/collections/...`       | What is this collection? What can I find? How can I search it?          | 100–150 words + examples | External contributors | Essential | planned | Commissioning        |
+| ID       | Page                     | File                                          | Purpose / key questions                                                                                   | Suggested length                                                    | Owner / source        | Priority  | Status  | Dependencies    |
+| -------- | ------------------------ | --------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | --------------------- | --------- | ------- | --------------- |
+| GUIDE-01 | Research guides overview | `pages/explore/research-guides/README.md`     | Explain what research guides are and how they support research                                            | 300–500 words                                                       | Editorial team        | Essential | draft   | Guide selection |
+| GUIDE-02 | Individual guides        | `pages/explore/research-guides/...`           | How can Globalise be used to investigate this category of material (template `collection.md`) or this historical theme (template `theme.md`)? | 100–150 words + examples (category); ~1,000 words (theme) | External contributors | Essential | planned | Commissioning   |
 
-
-#### Planned Collection categories
+#### Planned guides to a category of material
 
 * TBA (Melinda)
 
-Collections should be treated as a content type rather than merely as static pages.
+Guides to a category of material should be treated as a content type rather than merely as static pages.
 
-### 2.2 Themes
-
-| ID       | Page               | File                                 | Purpose / key questions                                         | Suggested length | Owner / source        | Priority  | Status  | Dependencies         |
-| -------- | ------------------ | ------------------------------------ | --------------------------------------------------------------- | ---------------- | --------------------- | --------- | ------- | -------------------- |
-| THEME-01 | Themes overview    | `pages/explore/themes/README.md`             | Explain what Themes are and how they support research           | 300–500 words    | Editorial team        | Essential | planned | Theme selection      |
-| THEME-02 | Individual Themes  | `pages/explore/themes/...`                   | How can Globalise be used to investigate this historical theme? | ~1,000 words     | External contributors | Essential | planned | Commissioning        |
-
-
-#### Possible themes
+#### Possible guides to a historical theme
 
 * Animal studies
 * Cultural history

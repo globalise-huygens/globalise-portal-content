@@ -244,11 +244,11 @@ Write with accessibility in mind:
 * avoid unnecessary jargon;
 * provide text alternatives for important visual information.
 
-## 12. Collections and Themes
+## 12. Research guides
 
-Collections and Themes will often be written by external contributors.
+Research guides will often be written by external contributors. They are stored in `pages/explore/research-guides/`.
 
-Use the relevant templates:
+Use the relevant template: `collection.md` for a guide to a category of material (such as persons, places or commodities), `theme.md` for a guide to a historical theme:
 
 * [`templates/collection.md`](templates/collection.md)
 * [`templates/theme.md`](templates/theme.md)

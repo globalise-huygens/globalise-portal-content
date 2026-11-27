@@ -10,8 +10,8 @@ The navigation bar has four sections. Each corresponds to a folder under `pages/
 
 | Navigation | Folder | Contents | Priority |
 | --- | --- | --- | --- |
-| [Home](pages/home.md) | `pages/home.md` | Introduce Globalise and provide entry points into search, Collections and Themes | Essential |
-| [Explore](pages/explore/index.md) | `pages/explore/` | [Collections](pages/explore/collections/README.md) and [Themes](pages/explore/themes/README.md): structured entry points into the material and examples of historical research | Essential |
+| [Home](pages/home.md) | `pages/home.md` | Introduce Globalise and provide entry points into search, the data and research guides | Essential |
+| [Explore](pages/explore/index.md) | `pages/explore/` | Entry points into the archive and the reference data, and [Research guides](pages/explore/research-guides/README.md) by researchers | Essential |
 | [Learn & get started](pages/learn-get-started/index.md) | `pages/learn-get-started/` | How to use the portal (searching and browsing, using an AI assistant via the MCP server, research workflow, citation guide, licences and reuse), plus [Resources](pages/learn-get-started/resources/index.md): bibliography, related projects, and videos | Essential |
 | [About GLOBALISE](pages/about/index.md) | `pages/about/` | What Globalise is, its ambitions and position, methods, outputs, team & partners, and an [Archive](pages/about/archive/index.md) of project documents and blog posts | Essential |
 | [Research responsibly](pages/research-responsibly/index.md) | `pages/research-responsibly/` | [Ethics & colonial context](pages/research-responsibly/ethics/index.md), the [guide to the VOC archives](pages/research-responsibly/voc-archives-guide.md) and [Data & documentation](pages/research-responsibly/data/index.md) | Essential |
@@ -29,11 +29,9 @@ pages/
 │
 ├── explore/
 │   ├── index.md
-│   ├── collections/
-│   │   └── README.md
-│   └── themes/
+│   └── research-guides/
 │       ├── README.md
-│       └── <one file per theme>.md
+│       └── <one file per guide>.md
 │
 ├── learn-get-started/
 │   ├── index.md

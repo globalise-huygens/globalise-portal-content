@@ -10,8 +10,8 @@ The navigation bar has four sections: Explore, Learn & get started, About GLOBAL
 Home
 
 Explore
-├── Collections
-└── Themes
+├── Explore the data (tiles: The archive · Places · Persons · Ships · Polities & rulers · Organisations · Thesaurus)
+└── Research guides
 
 Learn & get started
 ├── Searching & browsing
@@ -66,8 +66,8 @@ Contact · Release notes · Privacy · Cookies · Accessibility · Disclaimer ·
 ### Explore
 
 * [Explore](pages/explore/index.md) (EXPLORE-01)
-  * [Collections](pages/explore/collections/README.md) (COLL-01), with one page per collection (COLL-02)
-  * [Themes](pages/explore/themes/README.md) (THEME-01), with one page per theme (THEME-02)
+  * Explore the data: tiles on the Explore page linking to the Catalogue (the archive) and to the results tabs in Search for places, persons, ships, polities & rulers, organisations and the thesaurus (EXPLORE-02)
+  * [Research guides](pages/explore/research-guides/README.md) (GUIDE-01), with one page per guide (GUIDE-02)
 
 ### Learn & get started
 

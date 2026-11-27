@@ -61,11 +61,11 @@ Before it starts searching, the assistant receives background information from t
 Your assistant must support adding an MCP server, often called a *custom connector*, *remote MCP server* or *integration*. To connect it:
 
 1. Open the settings of your assistant and find the option to add a connector or MCP server.
-2. Enter the address of the Globalise MCP server: `https://globalise.nl/mcp`
+2. Enter the address of the Globalise MCP server: `https://mcp.globalise.nl/mcp`
 3. Give it a name, such as *Globalise*, and save. No login is needed.
 4. Start a new conversation and check that the Globalise tools are switched on.
 
-<!-- TODO: https://globalise.nl/mcp does not work yet. Check that the address works once the server is hosted, and whether it is http or https. -->
+<!-- Address checked 2026-11-26: https://mcp.globalise.nl/mcp answers MCP requests over https; http redirects to https. -->
 
 <!-- TODO: check which AI assistants (e.g. Claude, ChatGPT, Le Chat, Copilot, Cursor, VS Code) work with the server, on which plans, and add short step-by-step instructions, with screenshots, for the ones we support. -->
 
